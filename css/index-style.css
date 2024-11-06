@@ -55,10 +55,10 @@
 	font-display: swap;
 }
 .leaflet-popup-content-wrapper, .leaflet-popup-tip {
-    background: #8f53f0;
+    background: #8f53f0 !important;
 }
 .leaflet-popup-content {
-    margin: 0;
+    margin: 0 !important;
 }
 .title-alt {
 	color: #8f53f0;
@@ -159,7 +159,7 @@ h1 {
 }
 .rounded-img {
 	width: 100%;
-	border-radius: 15px;
+    	border-radius: 2.5rem;
 	margin-top: 20px;
 }
 h2 {
@@ -280,7 +280,7 @@ h2 {
 	background-color: #f8f9fa;
 }
 .rounded-img {
-	border-radius: 15px;
+    	border-radius: 2.5rem;
 	width: 100%;
 	height: auto;
 }
@@ -307,7 +307,7 @@ h2 {
 	padding: 20px;
 }
 .rounded-img {
-	border-radius: 15px;
+    	border-radius: 2.5rem;
 	width: 100%;
 	max-width: 100%;
 	height: auto;
