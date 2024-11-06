@@ -592,7 +592,7 @@ a:hover {
 	font-weight: 800;
 }
 .bg-dark {
-	background-color: #101018 !important;
+	background-color: #152228 !important;
 }
 @media (max-width: 991.98px) {
 	.background-image {
@@ -844,7 +844,7 @@ a.nav-link.new-link {
 
 @media (max-width: 992px) {
     .navbar {
-        background-color: #101018 !important;
+        background-color: #152228 !important;
     }
     .mobile-only {
         display: flex !important;
