@@ -56,7 +56,6 @@
 }
 .title-alt {
 	color: #8f53f0;
-	font-weight: 800;
 }
 .hero-section {
 	position: relative;
@@ -155,6 +154,7 @@ h1 {
 }
 h2 {
 	font-size: 3rem;
+	font-weight: 700;
 }
 .background-image {
 	background-size: cover;
