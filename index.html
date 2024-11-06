@@ -824,10 +824,12 @@ $(document).ready(function () {
         const feed = await fetchFeed();
         const markers = {};
 
-        const map = L.map('mapid', {
-            attributionControl: false,
-            scrollWheelZoom: false
-        }).setView([64.70397159508356, 13.109082259358335], 2);
+const map = L.map('mapid', {
+    attributionControl: false,
+    scrollWheelZoom: false,
+    maxBounds: [[-90, -180], [90, 180]], // Limit the map to geographical coordinates
+    maxBoundsViscosity: 1.0 // Makes the bounds fully solid, preventing panning outside
+}).setView([64.70397159508356, 13.109082259358335], 2);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/inequi/cm35l2hd4017v01pi9xvqhwj5/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiaW5lcXVpIiwiYSI6ImNsdTQ0c2FybTFiZG4ya3FzZjQxOW91ejUifQ.Z_vyEld041G0LshX2Mdtpw', {
     maxZoom: 8,
