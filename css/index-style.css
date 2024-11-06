@@ -57,6 +57,9 @@
 .title-alt {
 	color: #8f53f0;
 }
+.front-image img {
+    border-radius: 0 2.5rem 0 0;
+}
 .hero-section {
 	position: relative;
 	height: 100vh;
