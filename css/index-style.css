@@ -58,7 +58,7 @@
 	color: #8f53f0;
 }
 .front-image img {
-    	border-radius: 0 2.5rem 0 0;
+    	border-radius: 2.5rem;
 	width: 100%;
 }
 .hero-section {
@@ -307,12 +307,12 @@ h2 {
 	height: auto;
 }
 .quote-section {
-	background-color: #a463f3;
+	background-color: #8f53f0;
 	color: #fff;
 	padding: 60px 20px;
 }
 .quote-section .container {
-	max-width: 640px;
+	max-width: 880px;
 	margin: auto;
 }
 .blockquote p {
@@ -347,7 +347,7 @@ h2 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: #eeeef2;
+	background-color: #f5f3ed;
 	border-radius: 10px;
 	padding: 20px;
 	padding-top: 60px;
@@ -357,7 +357,7 @@ h2 {
 .benefit-icon {
 	position: relative;
 	margin-bottom: -50px;
-	background-color: #c6c5d9;
+	background-color: #edebe6;
 	border-radius: 50%;
 	width: 100px;
 	height: 120px;
