@@ -1,29 +1,28 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stillingsannonse</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/index-style.css">
-    <link rel="stylesheet" href="./css/job-details-style.css">
-    <link rel="icon" type="image/x-icon" href="./files/cropped-Favicon-A2G-32x32.png">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/ca38a06270.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script type="text/javascript" src="https://web106.reachmee.com/customerjs/helper.js"></script>
-
-  <meta property="og:title" content="Ledig stilling hos A2G">
-  <meta property="og:description" content="A2G Karriereportal">
-  <meta property="og:image" content="https://raw.githubusercontent.com/HeadlessJobSites/Wistrand/refs/heads/main/files/CMS-Wistrand-social.jpg">
-  <meta property="og:url" content="https://karriere.a2g.no/job-details.html">
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://career.talentech.c	om/css/job-details-style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/ca38a06270.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script type="text/javascript" src="https://web103.reachmee.com/customerjs/helper.js"></script>
+	
+  <meta property="og:title" content="Ledig stilling">
+  <meta property="og:image" content="https://career.talentech.com/files/Career-preview.jpg">
+  <meta property="og:url" content="https://career.talentech.com">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Ledig stilling hos A2G">
-  <meta name="twitter:description" content="A2G Karriereportal">
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/HeadlessJobSites/Wistrand/refs/heads/main/files/CMS-Wistrand-social.jpg">
+  <meta name="twitter:title" content="Ledig stilling">
+  <meta name="twitter:image" content="https://career.talentech.com/files/Career-preview.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:type" content="website">
@@ -40,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const params = new URLSearchParams(window.location.search);
     const jobId = params.get('rmjob') ? parseInt(params.get('rmjob'), 10) : parseInt(params.get('jobId'), 10);
 
-    fetch('https://api.talentech.io/reachmee/feed/a2g')
+    fetch('https://api.talentech.io/reachmee/feed/')
         .then(response => response.json())
         .then(jobs => {
             const job = jobs.find(job => job.ad_id === jobId);
@@ -100,12 +99,10 @@ function updateMetaTags(title, description) {
 }
 </script>
 
-
-
 </head>
 
 
-<body class="job-details">
+<body>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -121,70 +118,68 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 
-
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(0, 0, 0, 0.0);">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="./">
-            <img src="./files/A2G-new-logo-light.png" height="50" class="d-inline-block align-top" alt="">
+    <div class="container m-py-0">
+        <a class="navbar-brand" href="/" aria-label="Home">
+            <img src="https://career.talentech.com/files/TT-2.png" height="40" class="d-inline-block align-top" alt="">
         </a>
-        <a class="nav-link ml-auto d-lg-none btn btn-primary apply-btn m-mr-2" href="#appform-header">Søk her</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="d-flex justify-content-end align-items-center flex-grow-1">
+            <a class="nav-link ml-auto d-lg-none btn btn-primary apply-btn m-mr-2" href="#appform-header">Apply</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
         <div class="d-flex d-lg-none my-2 mobile-only">
-            <a class="nav-link new-link mr-1" href="#meet-employees">Møt de ansatte <i class="fa-thin fa-arrow-down"></i></a>
-            <a class="nav-link new-link ml-1" href="#our-process">Rekruteringsprosess <i class="fa-thin fa-arrow-down"></i></a>
+            <a class="nav-link new-link mr-1" href="#tt-talentech-section-2">Meet the Team <i class="fa-thin fa-arrow-down"></i></a>
+            <a class="nav-link new-link ml-1" href="#our-process">Recruitment Process <i class="fa-thin fa-arrow-down"></i></a>
         </div>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#appform-header">Søk på stillingen</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#meet-employees">Bli kjent med oss</a>
+                    <a class="nav-link" href="#appform-header">Apply</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#our-process">Rekrutteringsprosess</a>
+                    <a class="nav-link" href="#tt-talentech-section-2">Meet the Team</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://web106.reachmee.com/ext/I002/223/profile?site=5&validator=9ca234355a394a0d99f3c6ffc02745f1&lang=NO">Logg inn</a>
+                    <a class="nav-link" href="#our-process">Recruitment Process</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="blank" href="https://talentech.com">talentech.com <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
-        <div class="navbar-nav navbar-right d-none d-lg-flex"> 
-            <a class="btn btn-secondary mr-2" href="./#jobs-anchor">Ledige stillinger</a>
-        <a class="btn btn-primary" href="#contact-points">Kontakt oss</a></div>
     </div>
 </nav>
 
 
 
-
-
 <script>
 $(document).ready(function() {
-    $('.navbar-nav a').on('click', function() {
-        $('.navbar-collapse').collapse('hide');
-    });
-
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > 56) {
-            $(".navbar").addClass("bg-dark");
-        } else {
-            $(".navbar").removeClass("bg-dark");
-        }
-    });
-
-    $(".navbar-toggler").click(function() {
-        if (!$(".navbar-collapse").hasClass("show")) {
-            $(".navbar").addClass("bg-dark");
-        } else {
-            if ($(window).scrollTop() < 56) {
+    if ($(window).width() <= 992) {
+        $(".navbar").addClass("bg-dark");
+    } else {
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 56) {
+                $(".navbar").addClass("bg-dark");
+            } else {
                 $(".navbar").removeClass("bg-dark");
             }
-        }
-    });
+        });
+        $(".navbar-toggler").click(function() {
+            if (!$(".navbar-collapse").hasClass("show")) {
+                $(".navbar").addClass("bg-dark");
+            } else {
+                if ($(window).scrollTop() < 56) {
+                    $(".navbar").removeClass("bg-dark");
+                }
+            }
+        });
+    }
 });
 </script>
 
@@ -194,23 +189,22 @@ $(document).ready(function() {
 
 
 
+
+
     <div class="hero-section">
-    <!--<div class="custom-hero"></div>-->
-        <!--<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="hero-video">
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="hero-video">
             <source src="/files/Compressed-3-TT.mp4" type="video/mp4">
-        </video>-->
+        </video>
         <div class="hero-content">
-            <div class="job-title-heading" id="position-title"> </div>
+            <div class="job-title2" id="position-title"> </div>
             <p id="position-title-meta" style="font-size: 1.25rem;"><span class="organization-unit"> </span> • <span class="city"> </span></p>
         </div>
     </div>
 
 
-<script src="./js/hero-background.js"></script>
-    
-
-
-    
+<script src="/js/hero-background.js"></script>
+	
+	
 <div id="tt-job-section" class="job-section">
     <div class="container">
         <div class="row">
@@ -219,15 +213,15 @@ $(document).ready(function() {
                 <span class="organization-unit">Team</span>
             </div>
             <div class="col-md-3 col-6 job-info">
-                <span class="job-info-title">Sted</span>
-                <span class="city">Sted</span>
+                <span class="job-info-title">Location</span>
+                <span class="city">Location</span>
             </div>
             <div class="col-md-3 col-6 job-info">
-                <span class="job-info-title">Søknadsfrist</span>
-                <span class="expiration-date">Søknadsfrist</span>
+                <span class="job-info-title">Application due</span>
+                <span class="expiration-date">Application due</span>
             </div>
             <div class="col-md-3 col-6 text-center apply-btn-header">
-<a href="#appform-header" class="btn btn-primary apply-btn quicklinks" role="">Søk på stillingen</a>
+<a href="#appform-header" class="btn btn-primary apply-btn" role="">Apply for the job</a>
             </div>
         </div>
     </div>
@@ -235,11 +229,11 @@ $(document).ready(function() {
 
 
 
-    
-    
-    
-    <div id="tt-talentech-section-1" class="talentech-section mb-5 m-pb-3">
-    <div class="container mt-5 pt-3 m-px-2 m-mt-4">
+	
+	
+	
+	<div id="tt-talentech-section-1" class="talentech-section mb-5 m-pb-3">
+    <div class="container mt-5 pt-3 m-px-4 m-mt-4">
         <div id="inner-job-title" class="mb-5 job-title m-mb-4"> </div>
 
 
@@ -259,13 +253,13 @@ $(document).ready(function() {
         </div>
 <!-- END Share section -->
     
-        
+	    
         <div class="my-3 job-description"> </div>
-        <div class="contact-persons"></div>
+	    <div class="contact-persons"></div>
     </div>
 
             <div class="text-center centerd-apply-btn">
-<a href="#appform-header" class="btn btn-primary apply-btn" role="">Søk på stillingen</a>
+<a href="#appform-header" class="btn btn-primary apply-btn" role="">Apply for the job</a>
             </div>
 </div>
 
@@ -292,13 +286,13 @@ function loadExternalScriptAndBuildIframe() {
 
 function buildIframe() {
     var iFrameUrl = 'https://web103.reachmee.com/ext/';
-    var validator = '9ca234355a394a0d99f3c6ffc02745f1';
-    var iid = 'I002';
-    var customer = '223';
-    var site = '5';
-    var iHelperUrl = 'https://karriere.a2g.no/job-details.html?';
+    var validator = 'fa38d2eb8febb7bc22c8a91e10a1e9de';
+    var iid = 'I019';
+    var customer = '834';
+    var site = '19';
+    var iHelperUrl = 'https://career.talentech.com/job-details.html?';
     var height = '4000';
-    var langDef = 'NO';
+    var langDef = 'UK';
     var title = 'ReachMee Recruit external site';
 
     // More URL building logic here, using the current script logic
@@ -333,270 +327,88 @@ function buildIframe() {
 
 
 
-    
-
-    
-
-<!-- HIDE GOBI MEET THE TEAM
-<section id="tt-talentech-section-2" class="team-section py-5 mb-5 pb-4 m-my-0 m-py-5">
-        <center><h2 class="container mb-0 pb-0">Meet the <span class="organization-unit" class="title-alt"></span><span class="title-alt"> team</span></h2></center>
-    <div class="container mt-0 pt-2 m-ml-0 m-px-0">
-        <div class="row mt-3 m-mt-2 m-mx-0">
-<div id="gobi-section"></div>       
-        </div>
-    </div>
-</section>
--->    
-
-
-
-
-
-
-<!--
-        <h2 id="company-values" class="container pt-5 mt-5 m-my-0 m-px-4 m-pb-0">Våre <span class="title-alt">verdier</span></h2>
-    <div id="teamCarousel" class="carousel slide pb-5" data-interval="false">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-md-4 team-member">
-<div class="team-background-image mb-3" alt="" style="background-image: url('./files/A1080271.jpg')"></div>
-                        <p class="role mb-3">Med dig ser vi nya möjligheter</p>
-                        <p>Vi vet att en mångfald av kompetenser, perspektiv och erfarenheter inte bara ger en trevligare arbetsplats, utan också är en förutsättning för att ge våra klienter den bästa rådgivningen. När du börjar hos oss blir du en del av en öppen och inbjudande kultur där du får utrymme att vara dig själv – och där du kan vara trygg med att din röst blir hörd.</p>
-                    </div>
-                    <div class="col-md-4 team-member">
-<div class="team-background-image mb-3" alt="" style="background-image: url('./files/A1090896.jpg')"></div>
-                        <p class="role mb-3">Innovation som tradition</p>
-                        <p>Vi ser innovation som en drivande faktor bakom framgång. Vår bransch förändras ständigt, och vi ser till att vara rätt rustade för framtiden genom att hitta nya och mer effektiva sätt att leverera affärsjuridiska tjänster. Det innebär att vi uppmuntrar våra medarbetare att tänka kreativt och ta initiativ, oavsett om det handlar om att använda digitala verktyg för att effektivisera arbetsflöden eller att utveckla nya tjänster som möter klienternas föränderliga behov.</p>
-                    </div>
-                    <div class="col-md-4 team-member">
-<div class="team-background-image mb-3" alt="" style="background-image: url('./files/A1090755.jpg')"></div>
-                        <p class="role mb-3">Hållbarhet i stort som litet</p>
-                        <p>För oss är det viktigt att vi bidrar till en positiv utveckling inom hållbarhetsområdet. En stor del av detta arbete är att stötta och vägleda våra klienter i ESG-frågor kring regelefterlevnad, strategier och policys. Men att skapa en hållbar arbetsmiljö är en lika viktig komponent – därför ser vi till att du har de bästa förutsättningarna för att prestera långsiktigt, genom att erbjuda både stöd för att hantera arbetets utmaningar och utrymme för återhämtning.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
--->
-
-
-
-
-
-<!--
-<section class="team-section mt-5 pt-5 m-pt-3 m-mb-0 m-mt-5" id="meet-the-team" style="background-color: #f8f9fa;">
-        <h2 class="container pt-5 mb-0 pb-0 m-px-4">Møt teamet hos <span class="title-alt">A2G</span></h2>
-    <div class="container mt-0 pt-2">
-        <div class="row mt-3 m-mt-2 m-mx-1">
-		    <script src="https://widget.gobistories.com/gwi/6" async onload="gobi.discover()"></script>
-
-<div class="gobi-collection" data-gobi-collection-id="tavnb"></div>
-		    
-    </div>
-</section>
--->
+	
 
 	
 
 
-
-<div class="feature-section members" id="meet-employees" style="">
-    <div class="container py-5 m-py-0">
-        <h2 class="pt-5 m-px-2">Bli kjent med <span class="title-alt">våre ansatte</span></h2>
-        <div class="row align-items-center mt-5 mb-5 pb-3 flex-lg-row m-mt-4 m-mb-0"> 
-            <div class="col-lg-6">
-                <div class="background-image rounded-image m-mb-0" style="background-image: url('./files/image002.jpg'); cursor: pointer;" data-toggle="modal" data-target="#testimonialsModal"></div>
-            </div>
-            <div class="col-lg-6 text-padding py-0 m-p-4">
-                <h3 style="font-size: 24px;font-weight: 800;">Heidi Svedal Sellevold</h3>
-				<p><strong>Jobbveileder</strong></p>
-				<p>Hvis du trives med å møte sårbare mennesker og bidra i deres liv, så er dette en fantastisk og spennende jobb. A2G gir oss muligheten til å jobbe tett med jobbsøkere med ulik bakgrunn, og det å kunne være en del av deres vei mot en bedre fremtid er utrolig givende. Jeg ser daglig hvordan vårt arbeid direkte påvirker jobbsøkernes liv ved å gi dem verktøyene og støtten de trenger for å overvinne utfordringer og oppnå sine mål.</p>
-		<br><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#testimonialsModal">
-		  Les mer
-		</button>
-            </div>
+<section id="tt-talentech-section-2" class="team-section py-5 mb-5 pb-4 m-my-0 m-py-5">
+        <center><h2 class="container mb-0 pb-0">Meet the <span class="organization-unit" style="font-weight: 800;"></span><span style="font-weight: 800;"> team</span></h2></center>
+    <div class="container mt-0 pt-2 m-ml-0 m-px-0">
+        <div class="row mt-3 m-mt-2 m-mx-0">
+<div id="gobi-section"></div>		
         </div>
-<div class="row align-items-center mt-5 mb-5 pt-5 pb-3 m-my-0 m-pt-0">
-    <div class="col-lg-6 text-padding py-0 m-p-4 order-2 order-lg-1">
-        <h3 style="font-size: 24px;font-weight: 800;">Hamed Victory</h3>
-        <p><strong>HR-Leder Mennesker & Kultur</strong></p>
-        <p>Vår bedriftskultur er bygget på våre verdier; å være innovativ, inkluderende og solid. Vi mener at disse prinsippene er nøkkelen til å fremme kreativitet, produktivitet og trivsel blant våre ansatte, forklarer Hamed.<br>Vi setter pris på mangfold og mener at hver medarbeider har unike ferdigheter å bidra med. Et av våre hovedtiltak er å støtte både personlig og profesjonell vekst.</p>
     </div>
-    <div class="col-lg-6 order-1 order-lg-2">
-        <div class="background-image rounded-image m-mb-0" style="background-image: url('./files/image003.jpg');"></div>
-    </div>
-</div>
-
-        <div class="row align-items-center pt-5 mt-5 mb-5 pb-3 flex-lg-row m-mt-0 m-pt-0 m-mb-0 m-pb-4">
-            <div class="col-lg-6">
-                <div class="background-image rounded-image m-mb-0" style="background-image: url('./files/Caroline-A2G.jpg'); background-position: center;"></div>
-            </div>
-            <div class="col-lg-6 text-padding py-0 m-p-4"> 
-                <h3 style="font-size: 24px;font-weight: 800;">Caroline Røed</h3>
-				<p><strong>Jobbveileder</strong></p>
-				<p>Jeg trives godt i jobben som jobbveileder i A2G. Mye av grunnen til dette er den givende jobben vi har ved å kunne hjelpe mennesker tilbake til arbeidslivet. Samtidig er det et fint arbeidsmiljø, med mange gode kollegaer. </p>
-            </div>
-        </div>
-<div class="row align-items-center mt-5 mb-5 pt-5 pb-3 m-my-0 m-pt-0">
-    <div class="col-lg-6 text-padding py-0 m-p-4 order-2 order-lg-1">
-        <h3 style="font-size: 24px;font-weight: 800;">Andreas Eliassen</h3>
-        <p><strong>Jobbveileder</strong></p>
-        <p>Hverdagen i A2G er både variert og meningsfylt. Du møter mennesker med ulike bakgrunner og får være med på å gjøre en forskjell, noe som gir ekte glede og takknemlighet. Små og store øyeblikk med kollegaer og deltakere gjør arbeidsdagen givende, og med et sterkt fokus på raushet og utvikling blir det alltid spennende å komme på jobb.</p>
-    </div>
-    <div class="col-lg-6 order-1 order-lg-2">
-        <div class="background-image rounded-image m-mb-0" style="background-image: url('./files/Andreas-a2g.jpg');"></div>
-    </div>
-</div>
-
-        <div class="row align-items-center pt-5 mt-5 mb-5 pb-3 flex-lg-row m-mt-0 m-pt-0 m-mb-0 m-pb-4">
-            <div class="col-lg-6">
-                <div class="background-image rounded-image m-mb-0" style="background-image: url('./files/Marius-a2g.jpg'); background-position: center;"></div>
-            </div>
-            <div class="col-lg-6 text-padding py-0 m-p-4"> 
-                <h3 style="font-size: 24px;font-weight: 800;">Marius Oldervoll</h3>
-				<p><strong>Jobbveileder</strong></p>
-				<p>Det beste med å jobbe som jobbveileder i A2G er at man får muligheten til å komme tett på menneskers liv. Det å få lov til å ta del i viktige prosesser og bidra til at andre finner mestring, utvikler nye ferdigheter, og når sine karrieremål betyr mye for meg. I tillegg har A2G lært meg hvor flott og berikende det er å jobbe med så mange omsorgsfulle, kunnskapsrike og imøtekommende kollegaer.</p>
-            </div>
-        </div>
-
-    </div>
-</div>
+</section>
+	
 
 
 
 
 
 
-<!-- SLIDE UP MODAL FOR TESTIMONIALS -->
-<div class="modal fade testimonials-modal" id="testimonialsModal" tabindex="-1" aria-labelledby="testimonialsModalLabel" aria-hidden="true">
-  <div class="modal-dialog testimonials-modal-dialog">
-    <div class="modal-content testimonials-modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="testimonials-modal-body">
-    <div class="container mt-4 pt-5 m-mt-2">
-        <h2 class="pb-4 m-pb-0">Jobber med å få folk i arbeid: <span class="title-alt">– Plassen for deg som vil bidra i andres liv</span></h2>
-        <p class="pt-3"><strong>I et stadig skiftende arbeidsmarked skiller A2G seg ut som en ledende aktør innen arbeidsinkludering i Norge, et ideelt sted for deg som ønsker å støtte andre i deres karrierevei.</strong></p>
-        <p class="pt-3">Med over 2000 deltakere i ulike tiltak til enhver tid og hele 1136 personer formidlet til jobb eller utdanning det siste året, viser A2G en unik evne til å koble folks potensial med faktiske jobbmuligheter.</p>
-        <p class="pt-3">– A2G er et sted hvor man virkelig er opptatt av hele mennesket. Som ansatt får man mulighet til å utforske og jobbe ut ifra egne ressurser og kompetanse, sier Heidi.</p>
-        <div class="row align-items-stretch mt-5 mb-2 pb-3 flex-lg-row m-mt-4 m-mb-0"> 
-            <div class="col-lg-6 d-flex">
-                <div class="background-image rounded-image m-mb-0" style="background-image: url('./files/8e49568a-b037-426c-8bbb-72d186a49346.jpg');"></div>
-            </div>
-            <div class="col-lg-6 py-0 m-pt-3">
-	<p class="pt-3">Heidi Svedal Sellevold har jobbet hos A2G siden 2004. Hun startet i bedriftens barnehage og jobbet en periode som leder, før hun i 2014 bestemte seg for å gå inn i en rolle som veileder.</p>
-        <p class="pt-3">– Jeg oppdaget at jeg trives bedre som veileder – lytte, forstå og lære sammen med andre mennesker. Å kunne skaffe seg nye jobbmuligheter i samme selskap har vært viktig, forteller hun.</p>
-        <p class="pt-3">Hennes erfaring i selskapet viser hvordan A2G kontinuerlig tilpasser seg både ansattes og arbeidsmarkedets skiftende behov. Dette engasjementet for tilpasning og vekst ligger i kjernen av A2Gs suksess, både som arbeidsinkluderingsbedrift og som en attraktiv arbeidsplass.</p>
-            </div>
-        </div>
-	<p class="pt-3"><strong>Mennesker i sentrum</strong></p>
-        <p class="pt-3">Overgangen fra barnehageledelse til en veilederrolle var for henne ikke bare et yrkesskifte, men en reise mot å oppdage hva hun virkelig brenner for.</p>
-        <p class="pt-3">– Hvis du trives med å møte sårbare mennesker og bidra i deres liv, så er dette en fantastisk og spennende jobb. A2G gir oss muligheten til å jobbe tett med jobbsøkere med ulik bakgrunn, og det å kunne være en del av deres vei mot en bedre fremtid er utrolig givende, sier Heidi og legger til:</p>
-        <p class="pt-3">– Jeg ser daglig hvordan vårt arbeid direkte påvirker jobbsøkernes liv ved å gi dem verktøyene og støtten de trenger for å overvinne utfordringer og oppnå sine mål.</p>
-        <p class="pt-3">Denne rollen har brakt med seg en rekke utfordringer og muligheter, noe som har tillatt henne å utvikle seg både faglig og personlig.</p>
-        <p class="pt-3"– Jeg har lært så mye om meg selv gjennom alle disse møtene med mennesker.</p>
-            <div class="col-lg-12 px-0">
-                <div class="background-image rounded-image m-mb-0 testimonial-height" style="background-image: url('./files/image002.jpg');"></div>
-            </div>
-        <p class="pt-3 pb-2"><em>A2G er en av de største bedriftene i Norge innen arbeid og inkludering, og tilbyr en rekke tjenester rettet mot forskjellige bransjer og sektorer.Foto: Schibsted Partnerstudio</em></p>
-        <p class="pt-3"><strong>Best i klassen</strong></p>
-        <p class="pt-3">A2Gs inkluderingsarbeid har ikke gått ubemerket hen. Per januar topper de listen over medlemsbedrifter i Arbeid & Inkludering, kjent for å ha skapt flest jobber og utdanningsmuligheter det siste året. HR-leder mennesker og kultur, Hamed Victory forklarer hvordan A2G arbeider for å nå målene sine.</p>
-        <p class="pt-3">– Vår bedriftskultur er bygget på våre verdier; å være innovativ, inkluderende og solid. Vi mener at disse prinsippene er nøkkelen til å fremme kreativitet, produktivitet og trivsel blant våre ansatte, forklarer Hamed.</p>
-        <p class="pt-3"></p>
-	<div class="row align-items-stretch pb-3 m-my-0 m-py-0">
-    <div class="col-lg-6 py-0 m-px-3 m-pt-2 order-2 order-lg-1">
-        <p class="pt-3">Disse verdiene er ikke bare synlige internt i bedriften, men gjelder også jobbsøkerne som kommer til A2G. Ifølge en bedriftsundersøkelse fra NAV, står norske bedrifter overfor en mangel på omtrent 53.000 arbeidstakere. I dagens raskt skiftende arbeidsmarked er A2G en viktig samarbeidspartner for arbeidslivet.</p>
-        <p class="pt-3">– Vi setter pris på mangfold og mener at hver medarbeider har unike ferdigheter å bidra med. Et av våre hovedtiltak er å støtte både personlig og profesjonell vekst. Vi er lokalisert både i Vestland, Rogaland, Akershus og Østfold, og har stor delingskultur på tvers av organisasjonen. Vi legger til rette for kunnskapsdeling og karriereutvikling gjennom kurs som utvider ferdigheter, forteller han.</p>
-    </div>
-    <div class="col-lg-6 d-flex order-1 order-lg-2">
-        <div class="background-image rounded-image m-mb-0" style="background-image: url('./files/image003.jpg');"></div>
-    </div>
-</div>
-        <p class="pt-3">Disse verdiene kjenner Heidi igjen i hverdagen som veileder.</p>
-        <p class="pt-3">– Min erfaring er at man blir hørt, og det er ikke noe problem å få nye utfordringer hvis man ønsker det. Det bygger en kultur av tillit og respekt. Her er det frihet under ansvar og det gjør oss bedre rustet til å møte jobbsøkerne på en måte som er tilpasset deres behov, legger hun til.</p>
-        <p class="pt-3 pb-2 m-mt-4 m-pt-4"><strong>Erfaring og dedikasjon</strong></p>
-        <p class="pt-3">A2Gs suksess er ikke bare et resultat av innovasjon og inkludering, men også av deres evne til å bygge et stabilt og erfarent team. Dette reflekteres tydelig i hvordan langvarige ansatte som Heidi bidrar til bedriftens kultur.</p>
-        <p class="pt-3">– Det er mange dyktige mennesker i A2G, og flere av dem har vært der lenge. Vi er også opptatt av å ta godt imot nye kolleger – vi har et godt arbeidsmiljø. Å jobbe sammen med så mange gode kolleger gir en unik mulighet til å lære og dele kunnskap, noe som stadig inspirerer meg i mitt daglige arbeid, forklarer Heidi.</p>
-        <p class="pt-3">Hun forteller at denne dype forankringen i verdier og den kontinuerlige støtten fra kollegene er særegent hos A2G.</p>
-        <p class="pt-3">– Jeg opplever at det fortsatt er mange muligheter for vekst og læring, avslutter Heidi.</p>
-	<center><button type="button" class="btn my-5" data-dismiss="modal" aria-label="Close">Tilbake til karriereportalen</button></center>
-    </div>        
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-    
-
-
-<section id="our-process" class="process-section py-5 mb-3 m-my-0 m-pt-0 m-pb-4"  style="background-color: #f8f9fa;">
+<section id="our-process" class="process-section mb-5 py-5 m-my-0 m-pt-0 m-pb-4" style="background-color: #eeeef2;">
     <div class="container pt-5 m-px-4 m-pb-2">
-        <h2>Vår <span class="title-alt">rekrutterings&shy;prosess</span></h2>
+        <h2>Our <span style="font-weight: 800;">recruitment process</span></h2>
     </div>
     <div class="container">
         <div class="row">
-<!-- DISABLE GOBI
-
             <div class="col-md-4 px-0">
 <script src="https://widget.gobistories.com/gwi/6" async onload="gobi.discover()"></script>
 
 <div class="gobi-collection" data-gobi-collection-id="j2jom"></div>
             </div>
-		-->
-
-            <div class="col-md-12 pl-5 m-px-4">
+            <!-- Existing Content in Right Column -->
+            <div class="col-md-8 pl-5 m-px-4">
                 <div class="row process-row">
+                    <!-- Benefit 1 -->
                     <div class="col-md-4 col-sm-4 process-item">
                         <div class="process-icon">
                             <h3>1</h3>
                         </div>
                         <div class="process-content">
-                            <h3>Behovsanalyse</h3>
-                            <p>Før utlysningen blir lagt ut har vi gjort en behovsanalyse og utarbeidet en grundig beskrivelse av som tydeliggjør hvilken kandidat vil passe best for stillingen, samt hvilke oppgaver du kan forvente i rollen. Du kan også lese om hvilke goder du kan få dersom du blir ansatt.</p>
+                            <h3>Submit Your Application</h3>
+                            <p>Start your journey by applying through our career portal; upload your CV and share a bit about yourself.</p>
                         </div>
                     </div>
+                    <!-- Benefit 2 -->
                     <div class="col-md-4 col-sm-4 process-item">
                         <div class="process-icon">
                             <h3>2</>
                         </div>
                         <div class="process-content">
-                            <h3>Utlysning</h3>
-                            <p>Stillingen er nå lagt ut på ulike plattformer og du kan enkelt laste opp CV og søknad. Av hensyn til GDPR, har vi ikke anledning til å ta imot søknader tilsendt på epost. Ta deg tid til å bli kjent med vår bedrift og skriv noen ord om hvorfor akkurat du er den vi ser etter. Vi vil også vite hvordan vi kan bidra til din utvikling.</p>
+                            <h3>Initial Screening</h3>
+                            <p>We will review your application to assess the alignment between your skills and the job requirements.</p>
                         </div>
                     </div>
+                    <!-- Benefit 3 -->
                     <div class="col-md-4 col-sm-4 process-item">
                         <div class="process-icon">
                             <h3>3</h3>
                         </div>
                         <div class="process-content">
-                            <h3>Utvelgelse</h3>
-                            <p>Vi tar oss god tid til å gjennomgå alle søknader nøye. Som regel bistår HR avdelingen avdelingsleder, i form av både felles gjennomgang av søknader, og i noen tilfeller, screeningssamtaler. Dersom du kommer videre, vil du nå bli oppringt av en av oss.</p>
+                            <h3>Interview Process</h3>
+                            <p>Engage with us through one or more interviews to discuss your experiences, skills, and aspirations.</p>
                         </div>
                     </div>
+                    <!-- Benefit 4 -->
                     <div class="col-md-4 col-sm-4 process-item">
                         <div class="process-icon">
                             <h3>4</h3>
                         </div>
                         <div class="process-content">
-                            <h3>Intervjuer</h3>
-                            <p>Du vil bli invitert til et intervju der vi ønsker å bli bedre kjent med deg. Vi setter pris på åpne samtaler og ønsker å vite mer om din motivasjon, samt ambisjoner for fremtiden. Intervju er også en fin mulighet for deg til å bli kjent med oss og gjøre dine vurderinger om dette er en jobb for deg.</p>
+                            <h3>Assessment</h3>
+                            <p>Depending on the role, you may be invited to complete assignments or assessments to showcase your capabilities.</p>
                         </div>
                     </div>
+                    <!-- Benefit 5 -->
                     <div class="col-md-4 col-sm-4 process-item">
                         <div class="process-icon">
                             <h3>5</h3>
                         </div>
                         <div class="process-content">
-                            <h3>Ansettelse</h3>
-                            <p>Etter intervjuet, har vi gjerne hatt en prat med dine referanser og foretatt et valg. Du vil da få et skriftlig tilbud fra oss. Når du har takket ja til stillingen, vil vi ta kontakt for alle detaljer og opplysninger vi trenger for en god onboarding og trygg start i din nye rolle.</p>
+                            <h3>Offer & Onboarding</h3>
+                            <p>If it's a match, we'll extend an offer. Once accepted, we'll guide you through every step of your onboarding journey.</p>
                         </div>
                     </div>
                 </div>
@@ -610,11 +422,10 @@ function buildIframe() {
 
 
 
-
-<section class="appform-wrapper process-section mb-0 m-my-0 m-pt-0 m-pb-0">
-    <h2 id="appform-header" class="container pl-0 pt-5 m-px-3 m-pb-2" id="appFormWrapper"><span class="">Søknads&shy;skjema</span></h2>
+<section class="process-section mb-5 m-my-0 m-pt-0 m-pb-4">
+    <h2 id="appform-header" class="container pt-5 m-px-3 m-pb-2" id="appFormWrapper">Application <span style="font-weight: 800;">form</span></h2>
     <!-- Application form or alternative message -->
-    <div id="originalContentContainer" class="m-px-3">
+    <div id="originalContentContainer">
         <div id="applicationFormContainer"></div>
     </div>
 </section>
@@ -626,7 +437,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const jobId = params.get('rmjob') || params.get('jobId');
 
     // Fetch job details (assuming you have an endpoint to get job details by jobId)
-    fetch(`https://api.talentech.io/reachmee/feed/a2g`) // Replace with your actual API endpoint
+    fetch(`https://api.talentech.io/reachmee/feed/`) // Replace with your actual API endpoint
         .then(response => response.json())
         .then(jobs => {
             const job = jobs.find(job => job.ad_id === parseInt(jobId));
@@ -645,7 +456,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     iframe.style.width = "100%";
                     iframe.style.border = "none";
                     iframe.id = "applicationFormIframe";
-                    const iframeSrc = `https://web103.reachmee.com/ext/I002/223/apply?job_id=${jobId}&site=5&validator=9ca234355a394a0d99f3c6ffc02745f1&lang=NO&ihelper=${encodeURIComponent('https://career.talentech.com/jobs/rm?rmpage=job&rmjob=' + jobId)}`;
+                    const iframeSrc = `https://web103.reachmee.com/ext/I019/834/apply?job_id=${jobId}&site=19&validator=fa38d2eb8febb7bc22c8a91e10a1e9de&lang=UK&ihelper=${encodeURIComponent('https://career.talentech.com/jobs/rm?rmpage=job&rmjob=' + jobId)}`;
                     iframe.setAttribute('src', iframeSrc);
                     document.getElementById('applicationFormContainer').appendChild(iframe);
                 }
@@ -676,85 +487,55 @@ window.addEventListener('message', function(event) {
 
 
 
-<!-- Contact Persons Column -->
-<div class="container py-5 m-pt-0" id="contact-points">
-    <div class="row justify-content-center">
-        <div class="contact-persons-job d-flex justify-content-center">
-            <div class="contact-card">
-                <div class="profile-image" style="background-image: url('/files/Pattern-1.jpg');">
-                    <img src="/files/Hamed-1.png" alt="Hamed Victory">
-                </div>
-                <div class="contact-info">
-                    <div class="contact-info-inner">
-                        <h4>Hamed<br>Victory</h4>
-                        <p><a href="tel:004792400099"><i class="fas fa-phone"></i> 924 00 099</a></p>
-                        <p><a href="mailto:Hamed.Victory@a2g.no"><i class="fas fa-envelope"></i> Send e-post</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="contact-card">
-                <div class="profile-image" style="background-image: url('/files/Pattern-1.jpg');">
-                    <img src="/files/Inga-1.png" alt="Inga Falch">
-                </div>
-                <div class="contact-info">
-                    <div class="contact-info-inner">
-                        <h4>Inga<br>Falch</h4>
-                        <p><a href="tel:004799426683"><i class="fas fa-phone"></i> 994 26 683</a></p>
-                        <p><a href="mailto:inga.falch@a2g.no"><i class="fas fa-envelope"></i> Send e-post</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
+	
 
 
 
 
 
 
+	
 
-
-    
-
-    
-<div id="tt-feature-section" class="feature-section pt-3 pb-5" id="jobs-anchor" style="background-color: #f8f9fa;">
+	
+<div id="tt-feature-section" class="feature-section mb-5 pt-3 pb-5" id="jobs-anchor" style="background-color: #eeeef2;">
 <div class="container mt-3 mb-5 m-mb-0">
-    <h2 class="my-5 m-my-0">Flere <span class="title-alt">ledige stillinger</span></h2>
+    <h2 class="my-5 m-my-0">Similar <span style="font-weight: 800">jobs</span></h2>
     <div class="row my-3">
         <div class="col-md-3 mb-3">
-            <label for="locationFilter">Sted</label>
+            <label for="locationFilter">Location</label>
             <select id="locationFilter" class="form-control">
-                <option value="All">Alle steder</option>
+                <option value="All">All locations</option>
                 <!-- Location options will be dynamically added here -->
             </select>
         </div>
         <div class="col-md-3 mb-3">
-            <label for="jobTypeFilter">Stillingstype</label>
+            <label for="jobTypeFilter">Job type</label>
             <select id="jobTypeFilter" class="form-control">
-                <option value="All">Alle stillingstyper</option>
+                <option value="All">All job types</option>
                 <!-- Job type options will be dynamically added here -->
             </select>
         </div>
     </div>
     <div id="jobList" class="row"></div>
-    <div class="text-center mt-2">
-    <button id="loadMore" class="btn btn-primary">Se flere</button>
-    </div>
+	<div class="text-center mt-2">
+    <button id="loadMore" class="btn btn-primary">Load more</button>
+	</div>
 </div>
 </div>
 
 
-<div class="container my-5 py-5 m-my-0" style="text-align: center;">
+
+<div class="container my-5 py-5 m-my-0 m-pt-0" style="text-align: center;">
     <div class="">
-        <h2>Fant du ikke stillingen for deg?</h2>
+        <h2>Couldn't find the job you were looking for?</h2>
         <div class="mt-4 mb-2">
-        <p>Abonner på stillinger, så får du en e-post når det er en ledig stilling som passer dine preferanser.</p>
-        </div>
+		<p>Sign up and you'll get an e-mail when there is any position available similar to your prenumeration.</p>
+		</div>
     </div>
  
 
-    <button id="agent" class="mt-3 btn btn-primary" class="title-alt">Registrer deg</button>
+    <button id="agent" class="mt-3 btn btn-primary" style="font-weight:800">Sign up</button>
 
 
 <div class="modal fade modal-fullscreen-90w" id="exampleModal" tabindex="-1" aria-hidden="true">
@@ -775,7 +556,7 @@ window.addEventListener('message', function(event) {
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('agent').addEventListener('click', function() {
-        var iframeUrl = "https://web106.reachmee.com/ext/I002/223/subscribe?site=5&lang=NO&validator=9ca234355a394a0d99f3c6ffc02745f1";
+        var iframeUrl = "https://web103.reachmee.com/ext/I019/834/subscribe?site=19&lang=UK&validator=fa38d2eb8febb7bc22c8a91e10a1e9de";
         document.getElementById('modalIframe').src = iframeUrl;
         $('#exampleModal').modal('show');
     });
@@ -786,75 +567,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-<footer class="footer-bg-dark text-light pt-5 pb-3 m-py-0">
-    <div class="p-5">
-        <div class="row">
-            <!-- Logo and Description Column -->
-            <div class="col-md-3 footer-logo-section pt-0 m-px-0">
-                <img src="./files/A2G-new-logo-light.png" alt="A2G Logo" class="footer-logo">
-                <p class="footer-description">Sammen skal vi bidra til et arbeidsliv som har plass til alle</p>
-                <a href="https://www.linkedin.com/company/a2g-gruppen-as/" target="_blank">
-                    <img src="./files/a2g-linkedin.svg" alt="LinkedIn" class="footer-social-icon">
-                </a>
-            </div>
-
-            <!-- Useful Links Column -->
-            <div class="col-md-3 footer-links m-p-0">
-                <h4>Nyttige linker</h4>
-                <ul>
-                    <li><a target="_blank" href="https://a2g.no/om-a2g/">Om oss</a></li>
-                    <li><a target="_blank" href="https://karriere.a2g.no/">Karriere</a></li>
-                    <li><a target="_blank" href="https://a2g.no/aktuelt/">Aktuelt</a></li>
-                    <li><a target="_blank" href="https://a2g.no/personvernerklaering/">Vår personvernerklæring</a></li>
-                </ul>
-            </div>
-            
-            <!-- Virksomheter Column -->
-            <div class="col-md-3 footer-business m-px-0">
-                <h4>Virksomheter</h4>
-                <ul>
-                    <li><a target="_blank" href="https://a2g.no/virksomheter/a2g-kompetanse/">A2G Kompetanse</a></li>
-                    <li><a target="_blank" href="https://a2g.no/a2g-videre/">A2G Videre</a></li>
-                    <li><a target="_blank" href="https://a2g.no/virksomheter/a2g-logistikk-og-eiendomsdrift/">A2G Eiendomsdrift og logistikk</a></li>
-                    <li><a target="_blank" href="https://a2g.no/a2g-profilering/">A2G Profilering</a></li>
-                    <li><a target="_blank" href="https://a2g.no/virksomheter/a2g-bjorkhaug/">A2G Bjørkhaug</a></li>
-                </ul>
-            </div>
-
-            <!-- Contact Information Column -->
-		<div class="col-md-3 footer-contact-info m-p-0">
-		    <h4>Kontakt informasjon</h4>
-		    <p>
-			<img src="./files/a2g-location.svg" alt="Location" class="contact-icon">
-			<span>Blådalen 35, 5106 Øvre Ervik, Åsane</span>
-		    </p>
-		    <p>
-			<img src="./files/a2g-phone.svg" alt="Phone" class="contact-icon">
-			<span>+47 55 53 67 00</span>
-		    </p>
-		    <p>
-			<img src="./files/a2g-mail.svg" alt="Mail" class="contact-icon">
-			kontakt@a2g.no
-		    </p>
+<section class="text-center bg-dark text-light py-5">
+    <div class="container">
+        <img src="https://career.talentech.com/files/TT-2.png" alt="Talentech Logo" class="mb-3" style="max-width: 180px;">
+                <div class="mt-3 mb-4" style="max-width: 600px; margin: auto;">
+		 <p style="font-size: 1.25rem;">Talentech facilitates the full talent journey on a scalable platform with a tailored ecosystem of HR tech solutions.</p>
 		</div>
+        <div class="">
+            <!-- Replace these src attributes with your actual SVG paths -->
+            <a href="https://www.facebook.com/talentechnorway"><img src="/files/TT-f.svg" alt="Icon 1" class="mx-2" style="width: 30px; height: 30px;"></a>
+            <a href="https://www.linkedin.com/company/talentech-norway"><img src="/files/TT-l.svg" alt="Icon 2" class="mx-2" style="width: 30px; height: 30px;"></a>
+            <a href="https://talentech.com/no/kontakt"><img src="/files/TT-e.svg" alt="Icon 4" class="mx-2" style="width: 30px; height: 30px;"></a>
         </div>
     </div>
-</footer>
+</section>
 
 
-	
 
 
 
 <section class="bg-light text-dark">
     <div class="container my-0 py-1 m-py-2">
         <div class="d-flex align-items-center">
-		<a style="color: #000 !important;" href="https://talentech.no/" target="_blank">
-            <span class="mr-1">Levert av</span>
-            <img src="./files/TT-fav.svg" alt="Talentech Logo" style="width: 20px; vertical-align: middle; position: relative; bottom: 1px;">
-            <span class="ml-1" style="">Talentech</span>
-		</a>
+            <span class="mr-1">Powered by</span>
+            <img src="/files/TT-fav.svg" alt="Talentech Logo" style="width: 20px; vertical-align: middle; position: relative; bottom: 1px;">
+			<span class="ml-1" style="">Talentech</span>
         </div>
     </div>
 </section>
@@ -864,8 +601,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+	
 
-    
+
 <script>
 $(document).ready(function () {
     let jobs = []; // Array to store all jobs
@@ -874,144 +612,184 @@ $(document).ready(function () {
     const jobsToShowMobile = 6; // Number of jobs to show on mobile before "Load More"
     let jobsToShow = window.innerWidth > 768 ? jobsToShowDesktop : jobsToShowMobile;
 
+    // Adjust jobsToShow based on window resize
     $(window).resize(function() {
         jobsToShow = window.innerWidth > 768 ? jobsToShowDesktop : jobsToShowMobile;
-        displayedJobs = Math.min(jobsToShow, jobs.length);
-        displayJobs();
-        updateLoadMoreVisibility();
+        displayedJobs = Math.min(jobsToShow, jobs.length); // Adjust displayedJobs based on new jobsToShow
+        displayJobs(); // Redisplay jobs based on new size
+        updateLoadMoreVisibility(); // Update button visibility after resize
     });
 
-    function fetchJobs() {
-        const currentJobId = new URLSearchParams(window.location.search).get('jobId');
-        fetch('https://api.talentech.io/reachmee/feed/a2g')
-            .then(response => response.json())
-            .then(data => {
-                if (data.message && data.message === "ObjectNotFoundException" || !Array.isArray(data)) {
-                    jobs = [];
-                } else {
-                    jobs = data.filter(job => job.ad_id.toString() !== currentJobId); // Exclude the current job from the list
-                }
-                displayedJobs = Math.min(jobsToShow, jobs.length);
-                populateFilters();
-                displayJobs();
-            })
-            .catch(error => {
-                console.error('Error fetching jobs:', error);
-                jobs = [];
-                displayJobs();
-            });
-    }
-
+    // Function to populate filter dropdowns based on jobs
     function populateFilters() {
         const locationSet = new Set();
         const jobTypeSet = new Set();
+
         jobs.forEach(job => {
-            if (job.areas && job.areas.length > 0) {
-                job.areas.forEach(area => locationSet.add(area.name));
-            } else if (job.country) {
+            if (job.country) { // Check if job has a country
                 locationSet.add(job.country);
             }
-            if (job.occupation_area) {
-                jobTypeSet.add(job.occupation_area);
+            if (job.title) { // Check if job has a title
+                jobTypeSet.add(job.title);
             }
         });
-        $('#locationFilter').empty().append('<option value="All">Alle steder</option>');
-        locationSet.forEach(location => {
-            $('#locationFilter').append(`<option value="${location}">${location}</option>`);
+
+	    
+	// Populate location filter
+        $('#locationFilter').html('<option value="All">All locations</option>');
+        locationSet.forEach(country => {
+            $('#locationFilter').append(`<option value="${country}">${country}</option>`);
         });
-        $('#jobTypeFilter').empty().append('<option value="All">Alle stillingstyper</option>');
+
+        // Populate job type filter
+        $('#jobTypeFilter').html('<option value="All">All job types</option>');
         jobTypeSet.forEach(type => {
             $('#jobTypeFilter').append(`<option value="${type}">${type}</option>`);
         });
     }
 
+    // Function to display jobs based on filters
     function displayJobs() {
-        $('#jobList').empty();
-        let filteredJobs = jobs.slice(0, displayedJobs);
-        const selectedLocation = $('#locationFilter').val();
+        $('#jobList').empty(); // Clear current jobs
+
+        let filteredJobs = jobs.slice(0, displayedJobs); // Get the subset of jobs to be displayed
+
+        // Apply filters
+        const selectedCountry = $('#locationFilter').val();
         const selectedJobType = $('#jobTypeFilter').val();
         filteredJobs = filteredJobs.filter(job => {
-            const jobLocations = job.areas?.map(area => area.name) || [job.country];
-            return (selectedLocation === 'All' || jobLocations.includes(selectedLocation)) &&
-                   (selectedJobType === 'All' || job.occupation_area === selectedJobType);
+            return (selectedCountry === 'All' || job.country === selectedCountry) &&
+                   (selectedJobType === 'All' || job.title === selectedJobType);
         });
 
-        if (filteredJobs.length === 0) {
-            $('#jobList').append('<div class="text-center w-100 m-px-3">Det er for tiden ingen andre stillingsutlysninger.</div>');
-        } else {
-            filteredJobs.forEach(job => {
-                $('#jobList').append(buildJobCard(job));
-            });
-        }
-        updateLoadMoreVisibility();
+        // Add job cards to the DOM
+        filteredJobs.forEach(job => {
+            $('#jobList').append(buildJobCard(job));
+        });
+
+        updateLoadMoreVisibility(); // Update the visibility of the "Load More" button
     }
 
+    // Function to build HTML for a job card
     function buildJobCard(job) {
-	    
-        // Determine the display location based on the areas and country
-        let displayLocation = job.country || '';
-        if (job.areas && job.areas.length > 0) {
-            displayLocation = job.areas[job.areas.length - 1].name; // Use the last area
-        }
-	    
-        const jobDetailUrl = `job-details.html?jobId=${job.ad_id}`;
+    // Assuming job-details.html is your detail page and it can handle job IDs
+    // Adjust accordingly if your detail page has a different URL structure
+    const jobDetailUrl = `job-details.html?jobId=${job.ad_id}`;
+        // Use the second organization unit if available, otherwise use the first one
+        const organizationUnitName = job.organizations.length > 1 ? job.organizations[1].nameorgunit : job.organizations[0]?.nameorgunit || 'Not specified';
         return `
-            <div class="col-12 col-md-4 col-lg-4 mb-4">
-                <a href="${jobDetailUrl}" class="" style="text-decoration: none; color: inherit;">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <div class="card-category"><span>A2G</span></div>
-                            <div class="card-title">${job.title}</div>
-                            <p class="card-text">${displayLocation}</p>
-                        </div>
-                    </div>
-                </a>
-            </div>`;
+<div class="col-12 col-md-4 col-lg-4 mb-4">
+    <a href="${jobDetailUrl}" class="" style="text-decoration: none; color: inherit;">
+        <div class="card h-100">
+            <div class="card-body">
+		        <div class="card-category"><span>${organizationUnitName}</span></div>
+                <h5 class="card-title">${job.title}</h5>
+                <p class="card-text">${job.country}</p>
+			    <a href="${jobDetailUrl}" class="stretched-link">
+                <img src="/files/arrow-right-thin.svg" class="stretched-link" alt="Details" style="">
+		</a>
+            </div>
+        </div>
+    </a>
+</div>`;
     }
 
+    // Function to update the visibility of the "Load More" button
     function updateLoadMoreVisibility() {
-        if (displayedJobs >= jobs.length || jobs.length === 0) {
+        if (displayedJobs >= jobs.length) {
             $('#loadMore').hide();
         } else {
             $('#loadMore').show();
         }
     }
 
+    // Function to fetch jobs from the API
+	$(document).ready(function () {
+    const currentJobId = new URLSearchParams(window.location.search).get('jobId');
+    fetchJobs(currentJobId); // Pass currentJobId to the fetchJobs function
+});
+
+function fetchJobs(currentJobId) {
+    fetch('https://api.talentech.io/reachmee/feed/')
+        .then(response => response.json())
+        .then(data => {
+            jobs = data.filter(job => job.ad_id !== parseInt(currentJobId));
+            if (jobs.length === 0) {
+                $('#tt-feature-section').hide();
+            } else {
+                displayedJobs = Math.min(jobsToShow, jobs.length);
+                populateFilters();
+                displayJobs();
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching jobs:', error);
+        });
+}
+
+
+    // Load jobs when page is ready
     fetchJobs();
 
+    // Event listener for "Load More" button
     $('#loadMore').click(function() {
-        displayedJobs += jobsToShow;
-        displayJobs();
-        updateLoadMoreVisibility();
+        displayedJobs += jobsToShow; // Increase the number of displayed jobs
+        displayJobs(); // Display new set of jobs
+        updateLoadMoreVisibility(); // Check if we still need the "Load More" button
     });
 
-    $('#locationFilter').change(displayJobs);
-    $('#jobTypeFilter').change(displayJobs);
+    // Event listeners for filter dropdowns
+    $('#locationFilter').change(function() {
+        displayedJobs = jobsToShow; // Reset displayed jobs to show initial count based on current device
+        displayJobs(); // Apply filter and display jobs
+        updateLoadMoreVisibility(); // Update "Load More" button visibility based on filters
+    });
+
+    $('#jobTypeFilter').change(function() {
+        displayedJobs = jobsToShow; // Reset displayed jobs to show initial count based on current device
+        displayJobs(); // Apply filter and display jobs
+        updateLoadMoreVisibility(); // Update "Load More" button visibility based on filters
+    });
 });
 </script>
 
 
+
+
+	
     
 <script>
 $(document).ready(function() {
     const params = new URLSearchParams(window.location.search);
+    // Get 'rmjob' if present, otherwise get 'jobId'
     const jobId = params.get('rmjob') ? parseInt(params.get('rmjob'), 10) : parseInt(params.get('jobId'), 10);
 
-    fetch('https://api.talentech.io/reachmee/feed/a2g')
+    fetch('https://api.talentech.io/reachmee/feed/')
         .then(response => response.json())
         .then(jobs => {
             const job = jobs.find(job => job.ad_id === jobId);
             if (job) {
-                // Remove commas from the organization unit, if present
-                const organizationUnit = job.organizations ? (job.organizations.length > 1 ? job.organizations[1].nameorgunit.replace(/,/g, '') : job.organizations[0]?.nameorgunit.replace(/,/g, '')) : "A2G";
-
+                // If organizations is null, return "COMPANY NAME", otherwise proceed with existing logic
+                const organizationUnit = job.organizations ? (job.organizations.length > 1 ? job.organizations[1].nameorgunit : job.organizations[0]?.nameorgunit) : "Talentech";
+                
+                // Fetch the last city from the areas array, if it exists; otherwise, default to 'Not specified'
                 const city = job.areas && job.areas.length > 0 ? job.areas[job.areas.length - 1].name : 'Not specified';
+
                 const applicationLink = job.link.replace("rmpage=job", "rmpage=apply");
                 $('#applyButton').attr('onclick', `window.location.href='${applicationLink}'`);
                 $('#applyButton-tt').attr('onclick', `window.location.href='${applicationLink}'`);
+
+                // Set the page title to the job title
                 document.title = job.title;
 
-                $('.job-title-heading').html(job.title);
+                // Display the job title in the designated area with formatting
+                const titleWords = job.title.split(' ');
+                const firstWord = titleWords.shift();
+                const restOfTitle = titleWords.join(' ');
+                $('.job-title').html(`<span style="font-weight:400;">${firstWord}</span> <span style="font-weight:800;">${restOfTitle}</span>`);
+
+                // Update elements with job details
+                $('.job-title2').html(job.title);
                 $('.job-description').html(job.description);
                 $('.organization-unit').text(organizationUnit);
                 $('.city').text(city);
@@ -1021,7 +799,8 @@ $(document).ready(function() {
 
                 $('.contact-persons').empty();
                 job.contact_persons.forEach((person) => {
-                    const contactInfo = `<div class="contact-person">
+                    const contactInfo = `
+                        <div class="contact-person">
                             <p>${person.first_name} ${person.surname}, ${person.position}<br>
                             <a href="mailto:${person.email}">${person.email}</a><br>
                             <a href="tel:${person.phone}">${person.phone}</a></p>
@@ -1029,13 +808,14 @@ $(document).ready(function() {
                     $('.contact-persons').append(contactInfo);
                 });
 
-                let collectionId = 'no';
+                // Handle additional dynamic elements
+                let collectionId = 'no'; // Default to "no"
                 if (organizationUnit === "Finance") {
-                    collectionId = 'mnnvj';
+                    collectionId = 'mnnvj'; // Specific ID for "Finance"
                 } else if (organizationUnit === "Sales") {
-                    collectionId = '7zxwk';
+                    collectionId = '7zxwk'; // Example ID for "Sales"
                 } else {
-                    collectionId = '7zxwk';
+                    collectionId = '7zxwk'; // Other org units
                 }
                 const newDiv = $('<div class="gobi-collection"></div>').attr('data-gobi-collection-id', collectionId);
                 newDiv.insertAfter('#gobi-section');
@@ -1066,6 +846,7 @@ $(document).ready(function() {
 
 
 
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const urlParams = new URLSearchParams(window.location.search);
@@ -1074,7 +855,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (openApplication !== null) {
         // Change the src of the iframe
         const applicationFormIframe = document.getElementById('applicationFormIframe');
-        applicationFormIframe.src = "https://web103.reachmee.com/ext/I002/233/apply?site=5&lang=NO&validator=b026c105ea4a83b928726cb7cb18488c&job_id=-1";
+        applicationFormIframe.src = "https://web103.reachmee.com/ext/I019/834/apply?site=6&lang=UK&validator=319e0c2d95b73a9b706010e4fb40c3e6&job_id=-1";
         
         // Hide the job description and metadata
         document.getElementById('our-process').style.display = 'none';
@@ -1097,21 +878,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-    
-<script src="./js/share-some.js"></script>  
-
-<!-- FIXES DOUBLE TAP FOR 'LES MER' TESTIMONIAL BUTTON -->
-	<script>
-$(document).ready(function() {
-    // Handling touchstart separately to avoid the mobile double-tap issue
-    $('.btn[data-target="#testimonialsModal"]').on('touchstart', function(e) {
-        e.preventDefault(); // Prevents the default click behavior on touch
-        $('#testimonialsModal').modal('show');
-    });
-});
-</script>
-
 	
+<script src="/js/share-some.js"></script>	
 </body>
 
 </html>
