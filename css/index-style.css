@@ -58,7 +58,8 @@
 	color: #8f53f0;
 }
 .front-image img {
-    border-radius: 0 2.5rem 0 0;
+    	border-radius: 0 2.5rem 0 0;
+	width: 100%;
 }
 .hero-section {
 	position: relative;
