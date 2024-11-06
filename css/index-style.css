@@ -54,6 +54,9 @@
 	font-style: normal;
 	font-display: swap;
 }
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    background: #8f53f0;
+}
 .title-alt {
 	color: #8f53f0;
 }
