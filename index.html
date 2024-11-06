@@ -16,6 +16,8 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <script src="https://widget.gobistories.com/gwi/6" async onload="gobi.discover()"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
 
 	
   <meta property="og:title" content="Talentech Career Portal">
@@ -92,7 +94,7 @@ $(document).ready(function() {
 
     <div class="hero-section">
         <video playsinline autoplay loop muted class="hero-video">
-            <source src="https://career.talentech.com/files/Compressed-TT.mp4" type="video/mp4">
+            <source src="https://career.talentech.com/files/Hero-Avolta.mp4" type="video/mp4">
         </video>
         <div class="hero-content">
             <h1>Join our <span style="font-weight: 800;">journey</span></h1>
@@ -192,10 +194,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <div class="talentech-section pb-4 mb-5 m-mb-3">
     <div class="container mt-4 pt-2 mb-5 pb-3 video-container m-my-0">
-        <video id="talentechVideo" class="rounded-video" playsinline autoplay loop muted>
+        <!--<video id="talentechVideo" class="rounded-video" playsinline autoplay loop muted>
             <source src="/files/This-is-us-TT.mp4" type="video/mp4">
             Your browser does not support the video tag.
-        </video>
+        </video>-->
+	    <lottie-player src="<https://www.avoltaworld.com/sites/default/files/lottiefile_field/airports_0.json>" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop controls autoplay></lottie-player>
         <div class="video-controls">
             <button id="muteBtn"><img src="/files/volume-xmark-thin.svg" alt="Mute"></button>
         </div>
