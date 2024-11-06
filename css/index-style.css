@@ -613,7 +613,7 @@ a:hover {
 	}
 #inner-job-title, .share-container {
     padding-left: 210px;
-    padding-right: 260px;
+    /*padding-right: 260px;*/
 }
 }
 #inner-job-title {
