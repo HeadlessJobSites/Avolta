@@ -593,7 +593,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('agent').addEventListener('click', function() {
-        var iframeUrl = "https://web103.reachmee.com/ext/I019/834/subscribe?site=19&lang=UK&validator=fa38d2eb8febb7bc22c8a91e10a1e9de";
+        var iframeUrl = "https://web103.reachmee.com/ext/I022/2136/subscribe?site=6&lang=UK&validator=0d32864875e40299a57c8698c2f99c4b";
         document.getElementById('modalIframe').src = iframeUrl;
         $('#exampleModal').modal('show');
     });
@@ -764,7 +764,7 @@ $(document).ready(function () {
     }
 
     function fetchJobs() {
-        fetch('https://api.talentech.io/reachmee/feed/avolta')
+        fetch('https://api.talentech.io/reachmee/feed/a2g')
             .then(response => response.json())
             .then(data => {
                 if (data.message && data.message === "ObjectNotFoundException") {
