@@ -471,7 +471,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="feature-section pt-3 pb-5" id="jobs-anchor" style="background-color: #eeeef2;">
 <div class="container mt-3 mb-0 m-mb-0">
     <h2 class="my-5 m-px-2 m-my-0">Available <span style="font-weight: 800">positions</span></h2>
-    <<div class="row my-3">
+    <div class="row my-3 jobs-filter">
         <div class="col-md-3 mb-3">
             <label for="locationFilter">Plats</label>
             <select id="locationFilter" class="form-control">
@@ -722,7 +722,6 @@ $(document).ready(function () {
                     <div class="card-body">
                         <div class="card-category"><span>${category}</span></div>
                         <div class="card-title">${job.title}</div>
-                        <p class="card-text">${job.country}</p>
                         <a href="${jobDetailUrl}" class="stretched-link">
                             <img src="./files/arrow-right-thin.svg" class="stretched-link" alt="Details" style="">
                         </a>
