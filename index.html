@@ -107,20 +107,21 @@ $(document).ready(function() {
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Fetch the jobs from the feed
-  fetch('https://api.talentech.io/reachmee/feed/avolta')
+  fetch('https://api.talentech.io/reachmee/feed/a2g')
     .then(response => response.json())
     .then(jobs => {
       const positionsCount = jobs.length; // Get the count of jobs from the feed
-      const btnText = positionsCount === 1 ? 'See 1 available position' : `Se ${positionsCount} ledige stillinger`; // Update button text based on count
-      document.querySelector('a.btn.btn-primary.btn-lg strong').textContent = positionsCount > 0 ? btnText : 'See available position';
+      const btnText = positionsCount === 1 ? 'Se 1 ledig stilling' : `Se ${positionsCount} ledige stillinger`; // Update button text based on count
+      document.querySelector('a.btn.btn-primary.btn-lg strong').textContent = positionsCount > 0 ? btnText : 'Se ledige stillinger';
     })
     .catch(error => {
       console.error('Error fetching job details:', error);
       // If there is an error fetching the jobs, show default text
-      document.querySelector('a.btn.btn-primary.btn-lg strong').textContent = 'See available position';
+      document.querySelector('a.btn.btn-primary.btn-lg strong').textContent = 'Se ledige stillinger';
     });
 });
 </script>
+
 
 
 	<!--
@@ -144,54 +145,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const video = document.getElementById('talentechVideo');
-    const muteBtn = document.getElementById('muteBtn');
-    const muteIcon = muteBtn.querySelector('img');
-
-    // Function to toggle video play/pause
-    const togglePlayPause = () => {
-        if (video.paused || video.ended) {
-            video.play();
-        } else {
-            video.pause();
-        }
-    };
-
-    // Setup Intersection Observer for autoplay/pause based on visibility
-    // This part will now work on all devices
-    const observer = new IntersectionObserver((entries) => {
-        const [entry] = entries;
-        if (entry.isIntersecting) {
-            video.play();
-        } else {
-            video.pause();
-        }
-    }, {
-        root: null,
-        threshold: 0.5
-    });
-
-    observer.observe(video);
-
-    // Check if we are on desktop before adding event listeners for play/pause and mute controls
-    if (window.innerWidth > 992) {
-        // Click event for the video itself
-        video.addEventListener('click', () => {
-            togglePlayPause();
-        });
-
-        // Event listener for the mute button
-        muteBtn.addEventListener('click', () => {
-            video.muted = !video.muted;
-            muteIcon.src = video.muted ? "/files/volume-xmark-thin.svg" : "/files/volume-off-thin.svg";
-            muteIcon.alt = video.muted ? "Mute" : "Unmute";
-        });
-    }
-});
-</script>
 
 <div class="talentech-section pb-4 mb-5 m-mb-3">
     <div class="container mt-4 pt-2 mb-5 pb-3 video-container m-my-0">
