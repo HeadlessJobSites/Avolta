@@ -671,7 +671,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	
 	
-	
 <script>
 $(document).ready(function () {
     let jobs = []; // Array to store all jobs
@@ -700,11 +699,11 @@ $(document).ready(function () {
                 jobTypeSet.add(job.occupation_area);
             }
         });
-        $('#locationFilter').html('<option value="All">All locations</option>');
+        $('#locationFilter').html('<option value="All">Alle steder</option>');
         locationSet.forEach(location => {
             $('#locationFilter').append(`<option value="${location}">${location}</option>`);
         });
-        $('#jobTypeFilter').html('<option value="All">All position types</option>');
+        $('#jobTypeFilter').html('<option value="All">Alle stillingstyper</option>');
         jobTypeSet.forEach(type => {
             $('#jobTypeFilter').append(`<option value="${type}">${type}</option>`);
         });
@@ -739,13 +738,13 @@ $(document).ready(function () {
 	    
         const jobDetailUrl = `job-details.html?jobId=${job.ad_id}`;
         return `
-        <div class="col-12 col-md-4 col-lg-4 mb-4">
+        <div class="col-12 col-md-6 col-lg-6 mb-4">
             <a href="${jobDetailUrl}" class="" style="text-decoration: none; color: inherit;" aria-label="Job details">
                 <div class="card h-100">
                     <div class="card-body">
-                        <div class="card-category"><span>${job.occupation_area || 'Avolta'}</span></div>
+                        <div class="card-category"><span>${job.occupation_area || 'A2G'}</span></div>
                         <div class="card-title">${job.title}</div>
-                        <!--<p class="card-text">${displayLocation}</p>-->
+                        <p class="card-text">${displayLocation}</p>
                         <a href="${jobDetailUrl}" class="stretched-link">
                             <img src="./files/arrow-right-thin.svg" class="stretched-link" alt="Details">
                         </a>
@@ -804,7 +803,6 @@ $(document).ready(function () {
     });
 });
 </script>
-
 
 
 
