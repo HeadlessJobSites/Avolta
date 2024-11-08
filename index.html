@@ -103,7 +103,7 @@ $(document).ready(function() {
     </video>
     <div class="hero-content">
         <h1>Join our <span style="font-weight: 800;">journey</span></h1>
-        <a href="#jobs-anchor" class="btn btn-primary btn-lg"><strong>See available positions</strong></a>
+        <a href="#jobs-anchor" class="btn btn-primary btn-lg">See available positions</a>
     </div>
 	</div>
 
@@ -111,7 +111,7 @@ $(document).ready(function() {
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Fetch the jobs from the feed
-  fetch('https://api.talentech.io/reachmee/feed/a2g')
+  fetch('https://api.talentech.io/reachmee/feed/avolta')
     .then(response => response.json())
     .then(jobs => {
       const positionsCount = jobs.length; // Get the count of jobs from the feed
