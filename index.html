@@ -111,7 +111,7 @@ $(document).ready(function() {
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Fetch the jobs from the feed
-  fetch('https://api.talentech.io/reachmee/feed/avolta')
+  fetch('https://api.talentech.io/reachmee/feed/hmshost')
     .then(response => response.json())
     .then(jobs => {
       const positionsCount = jobs.length; // Get the count of jobs from the feed
@@ -813,7 +813,7 @@ $(document).ready(function () {
     }
 
     function fetchJobs() {
-        fetch('https://api.talentech.io/reachmee/feed/a2g')
+        fetch('https://api.talentech.io/reachmee/feed/hmshost')
             .then(response => response.json())
             .then(data => {
                 if (data.message && data.message === "ObjectNotFoundException") {
@@ -860,7 +860,7 @@ $(document).ready(function () {
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script>
     async function fetchFeed() {
-        const response = await fetch('https://api.talentech.io/reachmee/feed/a2g');
+        const response = await fetch('https://api.talentech.io/reachmee/feed/hmshost');
         return await response.json();
     }
 
