@@ -102,8 +102,8 @@ $(document).ready(function() {
         <source src="https://career.talentech.com/files/Compressed-TT.mp4" type="video/mp4">
     </video>
     <div class="hero-content">
-        <h1>Join our <span style="font-weight: 800; color: #A50287 !important">journey</span></h1>
-        <a href="#jobs-anchor" class="btn btn-primary btn-lg dark-btn"><strong>See available positions</strong></a>
+        <h1>Join our <span style="font-weight: 800;">journey</span></h1>
+        <a href="#jobs-anchor" class="btn btn-primary btn-lg"><strong>See available positions</strong></a>
     </div>
 	</div>
 
@@ -115,13 +115,13 @@ document.addEventListener('DOMContentLoaded', function() {
     .then(response => response.json())
     .then(jobs => {
       const positionsCount = jobs.length; // Get the count of jobs from the feed
-      const btnText = positionsCount === 1 ? 'Se 1 ledig stilling' : `Se ${positionsCount} ledige stillinger`; // Update button text based on count
-      document.querySelector('a.btn.btn-primary.btn-lg strong').textContent = positionsCount > 0 ? btnText : 'Se ledige stillinger';
+      const btnText = positionsCount === 1 ? 'Se 1 ledig stilling' : `See ${positionsCount} available positions`; // Update button text based on count
+      document.querySelector('a.btn.btn-primary.btn-lg strong').textContent = positionsCount > 0 ? btnText : 'See available positions';
     })
     .catch(error => {
       console.error('Error fetching job details:', error);
       // If there is an error fetching the jobs, show default text
-      document.querySelector('a.btn.btn-primary.btn-lg strong').textContent = 'Se ledige stillinger';
+      document.querySelector('a.btn.btn-primary.btn-lg strong').textContent = 'See available positions';
     });
 });
 </script>
