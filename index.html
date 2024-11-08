@@ -766,7 +766,7 @@ $(document).ready(function () {
     }
 
     function fetchJobs() {
-        fetch('https://api.talentech.io/reachmee/feed/a2g')
+        fetch('https://api.talentech.io/reachmee/feed/avolta')
             .then(response => response.json())
             .then(data => {
                 if (data.message && data.message === "ObjectNotFoundException") {
