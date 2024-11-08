@@ -5,109 +5,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A2G - Ledige stillinger</title>
+    <title>Career Portal</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="./css/index-style.css">
-<link rel="icon" type="image/x-icon" href="./files/cropped-Favicon-A2G-32x32.png">
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<link rel="icon" type="image/x-icon" href="./files/avolta-favicon-32x32.png">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/ca38a06270.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <script src="https://widget.gobistories.com/gwi/6" async onload="gobi.discover()"></script>
-
-
+<script type="text/javascript">
+    !function(b,c,f,g,h,i,j){b[h]||(b[h]=function(){(b[h].q=b[h].q||[]).push(arguments)},b[h].q=b[h].q||[],i=c.createElement(f),j=c.getElementsByTagName(f)[0],i.async=1,i.src=g,j.parentNode.insertBefore(i,j))}(window,document,"script","https://cdn.ontame.io/hmshost-norway-as.js","ontame");
+</script>
 	
-  <meta property="og:title" content="A2G - Ledige stillinger">
-  <meta property="og:description" content="Velkommen til A2G sin karriereportal.">
-  <meta property="og:image" content="https://github.com/HeadlessJobSites/Wistrand/blob/main/files/CMS-Wistrand-social.jpg?raw=true">
-  <meta property="og:url" content="https://karriere.a2g.no">
+  <meta property="og:title" content="Avolta Career Portal">
+  <meta property="og:description" content="See available jobs at Avolta">
+  <meta property="og:image" content="https://career.talentech.com/files/Avolta-preview.jpg">
+  <meta property="og:url" content="https://career.talentech.com">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="A2G - Ledige stillinger">
-  <meta name="twitter:description" content="Velkommen til A2G sin karriereportal.">
-  <meta name="twitter:image" content="https://github.com/HeadlessJobSites/Wistrand/blob/main/files/CMS-Wistrand-social.jpg?raw=true">
+  <meta name="twitter:title" content="Avolta Career Portal">
+  <meta name="twitter:description" content="See available jobs at Avolta">
+  <meta name="twitter:image" content="https://career.talentech.com/files/Avolta-preview.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:type" content="website">
 	
 </head>
 
-<body class="front-page">
+<body>
 
 
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(0, 0, 0, 0.0);">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="./">
-            <img src="./files/A2G-new-logo-light.png" height="50" class="d-inline-block align-top" alt="">
+    <div class="container">
+        <a class="navbar-brand" href="/" aria-label="Home">
+            <img src="./files/avolta-logo.svg" height="20" class="d-inline-block align-top" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="./#meet-the-team">Se ansattvideoer</a>
+                    <a class="nav-link" href="/#jobs-anchor">Jobs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./#meet-employees">Bli kjent med oss</a>
+                    <a class="nav-link" href="/#meet-the-team">Meet the Team</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./#our-process">Rekrutteringsprosess</a>
+                    <a class="nav-link" href="/#recruitment-process">Recruitment Process</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://web106.reachmee.com/ext/I002/223/profile?site=5&validator=9ca234355a394a0d99f3c6ffc02745f1&lang=NO">Logg inn</a>
+                    <a class="nav-link" target="blank" href="https://avoltaworld.com">avoltaworld.com <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
-        <div class="navbar-nav navbar-right d-none d-lg-flex"> 
-            <a class="btn btn-secondary mr-2" href="./#jobs-anchor">Ledige stillinger</a>
-        <a class="btn btn-primary" href="./#contact-points">Kontakt oss</a></div>
     </div>
 </nav>
 
 
 
-
-
 <script>
 $(document).ready(function() {
-    $('.navbar-nav a').on('click', function() {
-        $('.navbar-collapse').collapse('hide');
-    });
-
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > 56) {
-            $(".navbar").addClass("bg-dark");
-        } else {
-            $(".navbar").removeClass("bg-dark");
-        }
-    });
-
-    $(".navbar-toggler").click(function() {
-        if (!$(".navbar-collapse").hasClass("show")) {
-            $(".navbar").addClass("bg-dark");
-        } else {
-            if ($(window).scrollTop() < 56) {
-                $(".navbar").removeClass("bg-dark");
-            }
-        }
-    });
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 56) {
+      $(".navbar").addClass("bg-dark");
+    } else {
+      $(".navbar").removeClass("bg-dark");
+    }
+  });
+  $(".navbar-toggler").click(function() {
+    if (!$(".navbar-collapse").hasClass("show")) {
+      $(".navbar").addClass("bg-dark");
+    } else {
+      if ($(window).scrollTop() < 56) {
+        $(".navbar").removeClass("bg-dark");
+      } else {
+      }
+    }
+  });
 });
 </script>
 
 
-	<div class="hero-section">
-    <div class="custom-hero"></div>
-    <!--<video playsinline autoplay loop muted class="hero-video">
-        <source src="/files/a2g_velferdsstaten.mp4" type="video/mp4">
-    </video>-->
-    <div class="hero-content">
-        <h1>Jobb hos <span style="font-weight: 800; color: #A50287 !important">oss!</span></h1>
-        <a href="#jobs-anchor" class="btn btn-primary btn-lg dark-btn"><strong>Se ledige stillinger</strong></a>
+
+
+    <div class="hero-section">
+        <video playsinline autoplay loop muted class="hero-video">
+            <source src="https://career.talentech.com/files/Compressed-TT.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1>Join our <span style="font-weight: 800;">journey</span></h1>
+            <a href="#jobs-anchor" class="btn btn-primary btn-lg">See available positions</a>
+        </div>
     </div>
-	</div>
 
 
 <script>
@@ -128,89 +122,44 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-<!--
-	<div class="gobi-stories-container" id="gobi-stories-container">
+
+
+	<!--
+<div class="gobi-stories-container" id="gobi-stories-container">
   <button aria-label="Close video" class="close-btn" onclick="document.getElementById('gobi-stories-container').style.display='none';"><i class="fa-regular fa-xmark"></i></button>
 <script src="https://widget.gobistories.com/gwi/6" async onload="gobi.discover()"></script>
 
-<div class="gobi-collection" data-gobi-collection-id="69a5j"></div>
-  <a href="#company-section" aria-label="Bli kjent med oss"><div class="gobi-stories-text">Bli kjent med oss</div></a>
+<div class="gobi-collection" data-gobi-collection-id="pncc7"></div>
+  <a href="#company-section" aria-label="Get to know us"><div class="gobi-stories-text">Get to know us</div></a>
 </div>
 -->
 	
 	
 	<div class="talentech-section" id="company-section">
     <div class="container mt-5 pt-4 m-mt-2">
-        <h2 class="m-px-2">Bli med på vårt <span class="title-alt">lag</span>!</h2>
-        <p class="pt-3 m-px-2">A2G er en er en ledende aktør innen arbeidsinkludering i Norge. Vi samarbeider tett med NAV med et klart samfunnsoppdrag: å redusere utenforskap og skape et arbeidsliv som har plass til alle.</p>
-        <p class="pt-3 m-px-2">I A2G er hver dag en ny mulighet til å gjøre en forskjell! Vi er ikke bare kolleger, men en del av et fellesskap som bryr seg om hverandre og om de vi hjelper. Hver <a href="https://eur06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fvimeo.com%2Fmanage%2Fvideos%2F961061451&data=05%7C02%7Chenrik.moberg%40talentech.com%7C1ce5be9e3b2c420fdd2a08dce8569173%7C2e9160ba07674fe88d0cac9cc7cfa862%7C0%7C0%7C638640705719653016%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=8KnD0XIJ2WdleoCHabn0JpASVxrXjTl69IRcvtmZ9LM%3D&reserved=0" target="_blank" style="text-decoration:underline">suksesshistorie</a> fra mennesker vi lykkes med, gir en bekreftelse på at arbeidet vårt har betydning. Å jobbe i A2G er ikke bare en jobb; det er en mulighet til å være en del av et arbeidsmiljø som virkelig gjør en forskjell.</p>
+        <h2 class="m-px-2"><span class="title-alt">Career</span> takeoff</h2>
+        <p class="my-4  m-px-2">By uniting retail, convenience and food & beverage under one brand, we are reimagining travel, transcending traditional boundaries to create a seamless, end-to-end experience with you, the traveler, at its heart. More diversified and resilient, Avolta exists to make travelers happier.</p>
+        <p class="m-px-2">Our diverse workforce, representing over 150 nationalities, is the drum beat behind our vision to become the most innovative and successful travel experience player. Each team member strives to bring Avolta to life every day, turning our collective aspirations into achievements.</p>
     </div>
 </div>
 
 
 
 
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const video = document.getElementById('talentechVideo');
-    const muteBtn = document.getElementById('muteBtn');
-    const muteIcon = muteBtn.querySelector('img');
-
-    // Function to toggle video play/pause
-    const togglePlayPause = () => {
-        if (video.paused || video.ended) {
-            video.play();
-        } else {
-            video.pause();
-        }
-    };
-
-    // Setup Intersection Observer for autoplay/pause based on visibility
-    // This part will now work on all devices
-    const observer = new IntersectionObserver((entries) => {
-        const [entry] = entries;
-        if (entry.isIntersecting) {
-            video.play();
-        } else {
-            video.pause();
-        }
-    }, {
-        root: null,
-        threshold: 0.5
-    });
-
-    observer.observe(video);
-
-    // Check if we are on desktop before adding event listeners for play/pause and mute controls
-    if (window.innerWidth > 992) {
-        // Click event for the video itself
-        video.addEventListener('click', () => {
-            togglePlayPause();
-        });
-
-        // Event listener for the mute button
-        muteBtn.addEventListener('click', () => {
-            video.muted = !video.muted;
-            muteIcon.src = video.muted ? "./files/volume-xmark-thin.svg" : "./files/volume-off-thin.svg";
-            muteIcon.alt = video.muted ? "Mute" : "Unmute";
-        });
-    }
-});
-</script>
-
-<div class="talentech-section pb-3 mb-5 m-mb-3">
+<div class="talentech-section pb-4 mb-5 m-mb-3">
     <div class="container mt-4 pt-2 mb-5 pb-3 video-container m-my-0">
-        <video id="talentechVideo" class="rounded-video" playsinline autoplay loop muted>
-            <source src="/files/a2g_velferdsstaten.mp4" type="video/mp4">
+        <!--<video id="talentechVideo" class="rounded-video" playsinline autoplay loop muted>
+            <source src="/files/This-is-us-TT.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="video-controls">
-            <button id="muteBtn"><img src="./files/volume-xmark-thin.svg" alt="Mute"></button>
-        </div>
+            <button id="muteBtn"><img src="/files/volume-xmark-thin.svg" alt="Mute"></button>
+        </div>-->
+	    <div class="front-image"><img src="./files/Careers_homepage_2023.jpg"></div>
     </div>
 </div>
-	
+
+
 
 
 
