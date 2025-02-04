@@ -130,6 +130,8 @@ h1 {
     font-family: Telegraf;
     font-weight: 800;
     font-size: 4rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .btn-primary {
 	background-color: #8f53f0;
