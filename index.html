@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <p>Refereransesjekk, vi vil spørre deg om to til 3 referanser fra tidligere arbeidsgiver og/eller annen person som kan fortelle hvem du er.</p>
                         </div>
                     </div>
-                    <!-- Benefit 5 -->
+                    <!-- Benefit 5 --><!--
                     <div class="col-md-4 col-sm-4 process-item">
                         <div class="process-icon">
                             <h3>5</h3>
@@ -302,7 +302,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <h3>Tilbud og onboarding</h3>
                             <p>5. Tilbud og onboarding, hvis det er en match, vil vi gi et tilbud. Når det er akseptert, vil vi guide deg gjennom vår onboarding prosess.</p>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -702,11 +702,6 @@ $(document).ready(function () {
         updateLoadMoreVisibility();
     }
 
-        // Determine the display location based on the areas and country
-        let displayLocation = job.country || '';
-        if (job.areas && job.areas.length > 0) {
-            displayLocation = job.areas[job.areas.length - 1].name; // Use the last area
-        }
 
     // Function to build HTML for a job card
     function buildJobCard(job) {
@@ -714,14 +709,20 @@ $(document).ready(function () {
         const organizationUnitName = job.organizations && job.organizations.length > 1 
             ? job.organizations[1].nameorgunit 
             : job.organizations?.[0]?.nameorgunit || 'Not specified';
-        const category = job.occupation_area || 'Avolta'; // Use occupation_area or default to 'Wistrand'
+        const category = job.occupation_area || 'Avolta';
+	    
+        // Determine the display location based on the areas and country
+        let displayLocation = job.country || '';
+        if (job.areas && job.areas.length > 0) {
+            displayLocation = job.areas[job.areas.length - 1].name; // Use the last area
+        }
 
         return `
         <div class="col-12 col-md-6 col-lg-6 mb-4">
             <a href="${jobDetailUrl}" class="" style="text-decoration: none; color: inherit;" aria-label="Job details">
                 <div class="card h-100">
                     <div class="card-body">
-                        <div class="card-category"><span>${category}</span></div>
+                        <div class="card-category"><span>Avolta</span></div>
                         <div class="card-title">${job.title}</div>
 	                <p class="card-text">${displayLocation}</p>
                         <a href="${jobDetailUrl}" class="stretched-link">
