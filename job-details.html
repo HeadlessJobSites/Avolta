@@ -246,13 +246,13 @@ $(document).ready(function() {
 <!-- Share section -->
         <div class="container share-container mt-2 mt-sm-0 m-px-0 py-0">
             <span class="d-block d-sm-inline mb-1">
-                <a href="#" id="facebook-share-link" target="_blank" rel="noopener noreferrer">
+                <a href="#" class="facebook-share-link" target="_blank" rel="noopener noreferrer">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/facebook.svg" alt="Share on Facebook" width="18" height="18">
                 </a>
-                <a href="#" id="twitter-share-link" target="_blank" rel="noopener noreferrer">
+                <a href="#" class="twitter-share-link" target="_blank" rel="noopener noreferrer">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/x.svg" alt="Share on X" width="18" height="18">
                 </a>
-                <a href="#" id="linkedin-share-link" target="_blank" rel="noopener noreferrer">
+                <a href="#" class="linkedin-share-link" target="_blank" rel="noopener noreferrer">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/linkedin.svg" alt="Share on LinkedIn" width="18" height="18">
                 </a>
             </span>
@@ -673,13 +673,13 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="mt-2 mt-sm-0 ml-sm-auto"><!-- updated margin and alignment classes -->
             <span class="d-block d-sm-inline mb-1"><!-- updated responsive classes -->
                 Del på sosiale medier: 
-                <a href="#" id="facebook-share-link" target="_blank" rel="noopener noreferrer">
+                <a href="#" class="facebook-share-link" target="_blank" rel="noopener noreferrer">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/facebook.svg" alt="Share on Facebook" width="16" height="16">
                 </a>
-                <a href="#" id="twitter-share-link" target="_blank" rel="noopener noreferrer">
+                <a href="#" class="twitter-share-link" target="_blank" rel="noopener noreferrer">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/x.svg" alt="Share on X" width="16" height="16">
                 </a>
-                <a href="#" id="linkedin-share-link" target="_blank" rel="noopener noreferrer">
+                <a href="#" class="linkedin-share-link" target="_blank" rel="noopener noreferrer">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/linkedin.svg" alt="Share on LinkedIn" width="16" height="16">
                 </a>
             </span>
@@ -692,10 +692,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <script>
     // Function to dynamically set the URLs for social media sharing
     function setSocialMediaShareUrls() {
-        var facebookShareLink = document.getElementById('facebook-share-link');
-        var twitterShareLink = document.getElementById('twitter-share-link');
-        var linkedinShareLink = document.getElementById('linkedin-share-link');
-        var currentUrl = encodeURIComponent(window.location.href);
+    var facebookShareLinks = document.querySelectorAll('.facebook-share-link');
+    var twitterShareLinks = document.querySelectorAll('.twitter-share-link');
+    var linkedinShareLinks = document.querySelectorAll('.linkedin-share-link');
+    var currentUrl = encodeURIComponent(window.location.href);
 
         facebookShareLink.href = 'https://www.facebook.com/sharer/sharer.php?u=' + currentUrl;
         twitterShareLink.href = 'https://twitter.com/intent/tweet?url=' + currentUrl;
