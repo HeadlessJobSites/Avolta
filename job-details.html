@@ -690,20 +690,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	
 <script>
-    // Function to dynamically set the URLs for social media sharing
-    function setSocialMediaShareUrls() {
+document.addEventListener('DOMContentLoaded', function() {
+    setSocialMediaShareUrls();
+});
+
+function setSocialMediaShareUrls() {
     var facebookShareLinks = document.querySelectorAll('.facebook-share-link');
     var twitterShareLinks = document.querySelectorAll('.twitter-share-link');
     var linkedinShareLinks = document.querySelectorAll('.linkedin-share-link');
     var currentUrl = encodeURIComponent(window.location.href);
 
-        facebookShareLink.href = 'https://www.facebook.com/sharer/sharer.php?u=' + currentUrl;
-        twitterShareLink.href = 'https://twitter.com/intent/tweet?url=' + currentUrl;
-        linkedinShareLink.href = 'https://www.linkedin.com/shareArticle?url=' + currentUrl;
-    }
-
-    // Call the function to set social media share URLs
-    setSocialMediaShareUrls();
+    facebookShareLinks.forEach(link => link.href = 'https://www.facebook.com/sharer/sharer.php?u=' + currentUrl);
+    twitterShareLinks.forEach(link => link.href = 'https://twitter.com/intent/tweet?url=' + currentUrl);
+    linkedinShareLinks.forEach(link => link.href = 'https://www.linkedin.com/shareArticle?url=' + currentUrl);
+}
 </script>
 
 
