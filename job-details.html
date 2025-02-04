@@ -626,9 +626,9 @@ $(document).ready(function () {
     // Adjust jobsToShow based on window resize
     $(window).resize(function() {
         jobsToShow = window.innerWidth > 768 ? jobsToShowDesktop : jobsToShowMobile;
-        displayedJobs = Math.min(jobsToShow, jobs.length); // Adjust displayedJobs based on new jobsToShow
-        displayJobs(); // Redisplay jobs based on new size
-        updateLoadMoreVisibility(); // Update button visibility after resize
+        displayedJobs = Math.min(jobsToShow, jobs.length);
+        displayJobs();
+        updateLoadMoreVisibility();
     });
 
     // Function to populate filter dropdowns based on jobs
@@ -637,16 +637,15 @@ $(document).ready(function () {
         const jobTypeSet = new Set();
 
         jobs.forEach(job => {
-            if (job.country) { // Check if job has a country
+            if (job.country) {
                 locationSet.add(job.country);
             }
-            if (job.title) { // Check if job has a title
+            if (job.title) {
                 jobTypeSet.add(job.title);
             }
         });
 
-	    
-	// Populate location filter
+        // Populate location filter
         $('#locationFilter').html('<option value="All">All platser</option>');
         locationSet.forEach(country => {
             $('#locationFilter').append(`<option value="${country}">${country}</option>`);
@@ -678,27 +677,34 @@ $(document).ready(function () {
             $('#jobList').append(buildJobCard(job));
         });
 
-        updateLoadMoreVisibility(); // Update the visibility of the "Load More" button
+        updateLoadMoreVisibility();
     }
 
     // Function to build HTML for a job card
     function buildJobCard(job) {
-    // Assuming job-details.html is your detail page and it can handle job IDs
-    // Adjust accordingly if your detail page has a different URL structure
-    const jobDetailUrl = `job-details.html?jobId=${job.ad_id}`;
-        // Use the second organization unit if available, otherwise use the first one
-        const organizationUnitName = job.organizations.length > 1 ? job.organizations[1].nameorgunit : job.organizations[0]?.nameorgunit || 'Not specified';
+        const jobDetailUrl = `job-details.html?jobId=${job.ad_id}`;
+        
+        // Ensure organizations is an array; if not, default to an empty array.
+        const organizations = Array.isArray(job.organizations) ? job.organizations : [];
+        
+        // Use the second organization unit if available, otherwise the first; default to 'Not specified'
+        const organizationUnitName = organizations.length > 1 
+            ? organizations[1].nameorgunit 
+            : organizations.length > 0 
+                ? organizations[0].nameorgunit 
+                : 'Not specified';
+
         return `
 <div class="col-12 col-md-4 col-lg-4 mb-4">
-    <a href="${jobDetailUrl}" class="" style="text-decoration: none; color: inherit;">
+    <a href="${jobDetailUrl}" style="text-decoration: none; color: inherit;">
         <div class="card h-100">
             <div class="card-body">
-		        <div class="card-category"><span>${organizationUnitName}</span></div>
+                <div class="card-category"><span>${organizationUnitName}</span></div>
                 <h5 class="card-title">${job.title}</h5>
                 <p class="card-text">${job.country}</p>
-			    <a href="${jobDetailUrl}" class="stretched-link">
-                <img src="./files/arrow-right-thin.svg" class="stretched-link" alt="Details" style="">
-		</a>
+                <a href="${jobDetailUrl}" class="stretched-link">
+                    <img src="./files/arrow-right-thin.svg" class="stretched-link" alt="Details">
+                </a>
             </div>
         </div>
     </a>
@@ -715,54 +721,55 @@ $(document).ready(function () {
     }
 
     // Function to fetch jobs from the API
-	$(document).ready(function () {
+    function fetchJobs(currentJobId) {
+        fetch('https://api.talentech.io/reachmee/feed/avolta')
+            .then(response => response.json())
+            .then(data => {
+                // Filter out the current job if currentJobId is provided
+                if (currentJobId) {
+                    jobs = data.filter(job => job.ad_id !== parseInt(currentJobId, 10));
+                } else {
+                    jobs = data;
+                }
+                if (jobs.length === 0) {
+                    $('#tt-feature-section').hide();
+                } else {
+                    displayedJobs = Math.min(jobsToShow, jobs.length);
+                    populateFilters();
+                    displayJobs();
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching jobs:', error);
+            });
+    }
+
+    // Get current job id from query string (if available) and fetch jobs
     const currentJobId = new URLSearchParams(window.location.search).get('jobId');
-    fetchJobs(currentJobId); // Pass currentJobId to the fetchJobs function
-});
-
-function fetchJobs(currentJobId) {
-    fetch('https://api.talentech.io/reachmee/feed/avolta')
-        .then(response => response.json())
-        .then(data => {
-            jobs = data.filter(job => job.ad_id !== parseInt(currentJobId));
-            if (jobs.length === 0) {
-                $('#tt-feature-section').hide();
-            } else {
-                displayedJobs = Math.min(jobsToShow, jobs.length);
-                populateFilters();
-                displayJobs();
-            }
-        })
-        .catch(error => {
-            console.error('Error fetching jobs:', error);
-        });
-}
-
-
-    // Load jobs when page is ready
-    fetchJobs();
+    fetchJobs(currentJobId);
 
     // Event listener for "Load More" button
     $('#loadMore').click(function() {
-        displayedJobs += jobsToShow; // Increase the number of displayed jobs
-        displayJobs(); // Display new set of jobs
-        updateLoadMoreVisibility(); // Check if we still need the "Load More" button
+        displayedJobs += jobsToShow;
+        displayJobs();
+        updateLoadMoreVisibility();
     });
 
     // Event listeners for filter dropdowns
     $('#locationFilter').change(function() {
-        displayedJobs = jobsToShow; // Reset displayed jobs to show initial count based on current device
-        displayJobs(); // Apply filter and display jobs
-        updateLoadMoreVisibility(); // Update "Load More" button visibility based on filters
+        displayedJobs = jobsToShow;
+        displayJobs();
+        updateLoadMoreVisibility();
     });
 
     $('#jobTypeFilter').change(function() {
-        displayedJobs = jobsToShow; // Reset displayed jobs to show initial count based on current device
-        displayJobs(); // Apply filter and display jobs
-        updateLoadMoreVisibility(); // Update "Load More" button visibility based on filters
+        displayedJobs = jobsToShow;
+        displayJobs();
+        updateLoadMoreVisibility();
     });
 });
 </script>
+
 
 
 
