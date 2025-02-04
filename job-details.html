@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="./css/index-style.css">
 <link rel="stylesheet" href="./css/job-details-style.css">
-<link rel="icon" type="image/x-icon" href="./files/lkf-favicon.ico">
+<link rel="icon" type="image/x-icon" href="./files/avolta-favicon-32x32.png">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -447,7 +447,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const jobId = params.get('rmjob') || params.get('jobId');
 
     // Fetch job details (assuming you have an endpoint to get job details by jobId)
-    fetch(`https://api.talentech.io/reachmee/feed/lkf`) // Replace with your actual API endpoint
+    fetch(`https://api.talentech.io/reachmee/feed/avolta`) // Replace with your actual API endpoint
         .then(response => response.json())
         .then(jobs => {
             const job = jobs.find(job => job.ad_id === parseInt(jobId));
@@ -738,7 +738,7 @@ $(document).ready(function () {
 });
 
 function fetchJobs(currentJobId) {
-    fetch('https://api.talentech.io/reachmee/feed/lkf')
+    fetch('https://api.talentech.io/reachmee/feed/avolta')
         .then(response => response.json())
         .then(data => {
             jobs = data.filter(job => job.ad_id !== parseInt(currentJobId));
