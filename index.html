@@ -822,16 +822,20 @@ $(document).ready(function () {
             let coords = null;
             let location = 'Norge';
 
-            for (const area of item.areas) {
-                coords = await geocodeArea(area.name);
-                if (coords) {
-                    location = area.name;
-                    break;
+            // Check if the job has any areas defined before trying to geocode
+            if (item.areas && item.areas.length > 0) {
+                for (const area of item.areas) {
+                    coords = await geocodeArea(area.name);
+                    if (coords) {
+                        location = area.name;
+                        break;
+                    }
                 }
             }
 
+            // If no coordinates were found (or if areas is null), set the default coordinates
             if (!coords) {
-                coords = { lat: 61.99589575051149, lon: 9.423291957454996 };
+                coords = { lat: 60.201246726231126, lon: 11.094145105955588 };
             }
 
             const key = `${coords.lat},${coords.lon}`;
@@ -856,7 +860,7 @@ $(document).ready(function () {
         function updatePopup(markerObj) {
             const job = markerObj.jobs[markerObj.jobIndex];
             let popupContent = `
-                <div style="background-color: 212529; color: #fff; padding: 20px; border-radius: 12px;">
+                <div style="background-color: #000; color: #fff; padding: 20px; border-radius: 12px;">
                     <a href="${job.url}" target="_blank" style="font-size: large; color: #e9f3e7; text-decoration: none;">${job.title}</a>
                     <div style="margin-top: 10px;">
                         <span style="color: rgba(233, 243, 231, 0.7);">Sted:</span> <span>${job.location}</span>
