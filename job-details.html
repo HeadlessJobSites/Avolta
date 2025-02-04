@@ -298,7 +298,7 @@ function buildIframe() {
     var site = '6';
     var iHelperUrl = 'https://headlessjobsites.github.io/Avolta/job-details.html?';
     var height = '4000';
-    var langDef = 'UK';
+    var langDef = 'NO';
     var title = 'ReachMee Recruit external site';
 
     // More URL building logic here, using the current script logic
@@ -544,7 +544,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     iframe.style.width = "100%";
                     iframe.style.border = "none";
                     iframe.id = "applicationFormIframe";
-                    const iframeSrc = `https://web103.reachmee.com/ext/I022/2136/apply?job_id=${jobId}&site=6&validator=0d32864875e40299a57c8698c2f99c4b&lang=UK&ihelper=${encodeURIComponent('https://career.talentech.com/jobs/rm?rmpage=job&rmjob=' + jobId)}`;
+                    const iframeSrc = `https://web103.reachmee.com/ext/I022/2136/apply?job_id=${jobId}&site=6&validator=0d32864875e40299a57c8698c2f99c4b&lang=NO&ihelper=${encodeURIComponent('https://career.talentech.com/jobs/rm?rmpage=job&rmjob=' + jobId)}`;
                     iframe.setAttribute('src', iframeSrc);
                     document.getElementById('applicationFormContainer').appendChild(iframe);
                 }
@@ -629,7 +629,7 @@ window.addEventListener('message', function(event) {
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('agent').addEventListener('click', function() {
-        var iframeUrl = "https://web103.reachmee.com/ext/I022/2136/subscribe?site=6&lang=UK&validator=0d32864875e40299a57c8698c2f99c4b";
+        var iframeUrl = "https://web103.reachmee.com/ext/I022/2136/subscribe?site=6&lang=NO&validator=0d32864875e40299a57c8698c2f99c4b";
         document.getElementById('modalIframe').src = iframeUrl;
         $('#exampleModal').modal('show');
     });
