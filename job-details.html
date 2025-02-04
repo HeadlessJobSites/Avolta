@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const params = new URLSearchParams(window.location.search);
     const jobId = params.get('rmjob') ? parseInt(params.get('rmjob'), 10) : parseInt(params.get('jobId'), 10);
 
-    fetch('https://api.talentech.io/reachmee/feed/avolta')
+    fetch('https://api.talentech.io/reachmee/feed/lkf')
         .then(response => response.json())
         .then(jobs => {
             const job = jobs.find(job => job.ad_id === jobId);
@@ -279,7 +279,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function loadExternalScriptAndBuildIframe() {
     var script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = 'https://web103.reachmee.com/customerjs/I022-2136-6.js';
+    script.src = 'https://web103.reachmee.com/customerjs/I018-716-2.js';
     script.onload = function() {
         buildIframe();
     };
@@ -288,13 +288,13 @@ function loadExternalScriptAndBuildIframe() {
 
 function buildIframe() {
     var iFrameUrl = 'https://web103.reachmee.com/ext/';
-    var validator = '0d32864875e40299a57c8698c2f99c4b';
-    var iid = 'I022';
-    var customer = '2136';
-    var site = '6';
-    var iHelperUrl = 'https://headlessjobsites.github.io/avolta/job-details.html?';
+    var validator = '7f4f3be3058e3cb999c1bf054afc7b49';
+    var iid = 'I018';
+    var customer = '716';
+    var site = '2';
+    var iHelperUrl = 'https://headlessjobsites.github.io/lkf/job-details.html?';
     var height = '4000';
-    var langDef = 'NO';
+    var langDef = 'SE';
     var title = 'ReachMee Recruit external site';
 
     // More URL building logic here, using the current script logic
@@ -335,7 +335,7 @@ function buildIframe() {
 
 
 <section id="tt-talentech-section-2" class="team-section py-5 mb-5 pb-4 m-my-0 m-py-5">
-        <center><h2 class="container mb-0 pb-0">Møt <span class="organization-unit" class="title-alt"></span><span class="title-alt"> teamet</span></h2></center>
+        <center><h2 class="container mb-0 pb-0">Träffa <span class="organization-unit" class="title-alt"></span><span class="title-alt"> teamet</span></h2></center>
     <div class="container mt-0 pt-2 m-ml-0 m-px-0">
         <div class="row mt-3 m-mt-2 m-mx-0">
 <div id="gobi-section"></div>		
@@ -352,18 +352,19 @@ function buildIframe() {
 
 
 
-<section class="process-section mb-5 py-5 m-my-0 m-pt-0 m-pb-4" id="recruitment-process" style="background-color: #f5f5f5;">
+<section id="our-process" class="process-section mb-5 py-5 m-my-0 m-pt-0 m-pb-4" style="background-color: #f1f1f1;">
     <div class="container pt-5 m-px-4 m-pb-2">
-        <h2>Vår <span class="title-alt">rekrutterings&shy;prosess</span></h2>
-        <p class="pt-4">For å tilby en rettferdig og profesjonell rekrutteringsprosess, behandles alle søker rettferdig, og hver søker gis sammemuligheter til å bli vurdert.<br><br> Utvelgeseskriterinene for å best mulig fylle ledigestillinger er basert på søkerens kompetanse, ferdigheter, leverte resultster og beslutninger tatt uavhengig av rase, hudfarge, religion, kjønn, seksuell legning, alder,kjønnsidentitet eller uttrykk, nasjonal opprinnelse, politisk legning, funksjonshemning eller annen diskriminerende faktor.</span></p>
+        <h2>Vår <span style="font-weight: 800;">rekryterings&shy;process</span></h2>
     </div>
     <div class="container">
         <div class="row">
-            <!--<div class="col-md-4 px-0">
+<!-- DISABLE GOBI VIDEO
+            <div class="col-md-4 px-0">
 <script src="https://widget.gobistories.com/gwi/6" async onload="gobi.discover()"></script>
 
 <div class="gobi-collection" data-gobi-collection-id="j2jom"></div>
-            </div>-->
+            </div>
+-->
             <!-- Existing Content in Right Column -->
             <div class="col-md-12 pl-5 m-px-4">
                 <div class="row process-row">
@@ -373,8 +374,8 @@ function buildIframe() {
                             <h3>1</h3>
                         </div>
                         <div class="process-content">
-                            <h3>Send søknad</h3>
-                            <p>Send søknad, start reisen din ved å legge inn en enkelsøknad i vår karriereportal.</p>
+                            <h3>Skicka in din ansökan</h3>
+                            <p>Du ansöker genom att ladda upp CV och andra relevanta ansökningshandlingar i vår karriärportal.</p>
                         </div>
                     </div>
                     <!-- Benefit 2 -->
@@ -383,8 +384,8 @@ function buildIframe() {
                             <h3>2</>
                         </div>
                         <div class="process-content">
-                            <h3>Undersøkelse</h3>
-                            <p>Du vil motta en undersøkelse.</p>
+                            <h3>Första urval och screening</h3>
+                            <p>Vi går igenom din ansökan och ser om dina kunskaper, erfarenheter och kompetenser stämmer överens med det vi söker.</p>
                         </div>
                     </div>
                     <!-- Benefit 3 -->
@@ -393,8 +394,8 @@ function buildIframe() {
                             <h3>3</h3>
                         </div>
                         <div class="process-content">
-                            <h3>Intervju</h3>
-                            <p>Intervjuprosess, vi innkaller aktuelle kandidater og tar en prat sammen om dine erfaringer, kompetanse, tanker om rollen og Avolta/MEL/Flyplass som arbeidsplass.</p>
+                            <h3>Tester</h3>
+                            <p>Beroende på vilken roll du söker till kan du bli ombedd att genomföra ett personlighetstest och ett test som mäter din problemlösningsförmåga.</p>
                         </div>
                     </div>
                     <!-- Benefit 4 -->
@@ -403,8 +404,8 @@ function buildIframe() {
                             <h3>4</h3>
                         </div>
                         <div class="process-content">
-                            <h3>Referanser</h3>
-                            <p>Refereransesjekk, vi vil spørre deg om to til 3 referanser fra tidligere arbeidsgiver og/eller annen person som kan fortelle hvem du er.</p>
+                            <h3>Intervjuprocess </h3>
+                            <p>Beroende på vilken roll du söker kan du bli kallad till en eller fler intervjuer för att vi ska lära känna varandra och få möjlighet att höra mer om dina erfarenheter och ambitioner.</p>
                         </div>
                     </div>
                     <!-- Benefit 5 -->
@@ -413,8 +414,8 @@ function buildIframe() {
                             <h3>5</h3>
                         </div>
                         <div class="process-content">
-                            <h3>Tilbud og onboarding</h3>
-                            <p>5. Tilbud og onboarding, hvis det er en match, vil vi gi et tilbud. Når det er akseptert, vil vi guide deg gjennom vår onboarding prosess.</p>
+                            <h3>Erbjudande och onboarding</h3>
+                            <p>Om det blir en matchning ger vi dig ett erbjudande om anställning. När du har tackat ja börjar onboarding och självklart guidar vi dig genom varje steg!</p>
                         </div>
                     </div>
                 </div>
@@ -426,14 +427,13 @@ function buildIframe() {
 
 
 
-
 	
 
 
 
 
 <section class="process-section mb-5 m-my-0 m-pt-0 m-pb-4">
-    <h2 id="appform-header" class="container pt-5 m-px-3 m-pb-2" id="appFormWrapper"><span class="title-alt">Søknads&shy;skjema</span></h2>
+    <h2 id="appform-header" class="container pt-5 m-px-3 m-pb-2" id="appFormWrapper"><span class="title-alt">Anmälnings&shy;formulär</span></h2>
     <!-- Application form or alternative message -->
     <div id="originalContentContainer">
         <div id="applicationFormContainer"></div>
@@ -447,7 +447,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const jobId = params.get('rmjob') || params.get('jobId');
 
     // Fetch job details (assuming you have an endpoint to get job details by jobId)
-    fetch(`https://api.talentech.io/reachmee/feed/avolta`) // Replace with your actual API endpoint
+    fetch(`https://api.talentech.io/reachmee/feed/lkf`) // Replace with your actual API endpoint
         .then(response => response.json())
         .then(jobs => {
             const job = jobs.find(job => job.ad_id === parseInt(jobId));
@@ -510,26 +510,26 @@ window.addEventListener('message', function(event) {
 	
 <div id="tt-feature-section" class="feature-section mb-5 pt-3 pb-5 m-mb-0" id="jobs-anchor" style="background-color: #f1f1f1;">
 <div class="container mt-3 mb-5 m-mb-0">
-    <h2 class="my-5 m-my-0">Lignende <span class="title-alt">stillinger</span></h2>
+    <h2 class="my-5 m-my-0">Liknande <span class="title-alt">jobb</span></h2>
     <div class="row my-3">
         <div class="col-md-3 mb-3">
-            <label for="locationFilter">Steder</label>
+            <label for="locationFilter">Plats</label>
             <select id="locationFilter" class="form-control">
-                <option value="All">Alle steder</option>
+                <option value="All">Alla platser</option>
                 <!-- Location options will be dynamically added here -->
             </select>
         </div>
         <div class="col-md-3 mb-3">
-            <label for="jobTypeFilter">Stillingstyper</label>
+            <label for="jobTypeFilter">Arbetstyp</label>
             <select id="jobTypeFilter" class="form-control">
-                <option value="All">Alle stillingstyper</option>
+                <option value="All">Alle typer av jobb</option>
                 <!-- Job type options will be dynamically added here -->
             </select>
         </div>
     </div>
     <div id="jobList" class="row"></div>
 	<div class="text-center mt-2">
-    <button id="loadMore" class="btn btn-primary">Hent flere</button>
+    <button id="loadMore" class="btn btn-primary">Hämta flera</button>
 	</div>
 </div>
 </div>
@@ -538,14 +538,14 @@ window.addEventListener('message', function(event) {
 
 <div class="container my-5 py-5 m-my-0" style="text-align: center; background-color: #f1f1f1;">
     <div class="">
-        <h3>Fant du ikke stillingen for deg?</h3>
+        <h3>Hittade du inte tjänsten för dig?</h3>
         <div class="mt-4 mb-2">
-		<p>Abonner på stillinger, så får du en e-post når det er en ledig stilling som passer dine preferanser.</p>
+		<p>Prenumerera på tjänster så får du ett mail när det finns en ledig tjänst som matchar dina preferenser.</p>
 		</div>
     </div>
  
 
-    <button id="agent" class="mt-3 btn btn-primary" style="font-weight:800">Registrer deg</button>
+    <button id="agent" class="mt-3 btn btn-primary" style="font-weight:800">Register dig</button>
 
 
 <div class="modal fade modal-fullscreen-90w" id="exampleModal" tabindex="-1" aria-hidden="true">
@@ -566,7 +566,7 @@ window.addEventListener('message', function(event) {
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('agent').addEventListener('click', function() {
-        var iframeUrl = "https://web103.reachmee.com/ext/I022/2136/subscribe?site=6&lang=NO&validator=0d32864875e40299a57c8698c2f99c4b";
+        var iframeUrl = "https://web103.reachmee.com/ext/I018/716/subscribe?site=2&lang=SE&validator=7f4f3be3058e3cb999c1bf054afc7b49";
         document.getElementById('modalIframe').src = iframeUrl;
         $('#exampleModal').modal('show');
     });
@@ -579,7 +579,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <section class="text-center bg-dark text-light py-5">
     <div class="container">
-        <img src="./files/avolta-logo.svg" alt="LKF Logo" class="mb-3" style="max-width: 180px;">
+        <img src="./files/lkf-light.png" alt="LKF Logo" class="mb-3" style="max-width: 180px;">
                 <div class="mt-3 mb-4" style="max-width: 600px; margin: auto;">
 		 <p style="font-size: 1.25rem;">LKF erbjuder hyresbostäder i Lunds stad, Genarp, Södra Sandby, Stångby, Veberöd, Dalby och Revinge. Totalt äger och förvaltar vi drygt 10.000 bostadslägenheter, vilket innebär att mer än 20 000 lundabor har sitt hem hos oss.
 
@@ -738,7 +738,7 @@ $(document).ready(function () {
 });
 
 function fetchJobs(currentJobId) {
-    fetch('https://api.talentech.io/reachmee/feed/avolta')
+    fetch('https://api.talentech.io/reachmee/feed/lkf')
         .then(response => response.json())
         .then(data => {
             jobs = data.filter(job => job.ad_id !== parseInt(currentJobId));
@@ -792,13 +792,13 @@ $(document).ready(function() {
     // Get 'rmjob' if present, otherwise get 'jobId'
     const jobId = params.get('rmjob') ? parseInt(params.get('rmjob'), 10) : parseInt(params.get('jobId'), 10);
 
-    fetch('https://api.talentech.io/reachmee/feed/avolta')
+    fetch('https://api.talentech.io/reachmee/feed/lkf')
         .then(response => response.json())
         .then(jobs => {
             const job = jobs.find(job => job.ad_id === jobId);
             if (job) {
                 // If organizations is null, return "COMPANY NAME", otherwise proceed with existing logic
-                const organizationUnit = job.organizations ? (job.organizations.length > 1 ? job.organizations[1].nameorgunit : job.organizations[0]?.nameorgunit) : "Avolta";
+                const organizationUnit = job.organizations ? (job.organizations.length > 1 ? job.organizations[1].nameorgunit : job.organizations[0]?.nameorgunit) : "Talentech";
                 
                 // Fetch the last city from the areas array, if it exists; otherwise, default to 'Not specified'
                 const city = job.areas && job.areas.length > 0 ? job.areas[job.areas.length - 1].name : 'Not specified';
@@ -883,7 +883,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (openApplication !== null) {
         // Change the src of the iframe
         const applicationFormIframe = document.getElementById('applicationFormIframe');
-        applicationFormIframe.src = "https://web103.reachmee.com/ext/I022/2136/apply?site=6&lang=NO&validator=0d32864875e40299a57c8698c2f99c4b&job_id=-1";
+        applicationFormIframe.src = "https://web103.reachmee.com/ext/I018/716/apply?site=2&lang=SE&validator=7f4f3be3058e3cb999c1bf054afc7b49&job_id=-1";
         
         // Hide the job description and metadata
         document.getElementById('our-process').style.display = 'none';
