@@ -235,6 +235,9 @@ h2 {
 	display: block;
 }
 @media (max-width: 768px) {
+	.job-info {
+    		text-align: left;
+	}
 	.team-member {
 		flex: 0 0 70%;
 		max-width: 70%;
@@ -630,7 +633,7 @@ a:hover {
 }
 @media (max-width: 768px) {
 	#inner-job-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 1.4;
 	}
 	.text-center {
