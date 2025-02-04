@@ -505,26 +505,26 @@ window.addEventListener('message', function(event) {
 	
 <div id="tt-feature-section" class="feature-section mb-5 pt-3 pb-5" id="jobs-anchor" style="background-color: #eeeef2;">
 <div class="container mt-3 mb-5 m-mb-0">
-    <h2 class="my-5 m-my-0">Similar <span class="title-alt">jobs</span></h2>
+    <h2 class="my-5 m-my-0">Lignende <span class="title-alt">stillinger</span></h2>
     <div class="row my-3">
         <div class="col-md-3 mb-3">
-            <label for="locationFilter">Location</label>
+            <label for="locationFilter">Sted</label>
             <select id="locationFilter" class="form-control">
-                <option value="All">All locations</option>
+                <option value="All">Alle steder</option>
                 <!-- Location options will be dynamically added here -->
             </select>
         </div>
         <div class="col-md-3 mb-3">
-            <label for="jobTypeFilter">Job type</label>
+            <label for="jobTypeFilter">Jobbtype</label>
             <select id="jobTypeFilter" class="form-control">
-                <option value="All">All job types</option>
+                <option value="All">Alle typer jobber</option>
                 <!-- Job type options will be dynamically added here -->
             </select>
         </div>
     </div>
     <div id="jobList" class="row"></div>
 	<div class="text-center mt-2">
-    <button id="loadMore" class="btn btn-primary">Load more</button>
+    <button id="loadMore" class="btn btn-primary">Se flere</button>
 	</div>
 </div>
 </div>
@@ -592,6 +592,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
 <div class="container my-0 py-1 m-py-2">
     <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center"><!-- updated flex classes -->
         <!-- "Powered by" section -->
@@ -627,7 +628,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	
 
 
-
 <script>
 $(document).ready(function () {
     let jobs = []; // Array to store all jobs
@@ -660,13 +660,13 @@ $(document).ready(function () {
 
 	    
 	// Populate location filter
-        $('#locationFilter').html('<option value="All">Alle steder</option>');
+        $('#locationFilter').html('<option value="All">All platser</option>');
         locationSet.forEach(country => {
             $('#locationFilter').append(`<option value="${country}">${country}</option>`);
         });
 
         // Populate job type filter
-        $('#jobTypeFilter').html('<option value="All">Alle jobbtyper</option>');
+        $('#jobTypeFilter').html('<option value="All">Alla typer av jobb</option>');
         jobTypeSet.forEach(type => {
             $('#jobTypeFilter').append(`<option value="${type}">${type}</option>`);
         });
@@ -780,7 +780,6 @@ function fetchJobs(currentJobId) {
 
 
 
-
 	
     
 <script>
@@ -795,7 +794,7 @@ $(document).ready(function() {
             const job = jobs.find(job => job.ad_id === jobId);
             if (job) {
                 // If organizations is null, return "COMPANY NAME", otherwise proceed with existing logic
-                const organizationUnit = job.organizations ? (job.organizations.length > 1 ? job.organizations[1].nameorgunit : job.organizations[0]?.nameorgunit) : "Avolta";
+                const organizationUnit = job.organizations ? (job.organizations.length > 1 ? job.organizations[1].nameorgunit : job.organizations[0]?.nameorgunit) : "Talentech";
                 
                 // Fetch the last city from the areas array, if it exists; otherwise, default to 'Not specified'
                 const city = job.areas && job.areas.length > 0 ? job.areas[job.areas.length - 1].name : 'Not specified';
@@ -811,7 +810,7 @@ $(document).ready(function() {
                 const titleWords = job.title.split(' ');
                 const firstWord = titleWords.shift();
                 const restOfTitle = titleWords.join(' ');
-                $('.job-title').html(`<span style="font-weight:700;">${firstWord}</span> <span style="font-weight:700;">${restOfTitle}</span>`);
+                $('.job-title').html(`<span style="font-weight:400;">${firstWord}</span> <span style="font-weight:800;">${restOfTitle}</span>`);
 
                 // Update elements with job details
                 $('.job-title2').html(job.title);
@@ -880,7 +879,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (openApplication !== null) {
         // Change the src of the iframe
         const applicationFormIframe = document.getElementById('applicationFormIframe');
-        applicationFormIframe.src = "https://web103.reachmee.com/ext/I022/2136/apply?site=6&lang=UK&validator=0d32864875e40299a57c8698c2f99c4b&job_id=-1";
+        applicationFormIframe.src = "https://web103.reachmee.com/ext/I018/716/apply?site=2&lang=SE&validator=7f4f3be3058e3cb999c1bf054afc7b49&job_id=-1";
         
         // Hide the job description and metadata
         document.getElementById('our-process').style.display = 'none';
