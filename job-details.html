@@ -768,7 +768,7 @@ $(document).ready(function() {
     // Get 'rmjob' if present, otherwise get 'jobId'
     const jobId = params.get('rmjob') ? parseInt(params.get('rmjob'), 10) : parseInt(params.get('jobId'), 10);
 
-    fetch('https://api.talentech.io/reachmee/feed/lkf')
+    fetch('https://api.talentech.io/reachmee/feed/avolta')
         .then(response => response.json())
         .then(jobs => {
             const job = jobs.find(job => job.ad_id === jobId);
@@ -844,6 +844,37 @@ $(document).ready(function() {
         document.body.appendChild(gobiScript);
     }
 });
+</script>
+
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const openApplication = urlParams.get('open-application');
+    
+    if (openApplication !== null) {
+        // Change the src of the iframe
+        const applicationFormIframe = document.getElementById('applicationFormIframe');
+        applicationFormIframe.src = "https://web103.reachmee.com/ext/I022/2136/apply?site=6&lang=NO&validator=0d32864875e40299a57c8698c2f99c4b&job_id=-1";
+        
+        // Hide the job description and metadata
+        document.getElementById('our-process').style.display = 'none';
+        document.getElementById('tt-job-section').style.display = 'none';
+        document.getElementById('tt-talentech-section-1').style.display = 'none';
+        document.getElementById('tt-talentech-section-2').style.display = 'none';
+        document.getElementById('tt-feature-section').style.display = 'none';
+        document.getElementById('appform-header').style.display = 'none';
+        document.getElementById('position-title-meta').style.display = 'none';
+        
+        // Populate the position-title h1 with specific text
+        const positionTitleH1 = document.getElementById('position-title');
+        positionTitleH1.innerText = 'Join our talent pool';
+    }
+});
+
 </script>
 
 
