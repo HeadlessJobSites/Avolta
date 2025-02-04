@@ -257,10 +257,10 @@ h2 {
 	height: 450px;
 	display: block;
 }
-@media (max-width: 768px) {
 	.navbar-dark .navbar-brand {
 		display: flex;
 	}
+@media (max-width: 768px) {
 	.blockquote p {
 	    font-size: 26px !important;
 	    font-weight: 800;
