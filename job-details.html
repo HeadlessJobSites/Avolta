@@ -5,12 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LKF - Lediga tjänster</title>
+    <title>Available position</title>
     <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="./css/index-style.css">
 <link rel="stylesheet" href="./css/job-details-style.css">
-<link rel="icon" type="image/x-icon" href="./files/lkf-favicon.ico">
+<link rel="icon" type="image/x-icon" href="./files/avolta-favicon-32x32.png">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -18,13 +18,16 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <script type="text/javascript" src="https://web103.reachmee.com/customerjs/helper.js"></script>
+<script type="text/javascript">
+    !function(b,c,f,g,h,i,j){b[h]||(b[h]=function(){(b[h].q=b[h].q||[]).push(arguments)},b[h].q=b[h].q||[],i=c.createElement(f),j=c.getElementsByTagName(f)[0],i.async=1,i.src=g,j.parentNode.insertBefore(i,j))}(window,document,"script","https://cdn.ontame.io/hmshost-norway-as.js","ontame");
+</script>
 	
-  <meta property="og:title" content="Lunds Kommuns Fastighets ABs karriärportal">
-  <meta property="og:image" content="https://headlessjobsites.github.io/lkf/files/Lediga-jobb.jpg"">
-  <meta property="og:url" content="https://headlessjobsites.github.io/lkf/">
+  <meta property="og:title" content="Available position">
+  <meta property="og:image" content="https://headlessjobsites.github.io/Avolta/files/Avolta-preview.jpg">
+  <meta property="og:url" content="https://headlessjobsites.github.io/Avolta">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Lunds Kommuns Fastighets ABs karriärportal">
-  <meta name="twitter:image" content="https://headlessjobsites.github.io/lkf/files/Lediga-jobb.jpg"">
+  <meta name="twitter:title" content="Available position">
+  <meta name="twitter:image" content="https://headlessjobsites.github.io/Avolta/files/Avolta-preview.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:type" content="website">
@@ -121,37 +124,37 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(0, 0, 0, 0.0);">
-    <div class="container m-py-1">
+    <div class="container m-py-0">
         <a class="navbar-brand" href="./" aria-label="Home">
-            <img src="./files/lkf-light.png" class="d-inline-block align-top" alt="">
+            <img src="./files/avolta-logo.svg" height="20" class="d-inline-block align-top" alt="">
         </a>
         <div class="d-flex justify-content-end align-items-center flex-grow-1">
-            <a class="nav-link ml-auto d-lg-none btn btn-primary apply-btn m-mr-2" href="#appform-header">Ansök</a>
+            <a class="nav-link ml-auto d-lg-none btn btn-primary apply-btn m-mr-2" href="#appform-header">Apply</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
-        <div class="d-flex d-lg-none mt-2 mobile-only">
-            <a class="nav-link new-link mr-1" href="#tt-talentech-section-2">Møt teamet <i class="fa-thin fa-arrow-down"></i></a>
-            <a class="nav-link new-link ml-1" href="#our-process">Rekrutteringsprosess <i class="fa-thin fa-arrow-down"></i></a>
+        <div class="d-flex d-lg-none my-2 mobile-only">
+            <a class="nav-link new-link mr-1" href="#tt-talentech-section-2">Meet the Team <i class="fa-thin fa-arrow-down"></i></a>
+            <a class="nav-link new-link ml-1" href="#our-process">Recruitment Process <i class="fa-thin fa-arrow-down"></i></a>
         </div>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="./">Hem <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#appform-header">Ansök</a>
+                    <a class="nav-link" href="#appform-header">Apply</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#tt-talentech-section-2">Träffa teamet</a>
+                    <a class="nav-link" href="#tt-talentech-section-2">Meet the Team</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#our-process">Rekryteringsprocess</a>
+                    <a class="nav-link" href="#our-process">Recruitment Process</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" target="blank" href="https://lkf.se">lkf.se <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" target="blank" href="https://avoltaworld.com">avoltaworld.com <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
@@ -194,12 +197,12 @@ $(document).ready(function() {
 
 
     <div class="hero-section">
-        <!--<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="hero-video">
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="hero-video">
             <source src="./files/Compressed-3-TT.mp4" type="video/mp4">
-        </video>-->
+        </video>
         <div class="hero-content">
             <div class="job-title2" id="position-title"> </div>
-            <p id="position-title-meta" style="font-size: 1.25rem;"><span class="organization-unit"> </span> • <span class="city"> </span></p>
+            <p id="position-title-meta" style="font-size: 1.25rem;"><span class="organization-unit"> </span><!-- • <span class="city"> </span>--></p>
         </div>
     </div>
 
@@ -210,20 +213,20 @@ $(document).ready(function() {
 <div id="tt-job-section" class="job-section">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 col-6 job-info">
+            <div class="col-md-4 col-6 job-info">
                 <span class="job-info-title">Team</span>
                 <span class="organization-unit">Team</span>
             </div>
+            <!--<div class="col-md-4 col-6 job-info">
+                <span class="job-info-title">Location</span>
+                <span class="city">Location</span>
+            </div>-->
             <div class="col-md-3 col-6 job-info">
-                <span class="job-info-title">Sted</span>
-                <span class="city">Sted</span>
+                <span class="job-info-title">Application due</span>
+                <span class="expiration-date">Application due</span>
             </div>
-            <div class="col-md-3 col-6 job-info">
-                <span class="job-info-title">Søknadsfrist</span>
-                <span class="expiration-date">Søknadsfrist</span>
-            </div>
-            <div class="col-md-3 col-6 text-center apply-btn-header">
-<a href="#appform-header" class="btn btn-primary apply-btn" role="">Ansök</a>
+            <div class="col-md-4 col-6 text-center apply-btn-header">
+<a href="#appform-header" class="btn btn-primary apply-btn" role="">Apply for the job</a>
             </div>
         </div>
     </div>
@@ -261,7 +264,7 @@ $(document).ready(function() {
     </div>
 
             <div class="text-center centerd-apply-btn">
-<a href="#appform-header" class="btn btn-primary apply-btn" role="">Skicka in ansökan</a>
+<a href="#appform-header" class="btn btn-primary apply-btn" role="">Apply for the job</a>
             </div>
 </div>
 
@@ -292,9 +295,9 @@ function buildIframe() {
     var iid = 'I022';
     var customer = '2136';
     var site = '6';
-    var iHelperUrl = 'https://headlessjobsites.github.io/avolta/job-details.html?';
+    var iHelperUrl = 'https://headlessjobsites.github.io/Avolta/job-details.html?';
     var height = '4000';
-    var langDef = 'NO';
+    var langDef = 'UK';
     var title = 'ReachMee Recruit external site';
 
     // More URL building logic here, using the current script logic
@@ -335,7 +338,7 @@ function buildIframe() {
 
 
 <section id="tt-talentech-section-2" class="team-section py-5 mb-5 pb-4 m-my-0 m-py-5">
-        <center><h2 class="container mb-0 pb-0">Träffa <span class="organization-unit" class="title-alt"></span><span class="title-alt"> teamet</span></h2></center>
+        <center><h2 class="container mb-0 pb-0">Meet the <span class="organization-unit" class="title-alt"></span><span class="title-alt"> team</span></h2></center>
     <div class="container mt-0 pt-2 m-ml-0 m-px-0">
         <div class="row mt-3 m-mt-2 m-mx-0">
 <div id="gobi-section"></div>		
@@ -348,25 +351,20 @@ function buildIframe() {
 
 
 
-	
 
-
-
-<section id="our-process" class="process-section mb-5 py-5 m-my-0 m-pt-0 m-pb-4" style="background-color: #f1f1f1;">
+<section id="our-process" class="process-section mb-5 py-5 m-my-0 m-pt-0 m-pb-4" style="background-color: #eeeef2;">
     <div class="container pt-5 m-px-4 m-pb-2">
-        <h2>Vår <span style="font-weight: 800;">rekryterings&shy;process</span></h2>
+        <h2>Our <span class="title-alt">recruitment process</span></h2>
     </div>
     <div class="container">
         <div class="row">
-<!-- DISABLE GOBI VIDEO
             <div class="col-md-4 px-0">
 <script src="https://widget.gobistories.com/gwi/6" async onload="gobi.discover()"></script>
 
 <div class="gobi-collection" data-gobi-collection-id="j2jom"></div>
             </div>
--->
             <!-- Existing Content in Right Column -->
-            <div class="col-md-12 pl-5 m-px-4">
+            <div class="col-md-8 pl-5 m-px-4">
                 <div class="row process-row">
                     <!-- Benefit 1 -->
                     <div class="col-md-4 col-sm-4 process-item">
@@ -374,8 +372,8 @@ function buildIframe() {
                             <h3>1</h3>
                         </div>
                         <div class="process-content">
-                            <h3>Skicka in din ansökan</h3>
-                            <p>Du ansöker genom att ladda upp CV och andra relevanta ansökningshandlingar i vår karriärportal.</p>
+                            <h3>Submit Your Application</h3>
+                            <p>Start your journey by applying through our career portal; upload your CV and share a bit about yourself.</p>
                         </div>
                     </div>
                     <!-- Benefit 2 -->
@@ -384,8 +382,8 @@ function buildIframe() {
                             <h3>2</>
                         </div>
                         <div class="process-content">
-                            <h3>Första urval och screening</h3>
-                            <p>Vi går igenom din ansökan och ser om dina kunskaper, erfarenheter och kompetenser stämmer överens med det vi söker.</p>
+                            <h3>Initial Screening</h3>
+                            <p>We will review your application to assess the alignment between your skills and the job requirements.</p>
                         </div>
                     </div>
                     <!-- Benefit 3 -->
@@ -394,8 +392,8 @@ function buildIframe() {
                             <h3>3</h3>
                         </div>
                         <div class="process-content">
-                            <h3>Tester</h3>
-                            <p>Beroende på vilken roll du söker till kan du bli ombedd att genomföra ett personlighetstest och ett test som mäter din problemlösningsförmåga.</p>
+                            <h3>Interview Process</h3>
+                            <p>Engage with us through one or more interviews to discuss your experiences, skills, and aspirations.</p>
                         </div>
                     </div>
                     <!-- Benefit 4 -->
@@ -404,8 +402,8 @@ function buildIframe() {
                             <h3>4</h3>
                         </div>
                         <div class="process-content">
-                            <h3>Intervjuprocess </h3>
-                            <p>Beroende på vilken roll du söker kan du bli kallad till en eller fler intervjuer för att vi ska lära känna varandra och få möjlighet att höra mer om dina erfarenheter och ambitioner.</p>
+                            <h3>Assessment</h3>
+                            <p>Depending on the role, you may be invited to complete assignments or assessments to showcase your capabilities.</p>
                         </div>
                     </div>
                     <!-- Benefit 5 -->
@@ -414,8 +412,8 @@ function buildIframe() {
                             <h3>5</h3>
                         </div>
                         <div class="process-content">
-                            <h3>Erbjudande och onboarding</h3>
-                            <p>Om det blir en matchning ger vi dig ett erbjudande om anställning. När du har tackat ja börjar onboarding och självklart guidar vi dig genom varje steg!</p>
+                            <h3>Offer & Onboarding</h3>
+                            <p>If it's a match, we'll extend an offer. Once accepted, we'll guide you through every step of your onboarding journey.</p>
                         </div>
                     </div>
                 </div>
@@ -427,13 +425,10 @@ function buildIframe() {
 
 
 
-	
-
-
 
 
 <section class="process-section mb-5 m-my-0 m-pt-0 m-pb-4">
-    <h2 id="appform-header" class="container pt-5 m-px-3 m-pb-2" id="appFormWrapper"><span class="title-alt">Anmälnings&shy;formulär</span></h2>
+    <h2 id="appform-header" class="container pt-5 m-px-3 m-pb-2" id="appFormWrapper">Application <span class="title-alt">form</span></h2>
     <!-- Application form or alternative message -->
     <div id="originalContentContainer">
         <div id="applicationFormContainer"></div>
@@ -455,8 +450,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Display the message and button if hide_apply_button is true
                 const messageContainer = document.createElement('div');
                 messageContainer.innerHTML = `
-                    <center><p class="mt-5">Ansökningsformuläret är inaktiverat för detta jobb. Se arbetsbeskrivningen för mer information om hur du ansöker.</p>
-                    <a href="#tt-talentech-section-1" class="btn btn-primary my-5">Se arbetsbeskrivningen</a></center>
+                    <center><p>Application form is disabled for this job. Please see job description for details on applying.</p>
+                    <a href="#tt-talentech-section-1" class="btn btn-primary">See job description</a></center>
                 `;
                 document.getElementById('applicationFormContainer').appendChild(messageContainer);
             } else {
@@ -466,7 +461,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     iframe.style.width = "100%";
                     iframe.style.border = "none";
                     iframe.id = "applicationFormIframe";
-                    const iframeSrc = `https://web103.reachmee.com/ext/I022/2136/apply?job_id=${jobId}&site=6&validator=0d32864875e40299a57c8698c2f99c4b&lang=NO&ihelper=${encodeURIComponent('https://career.talentech.com/jobs/rm?rmpage=job&rmjob=' + jobId)}`;
+                    const iframeSrc = `https://web103.reachmee.com/ext/I022/2136/apply?job_id=${jobId}&site=6&validator=0d32864875e40299a57c8698c2f99c4b&lang=UK&ihelper=${encodeURIComponent('https://career.talentech.com/jobs/rm?rmpage=job&rmjob=' + jobId)}`;
                     iframe.setAttribute('src', iframeSrc);
                     document.getElementById('applicationFormContainer').appendChild(iframe);
                 }
@@ -492,20 +487,6 @@ window.addEventListener('message', function(event) {
 
 
 
-
-
-
-
-
-
-	
-
-
-
-
-
-
-	
 
 	
 <div id="tt-feature-section" class="feature-section mb-5 pt-3 pb-5 m-mb-0" id="jobs-anchor" style="background-color: #f1f1f1;">
@@ -536,16 +517,18 @@ window.addEventListener('message', function(event) {
 
 
 
-<div class="container my-5 py-5 m-my-0" style="text-align: center; background-color: #f1f1f1;">
+
+<div class="feature-section pt-3 pb-5" style="background-color: #eeeef2;">
+<div class="container mt-5 py-5 m-my-0 m-pt-0" style="text-align: center;">
     <div class="">
-        <h3>Hittade du inte tjänsten för dig?</h3>
+        <h2>Couldn't find the job you were looking for?</h2>
         <div class="mt-4 mb-2">
-		<p>Prenumerera på tjänster så får du ett mail när det finns en ledig tjänst som matchar dina preferenser.</p>
+		<p>Sign up and you'll get an e-mail when there is any position available similar to your prenumeration.</p>
 		</div>
     </div>
  
 
-    <button id="agent" class="mt-3 btn btn-primary" style="font-weight:800">Register dig</button>
+    <button id="agent" class="mt-3 btn btn-primary" style="font-weight:800">Sign up</button>
 
 
 <div class="modal fade modal-fullscreen-90w" id="exampleModal" tabindex="-1" aria-hidden="true">
@@ -566,7 +549,7 @@ window.addEventListener('message', function(event) {
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('agent').addEventListener('click', function() {
-        var iframeUrl = "https://web103.reachmee.com/ext/I022/2136/subscribe?site=6&lang=NO&validator=0d32864875e40299a57c8698c2f99c4b";
+        var iframeUrl = "https://web103.reachmee.com/ext/I022/2136/subscribe?site=6&lang=UK&validator=0d32864875e40299a57c8698c2f99c4b";
         document.getElementById('modalIframe').src = iframeUrl;
         $('#exampleModal').modal('show');
     });
@@ -574,24 +557,24 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 </div>
-
+</div>
 
 
 <section class="text-center bg-dark text-light py-5">
     <div class="container">
-        <img src="./files/lkf-light.png" alt="LKF Logo" class="mb-3" style="max-width: 180px;">
+        <img src="./files/avolta-logo.svg" alt="Avolta Logo" class="mb-3" style="max-width: 180px;">
                 <div class="mt-3 mb-4" style="max-width: 600px; margin: auto;">
-		 <p style="font-size: 1.25rem;">LKF erbjuder hyresbostäder i Lunds stad, Genarp, Södra Sandby, Stångby, Veberöd, Dalby och Revinge. Totalt äger och förvaltar vi drygt 10.000 bostadslägenheter, vilket innebär att mer än 20 000 lundabor har sitt hem hos oss.
-
-</p>
+		 <p style="font-size: 1.25rem;">Our diverse workforce, representing over 150 nationalities, is the drum beat behind our vision to become the most innovative and successful travel experience player.</p>
 		</div>
         <div class="">
-            <a href="https://www.facebook.com/LKFLUND/"><img src="./files/TT-f.svg" alt="Icon 1" class="mx-2" style="width: 30px; height: 30px;"></a>
-            <a href="https://se.linkedin.com/company/lkf-lund"><img src="./files/TT-l.svg" alt="Icon 2" class="mx-2" style="width: 30px; height: 30px;"></a>
-            <a href="https://lkf.no/kontakt-selskapet/"><img src="./files/TT-e.svg" alt="Icon 4" class="mx-2" style="width: 30px; height: 30px;"></a>
+            <!-- Replace these src attributes with your actual SVG paths -->
+            <a href="https://www.facebook.com/talentechnorway"><img src="./files/TT-f.svg" alt="Icon 1" class="mx-2" style="width: 30px; height: 30px;"></a>
+            <a href="https://www.linkedin.com/company/talentech-norway"><img src="./files/TT-l.svg" alt="Icon 2" class="mx-2" style="width: 30px; height: 30px;"></a>
+            <a href="https://talentech.com/no/kontakt"><img src="./files/TT-e.svg" alt="Icon 4" class="mx-2" style="width: 30px; height: 30px;"></a>
         </div>
     </div>
 </section>
+
 
 
 
@@ -901,9 +884,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
-
-
-
 
 
 	
