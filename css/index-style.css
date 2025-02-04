@@ -258,6 +258,11 @@ h2 {
 	display: block;
 }
 @media (max-width: 768px) {
+	.blockquote p {
+	    font-size: 26px;
+	    font-weight: 800;
+	    line-height: 1.3;
+	}
 	.team-member {
 		flex: 0 0 70%;
 		max-width: 70%;
@@ -484,7 +489,8 @@ h2 {
 	.process-section .row {
 		justify-content: left;
 	}
-.process-section .process-row {
+.benefits-section .row, 
+	.process-section .process-row {
     justify-content: left;
     display: flex;
     flex-wrap: nowrap;
