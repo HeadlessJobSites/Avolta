@@ -783,7 +783,7 @@ $(document).ready(function () {
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script>
     async function fetchFeed() {
-        const response = await fetch('https://api.talentech.io/reachmee/feed/naf');
+        const response = await fetch('https://api.talentech.io/reachmee/feed/avolta');
         return await response.json();
     }
 
@@ -856,13 +856,13 @@ $(document).ready(function () {
         function updatePopup(markerObj) {
             const job = markerObj.jobs[markerObj.jobIndex];
             let popupContent = `
-                <div style="background-color: #062e2a; color: #e9f3e7; padding: 20px; border-radius: 12px;">
+                <div style="background-color: 212529; color: #fff; padding: 20px; border-radius: 12px;">
                     <a href="${job.url}" target="_blank" style="font-size: large; color: #e9f3e7; text-decoration: none;">${job.title}</a>
                     <div style="margin-top: 10px;">
                         <span style="color: rgba(233, 243, 231, 0.7);">Sted:</span> <span>${job.location}</span>
                     </div>
                     <div style="display: flex; justify-content: flex-end; margin-top: 10px;">
-                        <a href="${job.url}" target="_blank" style="background-color: #ffdb16; color: #1a1a1a; padding: 5px 10px; text-decoration: none; border-radius: 5px;">Se stilling</a>
+                        <a href="${job.url}" target="_blank" style="background-color: #8f53f0; color: #fff; padding: 5px 10px; text-decoration: none; border-radius: 5px;">Se stilling</a>
                     </div>
                     ${markerObj.jobs.length > 1 ? `
                     <div style="display: flex; justify-content: space-between; margin-top: 15px;">
