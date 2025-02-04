@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const params = new URLSearchParams(window.location.search);
     const jobId = params.get('rmjob') ? parseInt(params.get('rmjob'), 10) : parseInt(params.get('jobId'), 10);
 
-    fetch('https://api.talentech.io/reachmee/feed/lkf')
+    fetch('https://api.talentech.io/reachmee/feed/avolta')
         .then(response => response.json())
         .then(jobs => {
             const job = jobs.find(job => job.ad_id === jobId);
@@ -279,7 +279,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function loadExternalScriptAndBuildIframe() {
     var script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = 'https://web103.reachmee.com/customerjs/I018-716-2.js';
+    script.src = 'https://web103.reachmee.com/customerjs/I022-2136-6.js';
     script.onload = function() {
         buildIframe();
     };
@@ -288,13 +288,13 @@ function loadExternalScriptAndBuildIframe() {
 
 function buildIframe() {
     var iFrameUrl = 'https://web103.reachmee.com/ext/';
-    var validator = '7f4f3be3058e3cb999c1bf054afc7b49';
-    var iid = 'I018';
-    var customer = '716';
-    var site = '2';
-    var iHelperUrl = 'https://headlessjobsites.github.io/lkf/job-details.html?';
+    var validator = '0d32864875e40299a57c8698c2f99c4b';
+    var iid = 'I022';
+    var customer = '2136';
+    var site = '6';
+    var iHelperUrl = 'https://headlessjobsites.github.io/avolta/job-details.html?';
     var height = '4000';
-    var langDef = 'SE';
+    var langDef = 'NO';
     var title = 'ReachMee Recruit external site';
 
     // More URL building logic here, using the current script logic
@@ -447,7 +447,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const jobId = params.get('rmjob') || params.get('jobId');
 
     // Fetch job details (assuming you have an endpoint to get job details by jobId)
-    fetch(`https://api.talentech.io/reachmee/feed/lkf`) // Replace with your actual API endpoint
+    fetch(`https://api.talentech.io/reachmee/feed/avolta`) // Replace with your actual API endpoint
         .then(response => response.json())
         .then(jobs => {
             const job = jobs.find(job => job.ad_id === parseInt(jobId));
@@ -466,7 +466,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     iframe.style.width = "100%";
                     iframe.style.border = "none";
                     iframe.id = "applicationFormIframe";
-                    const iframeSrc = `https://web103.reachmee.com/ext/I018/716/apply?job_id=${jobId}&site=2&validator=7f4f3be3058e3cb999c1bf054afc7b49&lang=SE&ihelper=${encodeURIComponent('https://career.talentech.com/jobs/rm?rmpage=job&rmjob=' + jobId)}`;
+                    const iframeSrc = `https://web103.reachmee.com/ext/I022/2136/apply?job_id=${jobId}&site=6&validator=0d32864875e40299a57c8698c2f99c4b&lang=NO&ihelper=${encodeURIComponent('https://career.talentech.com/jobs/rm?rmpage=job&rmjob=' + jobId)}`;
                     iframe.setAttribute('src', iframeSrc);
                     document.getElementById('applicationFormContainer').appendChild(iframe);
                 }
@@ -566,7 +566,7 @@ window.addEventListener('message', function(event) {
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('agent').addEventListener('click', function() {
-        var iframeUrl = "https://web103.reachmee.com/ext/I018/716/subscribe?site=2&lang=SE&validator=7f4f3be3058e3cb999c1bf054afc7b49";
+        var iframeUrl = "https://web103.reachmee.com/ext/I022/2136/subscribe?site=6&lang=NO&validator=0d32864875e40299a57c8698c2f99c4b";
         document.getElementById('modalIframe').src = iframeUrl;
         $('#exampleModal').modal('show');
     });
@@ -738,7 +738,7 @@ $(document).ready(function () {
 });
 
 function fetchJobs(currentJobId) {
-    fetch('https://api.talentech.io/reachmee/feed/lkf')
+    fetch('https://api.talentech.io/reachmee/feed/avolta')
         .then(response => response.json())
         .then(data => {
             jobs = data.filter(job => job.ad_id !== parseInt(currentJobId));
@@ -792,7 +792,7 @@ $(document).ready(function() {
     // Get 'rmjob' if present, otherwise get 'jobId'
     const jobId = params.get('rmjob') ? parseInt(params.get('rmjob'), 10) : parseInt(params.get('jobId'), 10);
 
-    fetch('https://api.talentech.io/reachmee/feed/lkf')
+    fetch('https://api.talentech.io/reachmee/feed/avolta')
         .then(response => response.json())
         .then(jobs => {
             const job = jobs.find(job => job.ad_id === jobId);
@@ -883,7 +883,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (openApplication !== null) {
         // Change the src of the iframe
         const applicationFormIframe = document.getElementById('applicationFormIframe');
-        applicationFormIframe.src = "https://web103.reachmee.com/ext/I018/716/apply?site=2&lang=SE&validator=7f4f3be3058e3cb999c1bf054afc7b49&job_id=-1";
+        applicationFormIframe.src = "https://web103.reachmee.com/ext/I022/2136/apply?site=6&lang=NO&validator=0d32864875e40299a57c8698c2f99c4b&job_id=-1";
         
         // Hide the job description and metadata
         document.getElementById('our-process').style.display = 'none';
