@@ -22,11 +22,11 @@
     !function(b,c,f,g,h,i,j){b[h]||(b[h]=function(){(b[h].q=b[h].q||[]).push(arguments)},b[h].q=b[h].q||[],i=c.createElement(f),j=c.getElementsByTagName(f)[0],i.async=1,i.src=g,j.parentNode.insertBefore(i,j))}(window,document,"script","https://cdn.ontame.io/hmshost-norway-as.js","ontame");
 </script>
 	
-  <meta property="og:title" content="Available position">
+  <meta property="og:title" content="Avolta - Ledig stilling">
   <meta property="og:image" content="https://headlessjobsites.github.io/Avolta/files/Avolta-preview.jpg">
   <meta property="og:url" content="https://headlessjobsites.github.io/Avolta">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Available position">
+  <meta name="twitter:title" content="Avolta - Ledig stilling">
   <meta name="twitter:image" content="https://headlessjobsites.github.io/Avolta/files/Avolta-preview.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -136,22 +136,22 @@ document.addEventListener("DOMContentLoaded", function() {
             </button>
         </div>
         <div class="d-flex d-lg-none my-2 mobile-only">
-            <a class="nav-link new-link mr-1" href="#tt-talentech-section-2">Meet the Team <i class="fa-thin fa-arrow-down"></i></a>
-            <a class="nav-link new-link ml-1" href="#our-process">Recruitment Process <i class="fa-thin fa-arrow-down"></i></a>
+            <a class="nav-link new-link mr-1" href="#tt-talentech-section-2">Møt teamet <i class="fa-thin fa-arrow-down"></i></a>
+            <a class="nav-link new-link ml-1" href="#our-process">Rekrutteringsprosess <i class="fa-thin fa-arrow-down"></i></a>
         </div>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./">Hjem <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#appform-header">Apply</a>
+                    <a class="nav-link" href="#appform-header">Søk nå</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#tt-talentech-section-2">Meet the Team</a>
+                    <a class="nav-link" href="#tt-talentech-section-2">Møt teamet</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#our-process">Recruitment Process</a>
+                    <a class="nav-link" href="#our-process">Rekrutteringsprosess</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" target="blank" href="https://avoltaworld.com">avoltaworld.com <span class="sr-only">(current)</span></a>
@@ -222,11 +222,11 @@ $(document).ready(function() {
                 <span class="city">Location</span>
             </div>-->
             <div class="col-md-3 col-6 job-info">
-                <span class="job-info-title">Application due</span>
-                <span class="expiration-date">Application due</span>
+                <span class="job-info-title">Søknadsfrist</span>
+                <span class="expiration-date">Søknadsfrist</span>
             </div>
             <div class="col-md-4 col-6 text-center apply-btn-header">
-<a href="#appform-header" class="btn btn-primary apply-btn" role="">Apply for the job</a>
+<a href="#appform-header" class="btn btn-primary apply-btn" role="">Søk på stillingen</a>
             </div>
         </div>
     </div>
@@ -264,7 +264,7 @@ $(document).ready(function() {
     </div>
 
             <div class="text-center centerd-apply-btn">
-<a href="#appform-header" class="btn btn-primary apply-btn" role="">Apply for the job</a>
+<a href="#appform-header" class="btn btn-primary apply-btn" role="">Søk på stillingen</a>
             </div>
 </div>
 
@@ -338,7 +338,7 @@ function buildIframe() {
 
 
 <section id="tt-talentech-section-2" class="team-section py-5 mb-5 pb-4 m-my-0 m-py-5">
-        <center><h2 class="container mb-0 pb-0">Meet the <span class="organization-unit" class="title-alt"></span><span class="title-alt"> team</span></h2></center>
+        <center><h2 class="container mb-0 pb-0">Møt <span class="organization-unit" class="title-alt"></span><span class="title-alt"> teamet</span></h2></center>
     <div class="container mt-0 pt-2 m-ml-0 m-px-0">
         <div class="row mt-3 m-mt-2 m-mx-0">
 <div id="gobi-section"></div>		
@@ -354,7 +354,7 @@ function buildIframe() {
 
 <section id="our-process" class="process-section mb-5 py-5 m-my-0 m-pt-0 m-pb-4" style="background-color: #eeeef2;">
     <div class="container pt-5 m-px-4 m-pb-2">
-        <h2>Our <span class="title-alt">recruitment process</span></h2>
+        <h2>Vår <span class="title-alt">rekrutterings&shy;prosess</span></h2>
     </div>
     <div class="container">
         <div class="row">
@@ -618,18 +618,6 @@ document.addEventListener('DOMContentLoaded', function() {
 <script>
 $(document).ready(function () {
     let jobs = []; // Array to store all jobs
-    let displayedJobs = 0; // Counter for the number of jobs currently displayed
-    const jobsToShowDesktop = 12; // Number of jobs to show on desktop before "Load More"
-    const jobsToShowMobile = 6; // Number of jobs to show on mobile before "Load More"
-    let jobsToShow = window.innerWidth > 768 ? jobsToShowDesktop : jobsToShowMobile;
-
-    // Adjust jobsToShow based on window resize
-    $(window).resize(function() {
-        jobsToShow = window.innerWidth > 768 ? jobsToShowDesktop : jobsToShowMobile;
-        displayedJobs = Math.min(jobsToShow, jobs.length);
-        displayJobs();
-        updateLoadMoreVisibility();
-    });
 
     // Function to populate filter dropdowns based on jobs
     function populateFilters() {
@@ -662,29 +650,27 @@ $(document).ready(function () {
     function displayJobs() {
         $('#jobList').empty(); // Clear current jobs
 
-        let filteredJobs = jobs.slice(0, displayedJobs); // Get the subset of jobs to be displayed
-
-        // Apply filters
+        // Get current filter values
         const selectedCountry = $('#locationFilter').val();
         const selectedJobType = $('#jobTypeFilter').val();
-        filteredJobs = filteredJobs.filter(job => {
+
+        // Filter jobs based on selected filters
+        let filteredJobs = jobs.filter(job => {
             return (selectedCountry === 'All' || job.country === selectedCountry) &&
                    (selectedJobType === 'All' || job.title === selectedJobType);
         });
 
-        // Add job cards to the DOM
+        // Append job cards for each filtered job
         filteredJobs.forEach(job => {
             $('#jobList').append(buildJobCard(job));
         });
-
-        updateLoadMoreVisibility();
     }
 
     // Function to build HTML for a job card
     function buildJobCard(job) {
         const jobDetailUrl = `job-details.html?jobId=${job.ad_id}`;
         
-        // Ensure organizations is an array; if not, default to an empty array.
+        // Ensure job.organizations is an array; if not, default to an empty array.
         const organizations = Array.isArray(job.organizations) ? job.organizations : [];
         
         // Use the second organization unit if available, otherwise the first; default to 'Not specified'
@@ -711,15 +697,6 @@ $(document).ready(function () {
 </div>`;
     }
 
-    // Function to update the visibility of the "Load More" button
-    function updateLoadMoreVisibility() {
-        if (displayedJobs >= jobs.length) {
-            $('#loadMore').hide();
-        } else {
-            $('#loadMore').show();
-        }
-    }
-
     // Function to fetch jobs from the API
     function fetchJobs(currentJobId) {
         fetch('https://api.talentech.io/reachmee/feed/avolta')
@@ -734,7 +711,6 @@ $(document).ready(function () {
                 if (jobs.length === 0) {
                     $('#tt-feature-section').hide();
                 } else {
-                    displayedJobs = Math.min(jobsToShow, jobs.length);
                     populateFilters();
                     displayJobs();
                 }
@@ -748,24 +724,13 @@ $(document).ready(function () {
     const currentJobId = new URLSearchParams(window.location.search).get('jobId');
     fetchJobs(currentJobId);
 
-    // Event listener for "Load More" button
-    $('#loadMore').click(function() {
-        displayedJobs += jobsToShow;
-        displayJobs();
-        updateLoadMoreVisibility();
-    });
-
     // Event listeners for filter dropdowns
     $('#locationFilter').change(function() {
-        displayedJobs = jobsToShow;
         displayJobs();
-        updateLoadMoreVisibility();
     });
 
     $('#jobTypeFilter').change(function() {
-        displayedJobs = jobsToShow;
         displayJobs();
-        updateLoadMoreVisibility();
     });
 });
 </script>
@@ -788,7 +753,7 @@ $(document).ready(function() {
             const job = jobs.find(job => job.ad_id === jobId);
             if (job) {
                 // If organizations is null, return "COMPANY NAME", otherwise proceed with existing logic
-                const organizationUnit = job.organizations ? (job.organizations.length > 1 ? job.organizations[1].nameorgunit : job.organizations[0]?.nameorgunit) : "Talentech";
+                const organizationUnit = job.organizations ? (job.organizations.length > 1 ? job.organizations[1].nameorgunit : job.organizations[0]?.nameorgunit) : "Avolta";
                 
                 // Fetch the last city from the areas array, if it exists; otherwise, default to 'Not specified'
                 const city = job.areas && job.areas.length > 0 ? job.areas[job.areas.length - 1].name : 'Not specified';
