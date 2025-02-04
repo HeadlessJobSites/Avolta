@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(0, 0, 0, 0.0);">
     <div class="container m-py-1">
         <a class="navbar-brand" href="./" aria-label="Home">
-            <img src="./files/lkf-light.png" class="d-inline-block align-top" alt="">
+            <img src="./files/avolta-logo.svg" class="d-inline-block align-top" alt="">
         </a>
         <div class="d-flex justify-content-end align-items-center flex-grow-1">
             <a class="nav-link ml-auto d-lg-none btn btn-primary apply-btn m-mr-2" href="#appform-header">Søk nå</a>
@@ -194,12 +194,12 @@ $(document).ready(function() {
 
 
     <div class="hero-section">
-        <!--<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="hero-video">
-            <source src="./files/Compressed-3-TT.mp4" type="video/mp4">
-        </video>-->
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="hero-video">
+            <source src="./files/Hero-video-with-centred-text_compressed.mp4" type="video/mp4">
+        </video>
         <div class="hero-content">
             <div class="job-title2" id="position-title"> </div>
-            <p id="position-title-meta" style="font-size: 1.25rem;"><span class="organization-unit"> </span> • <span class="city"> </span></p>
+            <p id="position-title-meta" style="font-size: 1.25rem;"><span class="organization-unit"> </span><!-- • <span class="city"> </span>--></p>
         </div>
     </div>
 
@@ -213,11 +213,11 @@ $(document).ready(function() {
             <div class="col-md-3 col-6 job-info">
                 <span class="job-info-title">Team</span>
                 <span class="organization-unit">Team</span>
-            </div>
+            </div><!--
             <div class="col-md-3 col-6 job-info">
                 <span class="job-info-title">Sted</span>
                 <span class="city">Sted</span>
-            </div>
+            </div>-->
             <div class="col-md-3 col-6 job-info">
                 <span class="job-info-title">Søknadsfrist</span>
                 <span class="expiration-date">Søknadsfrist</span>
@@ -261,7 +261,7 @@ $(document).ready(function() {
     </div>
 
             <div class="text-center centerd-apply-btn">
-<a href="#appform-header" class="btn btn-primary apply-btn" role="">Skicka in ansökan</a>
+<a href="#appform-header" class="btn btn-primary apply-btn" role="">Send søknad</a>
             </div>
 </div>
 
@@ -352,19 +352,18 @@ function buildIframe() {
 
 
 
-<section id="our-process" class="process-section mb-5 py-5 m-my-0 m-pt-0 m-pb-4" style="background-color: #f1f1f1;">
+<section class="process-section mb-5 py-5 m-my-0 m-pt-0 m-pb-4" id="recruitment-process" style="background-color: #f5f5f5;">
     <div class="container pt-5 m-px-4 m-pb-2">
-        <h2>Vår <span style="font-weight: 800;">Rekrutterings&shy;prosess</span></h2>
+        <h2>Vår <span class="title-alt">rekrutterings&shy;prosess</span></h2>
+        <p class="pt-4">For å tilby en rettferdig og profesjonell rekrutteringsprosess, behandles alle søker rettferdig, og hver søker gis sammemuligheter til å bli vurdert.<br><br> Utvelgeseskriterinene for å best mulig fylle ledigestillinger er basert på søkerens kompetanse, ferdigheter, leverte resultster og beslutninger tatt uavhengig av rase, hudfarge, religion, kjønn, seksuell legning, alder,kjønnsidentitet eller uttrykk, nasjonal opprinnelse, politisk legning, funksjonshemning eller annen diskriminerende faktor.</span></p>
     </div>
     <div class="container">
         <div class="row">
-<!-- DISABLE GOBI VIDEO
-            <div class="col-md-4 px-0">
+            <!--<div class="col-md-4 px-0">
 <script src="https://widget.gobistories.com/gwi/6" async onload="gobi.discover()"></script>
 
 <div class="gobi-collection" data-gobi-collection-id="j2jom"></div>
-            </div>
--->
+            </div>-->
             <!-- Existing Content in Right Column -->
             <div class="col-md-12 pl-5 m-px-4">
                 <div class="row process-row">
@@ -374,8 +373,8 @@ function buildIframe() {
                             <h3>1</h3>
                         </div>
                         <div class="process-content">
-                            <h3>Skicka in din ansökan</h3>
-                            <p>Du ansöker genom att ladda upp CV och andra relevanta ansökningshandlingar i vår karriärportal.</p>
+                            <h3>Send søknad</h3>
+                            <p>Send søknad, start reisen din ved å legge inn en enkelsøknad i vår karriereportal.</p>
                         </div>
                     </div>
                     <!-- Benefit 2 -->
@@ -384,8 +383,8 @@ function buildIframe() {
                             <h3>2</>
                         </div>
                         <div class="process-content">
-                            <h3>Första urval och screening</h3>
-                            <p>Vi går igenom din ansökan och ser om dina kunskaper, erfarenheter och kompetenser stämmer överens med det vi söker.</p>
+                            <h3>Undersøkelse</h3>
+                            <p>Du vil motta en undersøkelse.</p>
                         </div>
                     </div>
                     <!-- Benefit 3 -->
@@ -394,8 +393,8 @@ function buildIframe() {
                             <h3>3</h3>
                         </div>
                         <div class="process-content">
-                            <h3>Tester</h3>
-                            <p>Beroende på vilken roll du söker till kan du bli ombedd att genomföra ett personlighetstest och ett test som mäter din problemlösningsförmåga.</p>
+                            <h3>Intervju</h3>
+                            <p>Intervjuprosess, vi innkaller aktuelle kandidater og tar en prat sammen om dine erfaringer, kompetanse, tanker om rollen og Avolta/MEL/Flyplass som arbeidsplass.</p>
                         </div>
                     </div>
                     <!-- Benefit 4 -->
@@ -404,8 +403,8 @@ function buildIframe() {
                             <h3>4</h3>
                         </div>
                         <div class="process-content">
-                            <h3>Intervjuprocess </h3>
-                            <p>Beroende på vilken roll du söker kan du bli kallad till en eller fler intervjuer för att vi ska lära känna varandra och få möjlighet att höra mer om dina erfarenheter och ambitioner.</p>
+                            <h3>Referanser</h3>
+                            <p>Refereransesjekk, vi vil spørre deg om to til 3 referanser fra tidligere arbeidsgiver og/eller annen person som kan fortelle hvem du er.</p>
                         </div>
                     </div>
                     <!-- Benefit 5 -->
@@ -414,8 +413,8 @@ function buildIframe() {
                             <h3>5</h3>
                         </div>
                         <div class="process-content">
-                            <h3>Erbjudande och onboarding</h3>
-                            <p>Om det blir en matchning ger vi dig ett erbjudande om anställning. När du har tackat ja börjar onboarding och självklart guidar vi dig genom varje steg!</p>
+                            <h3>Tilbud og onboarding</h3>
+                            <p>5. Tilbud og onboarding, hvis det er en match, vil vi gi et tilbud. Når det er akseptert, vil vi guide deg gjennom vår onboarding prosess.</p>
                         </div>
                     </div>
                 </div>
@@ -423,6 +422,7 @@ function buildIframe() {
         </div>
     </div>
 </section>
+
 
 
 
@@ -579,7 +579,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <section class="text-center bg-dark text-light py-5">
     <div class="container">
-        <img src="./files/lkf-light.png" alt="LKF Logo" class="mb-3" style="max-width: 180px;">
+        <img src="./files/avolta-logo.svg" alt="LKF Logo" class="mb-3" style="max-width: 180px;">
                 <div class="mt-3 mb-4" style="max-width: 600px; margin: auto;">
 		 <p style="font-size: 1.25rem;">LKF erbjuder hyresbostäder i Lunds stad, Genarp, Södra Sandby, Stångby, Veberöd, Dalby och Revinge. Totalt äger och förvaltar vi drygt 10.000 bostadslägenheter, vilket innebär att mer än 20 000 lundabor har sitt hem hos oss.
 
@@ -798,7 +798,7 @@ $(document).ready(function() {
             const job = jobs.find(job => job.ad_id === jobId);
             if (job) {
                 // If organizations is null, return "COMPANY NAME", otherwise proceed with existing logic
-                const organizationUnit = job.organizations ? (job.organizations.length > 1 ? job.organizations[1].nameorgunit : job.organizations[0]?.nameorgunit) : "Talentech";
+                const organizationUnit = job.organizations ? (job.organizations.length > 1 ? job.organizations[1].nameorgunit : job.organizations[0]?.nameorgunit) : "Avolta";
                 
                 // Fetch the last city from the areas array, if it exists; otherwise, default to 'Not specified'
                 const city = job.areas && job.areas.length > 0 ? job.areas[job.areas.length - 1].name : 'Not specified';
