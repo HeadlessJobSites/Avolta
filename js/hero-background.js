@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const params = new URLSearchParams(window.location.search);
         const jobId = parseInt(params.get('rmjob') || params.get('jobId')); 
 
-        fetch('https://api.talentech.io/reachmee/feed/') 
+        fetch('https://api.talentech.io/reachmee/feed/avolta') 
             .then(response => response.json())
             .then(jobs => {
                 const job = jobs.find(job => job.ad_id === jobId);
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function setHeroBackgroundImage(imageUrl) {
     // Remove the video element
-    var videoElement = document.querySelector('.hero-video');
+    var videoElement = document.querySelector('.naf-hero');
     if (videoElement) {
         videoElement.parentNode.removeChild(videoElement);
     }
