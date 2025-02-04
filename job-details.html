@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="./css/index-style.css">
 <link rel="stylesheet" href="./css/job-details-style.css">
-<link rel="icon" type="image/x-icon" href="./files/avolta-favicon-32x32.png">
+<link rel="icon" type="image/x-icon" href="./files/lkf-favicon.ico">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -19,12 +19,12 @@
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <script type="text/javascript" src="https://web103.reachmee.com/customerjs/helper.js"></script>
 	
-  <meta property="og:title" content="Avoltas karriereportal">
-  <meta property="og:image" content="https://headlessjobsites.github.io/avolta/files/Avolta-preview.jpg"">
-  <meta property="og:url" content="https://headlessjobsites.github.io/avolta/">
+  <meta property="og:title" content="Lunds Kommuns Fastighets ABs karriärportal">
+  <meta property="og:image" content="https://headlessjobsites.github.io/lkf/files/Lediga-jobb.jpg"">
+  <meta property="og:url" content="https://headlessjobsites.github.io/lkf/">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Avoltas karriereportal">
-  <meta name="twitter:image" content="https://headlessjobsites.github.io/avolta/files/Avolta-preview.jpg"">
+  <meta name="twitter:title" content="Lunds Kommuns Fastighets ABs karriärportal">
+  <meta name="twitter:image" content="https://headlessjobsites.github.io/lkf/files/Lediga-jobb.jpg"">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:type" content="website">
@@ -123,10 +123,10 @@ document.addEventListener("DOMContentLoaded", function() {
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(0, 0, 0, 0.0);">
     <div class="container m-py-1">
         <a class="navbar-brand" href="./" aria-label="Home">
-            <img src="./files/avolta-logo.svg" class="d-inline-block align-top" alt="">
+            <img src="./files/lkf-light.png" class="d-inline-block align-top" alt="">
         </a>
         <div class="d-flex justify-content-end align-items-center flex-grow-1">
-            <a class="nav-link ml-auto d-lg-none btn btn-primary apply-btn m-mr-2" href="#appform-header">Søk nå</a>
+            <a class="nav-link ml-auto d-lg-none btn btn-primary apply-btn m-mr-2" href="#appform-header">Ansök</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -139,19 +139,19 @@ document.addEventListener("DOMContentLoaded", function() {
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="./">Hjem <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./">Hem <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#appform-header">Søk nå</a>
+                    <a class="nav-link" href="#appform-header">Ansök</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#tt-talentech-section-2">Møt teamet</a>
+                    <a class="nav-link" href="#tt-talentech-section-2">Träffa teamet</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#our-process">Rekrutteringsprosess</a>
+                    <a class="nav-link" href="#our-process">Rekryteringsprocess</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" target="blank" href="https://www.avoltaworld.com/">avoltaworld.com <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" target="blank" href="https://lkf.se">lkf.se <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
@@ -194,12 +194,12 @@ $(document).ready(function() {
 
 
     <div class="hero-section">
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="hero-video">
-            <source src="./files/Hero-video-with-centred-text_compressed.mp4" type="video/mp4">
-        </video>
+        <!--<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="hero-video">
+            <source src="./files/Compressed-3-TT.mp4" type="video/mp4">
+        </video>-->
         <div class="hero-content">
             <div class="job-title2" id="position-title"> </div>
-            <p id="position-title-meta" style="font-size: 1.25rem;"><span class="organization-unit"> </span><!-- • <span class="city"> </span>--></p>
+            <p id="position-title-meta" style="font-size: 1.25rem;"><span class="organization-unit"> </span> • <span class="city"> </span></p>
         </div>
     </div>
 
@@ -213,11 +213,11 @@ $(document).ready(function() {
             <div class="col-md-3 col-6 job-info">
                 <span class="job-info-title">Team</span>
                 <span class="organization-unit">Team</span>
-            </div><!--
+            </div>
             <div class="col-md-3 col-6 job-info">
                 <span class="job-info-title">Sted</span>
                 <span class="city">Sted</span>
-            </div>-->
+            </div>
             <div class="col-md-3 col-6 job-info">
                 <span class="job-info-title">Søknadsfrist</span>
                 <span class="expiration-date">Søknadsfrist</span>
@@ -261,7 +261,7 @@ $(document).ready(function() {
     </div>
 
             <div class="text-center centerd-apply-btn">
-<a href="#appform-header" class="btn btn-primary apply-btn" role="">Send søknad</a>
+<a href="#appform-header" class="btn btn-primary apply-btn" role="">Skicka in ansökan</a>
             </div>
 </div>
 
@@ -279,7 +279,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function loadExternalScriptAndBuildIframe() {
     var script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = 'https://web103.reachmee.com/customerjs/I018-716-2.js';
+    script.src = 'https://web103.reachmee.com/customerjs/I022-2136-6.js';
     script.onload = function() {
         buildIframe();
     };
