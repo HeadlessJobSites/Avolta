@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,130 +5,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Career Portal</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<link rel="stylesheet" href="./css/index-style.css">
-<link rel="icon" type="image/x-icon" href="./files/avolta-favicon-32x32.png">
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://kit.fontawesome.com/ca38a06270.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-<script src="https://widget.gobistories.com/gwi/6" async onload="gobi.discover()"></script>
-<script type="text/javascript">
-    !function(b,c,f,g,h,i,j){b[h]||(b[h]=function(){(b[h].q=b[h].q||[]).push(arguments)},b[h].q=b[h].q||[],i=c.createElement(f),j=c.getElementsByTagName(f)[0],i.async=1,i.src=g,j.parentNode.insertBefore(i,j))}(window,document,"script","https://cdn.ontame.io/hmshost-norway-as.js","ontame");
-</script>
-	
-  <meta property="og:title" content="Avolta Karriereportal">
-  <meta property="og:description" content="Ledige stillinger hos Avolta">
-  <meta property="og:image" content="https://headlessjobsites.github.io/avolta/files/Avolta-preview.jpg">
-  <meta property="og:url" content="https://headlessjobsites.github.io/avolta/">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Avolta Karriereportal">
-  <meta name="twitter:description" content="Ledige stillinger hos Avolta">
-  <meta name="twitter:image" content="https://headlessjobsites.github.io/avolta/files/Avolta-preview.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:type" content="website">
-	
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index-style.css">
+    <link rel="icon" type="image/x-icon" href="./files/avolta-favicon-32x32.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/ca38a06270.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://widget.gobistories.com/gwi/6" async onload="gobi.discover()"></script>
+    <script type="text/javascript">
+        !function (b, c, f, g, h, i, j) { b[h] || (b[h] = function () { (b[h].q = b[h].q || []).push(arguments) }, b[h].q = b[h].q || [], i = c.createElement(f), j = c.getElementsByTagName(f)[0], i.async = 1, i.src = g, j.parentNode.insertBefore(i, j)) }(window, document, "script", "https://cdn.ontame.io/hmshost-norway-as.js", "ontame");
+    </script>
+
+    <meta property="og:title" content="Avolta Karriereportal">
+    <meta property="og:description" content="Ledige stillinger hos Avolta">
+    <meta property="og:image" content="https://headlessjobsites.github.io/avolta/files/Avolta-preview.jpg">
+    <meta property="og:url" content="https://headlessjobsites.github.io/avolta/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Avolta Karriereportal">
+    <meta name="twitter:description" content="Ledige stillinger hos Avolta">
+    <meta name="twitter:image" content="https://headlessjobsites.github.io/avolta/files/Avolta-preview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+
 </head>
 
 <body>
 
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(0, 0, 0, 0.0);">
-    <div class="container m-py-1">
-        <a class="navbar-brand" href="./" aria-label="Home">
-            <img src="./files/avolta-logo.svg" height="20" class="d-inline-block align-top" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="./#jobs-anchor">Stillinger</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./#meet-the-team">Møt teamet</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./#recruitment-process">Rekrutteringsprosess</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" target="blank" href="https://avoltaworld.com">avoltaworld.com <span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(0, 0, 0, 0.0);">
+        <div class="container m-py-1">
+            <a class="navbar-brand" href="./" aria-label="Home">
+                <img src="./files/avolta-logo.svg" height="20" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./#jobs-anchor">Stillinger</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./#meet-the-team">Møt teamet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./#recruitment-process">Rekrutteringsprosess</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="blank" href="https://avoltaworld.com">avoltaworld.com <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 56) {
+                    $(".navbar").addClass("bg-dark");
+                } else {
+                    $(".navbar").removeClass("bg-dark");
+                }
+            });
+            $(".navbar-toggler").click(function () {
+                if (!$(".navbar-collapse").hasClass("show")) {
+                    $(".navbar").addClass("bg-dark");
+                } else {
+                    if ($(window).scrollTop() < 56) {
+                        $(".navbar").removeClass("bg-dark");
+                    } else {
+                    }
+                }
+            });
+        });
+    </script>
+
+
+    <div class="hero-section">
+        <div class="custom-hero"></div>
+        <video playsinline autoplay loop muted class="hero-video">
+            <source src="./files/Hero-video-with-centred-text_compressed.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <!--<h1>Join our <strong>journey</strong></h1>-->
+            <a href="#jobs-anchor" class="btn btn-primary btn-lg dark-btn"><strong>Se ledige stillinger</strong></a>
         </div>
     </div>
-</nav>
 
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Fetch the jobs from the feed
+            fetch('https://api.talentech.io/reachmee/feed/avolta')
+                .then(response => response.json())
+                .then(jobs => {
+                    const positionsCount = jobs.length; // Get the count of jobs from the feed
+                    const btnText = positionsCount === 1 ? 'Se 1 ledig stilling' : `Se ${positionsCount} ledige stillinger`; // Update button text based on count
+                    document.querySelector('a.btn.btn-primary.btn-lg strong').textContent = positionsCount > 0 ? btnText : 'Se ledige stillinger';
+                })
+                .catch(error => {
+                    console.error('Error fetching job details:', error);
+                    // If there is an error fetching the jobs, show default text
+                    document.querySelector('a.btn.btn-primary.btn-lg strong').textContent = 'Se ledige stillinger';
+                });
+        });
+    </script>
 
 
-
-
-<script>
-$(document).ready(function() {
-  $(window).scroll(function() {
-    if ($(window).scrollTop() > 56) {
-      $(".navbar").addClass("bg-dark");
-    } else {
-      $(".navbar").removeClass("bg-dark");
-    }
-  });
-  $(".navbar-toggler").click(function() {
-    if (!$(".navbar-collapse").hasClass("show")) {
-      $(".navbar").addClass("bg-dark");
-    } else {
-      if ($(window).scrollTop() < 56) {
-        $(".navbar").removeClass("bg-dark");
-      } else {
-      }
-    }
-  });
-});
-</script>
-
-
-
-
-	<div class="hero-section">
-    <div class="custom-hero"></div>
-    <video playsinline autoplay loop muted class="hero-video">
-        <source src="./files/Hero-video-with-centred-text_compressed.mp4" type="video/mp4">
-    </video>
-    <div class="hero-content">
-        <!--<h1>Join our <strong>journey</strong></h1>-->
-        <a href="#jobs-anchor" class="btn btn-primary btn-lg dark-btn" style=""><strong>Se ledige stillinger</strong></a>
-    </div>
-	</div>
-
-
-
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Fetch the jobs from the feed
-  fetch('https://api.talentech.io/reachmee/feed/avolta')
-    .then(response => response.json())
-    .then(jobs => {
-      const positionsCount = jobs.length; // Get the count of jobs from the feed
-      const btnText = positionsCount === 1 ? 'Se 1 ledig stilling' : `Se ${positionsCount} ledige stillinger`; // Update button text based on count
-      document.querySelector('a.btn.btn-primary.btn-lg strong').textContent = positionsCount > 0 ? btnText : 'Se ledige stillinger';
-    })
-    .catch(error => {
-      console.error('Error fetching job details:', error);
-      // If there is an error fetching the jobs, show default text
-      document.querySelector('a.btn.btn-primary.btn-lg strong').textContent = 'Se ledige stillinger';
-    });
-});
-</script>
-
-
-	<!--
+    <!--
 <div class="gobi-stories-container" id="gobi-stories-container">
   <button aria-label="Close video" class="close-btn" onclick="document.getElementById('gobi-stories-container').style.display='none';"><i class="fa-regular fa-xmark"></i></button>
 <script src="https://widget.gobistories.com/gwi/6" async onload="gobi.discover()"></script>
@@ -138,8 +128,8 @@ document.addEventListener('DOMContentLoaded', function() {
   <a href="#company-section" aria-label="Get to know us"><div class="gobi-stories-text">Get to know us</div></a>
 </div>
 -->
-	
-<!--	
+
+    <!--	
 	<div class="talentech-section" id="company-section">
     <div class="container mt-5 pt-4 m-mt-2">
         <h2 class="m-px-2">Career <span class="title-alt">takeoff</span></h2>
@@ -151,46 +141,116 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-<div class="talentech-section pt-5 pb-4 m-pt-2 mb-5 m-mb-3">
-    <div class="container pt-5 mt-5 pt-2 mb-5 pb-3 video-container m-my-0">
-        <!--<video id="talentechVideo" class="rounded-video" playsinline autoplay loop muted>
+    <div class="talentech-section pt-5 pb-4 m-pt-2 mb-5 m-mb-3">
+        <div class="container pt-5 mt-5 pt-2 mb-5 pb-3 video-container m-my-0">
+            <!--<video id="talentechVideo" class="rounded-video" playsinline autoplay loop muted>
             <source src="/files/This-is-us-TT.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="video-controls">
             <button id="muteBtn"><img src="/files/volume-xmark-thin.svg" alt="Mute"></button>
         </div>-->
-	    <div class="front-image"><img src="./files/Careers_homepage_2023.jpg"></div>
+            <div class="front-image"><img src="./files/Careers_homepage_2023.jpg"></div>
+        </div>
     </div>
-</div>
 
 
 
-
-
-	
-
-
-<section class="team-section mt-2 py-5 m-my-0" id="meet-the-team" style="background-color: #f5f5f5;">
+    <section class="team-section mt-2 py-5 m-my-0" id="meet-the-team" style="background-color: #f5f5f5;">
         <h2 class="container py-5 mb-3 pb-0 m-py-0 m-px-4">Hvordan er det å jobbe hos <span class="title-alt">oss?</span></h2>
-	<p class="container pt-5 mb-0 pb-0 m-pt-3 m-px-4">Våre ansatte er viktige ambassadører for selskapets verdier og vi ser etter personer som motiveres av å skape gode gjesteopplevelser for gjestene våre, yte god service og følge rutiner. <br><br>Hvert Avolta teammedlem er en ambassadør for selskapet, og vi vil sørge for at vi kan bygge et flott sted å jobbe for dem. Vi følger teammedlemmene våre på deres reise med Avolta og gir dem attraktive muligheter fra og med et teammedlem søker på en stilling til det øyeblikket de forlater organisasjonen.<br><br> Vi har derfor identifisert fire nøkkelstadier for teammedlemmets livssyklus og erfaring: Rekruttering, Opplæring og Karriereprogresjon, samt kompensasjon og anerkjennelse.</p>
+        <div class="company-info container">
+            <div class="company-info-item">
+                <h4 class="company-info-item-title">💜 Avolta – med deg på reisen, uansett hvor du skal!</h4>
+                <p class="company-info-item-text">
+                    Enten man er på farten, tar en pause eller planlegger din neste destinasjon, er vi i Avolta her
+                    for deg. Med et bredt utvalg innen travel retail, mat og drikke, hybrid- og convenience-
+                    konsepter, finner du oss på flyplasser, motorveier, cruise, jernbaner og mer – i over 1 000
+                    lokasjoner i 70 land. I Norge finner du oss på Oslo Lufthavn og Stavanger Lufthavn.
+                </p>
+            </div>
+            <div class="company-info-item">
+                <h4 class="company-info-item-title">💜 Våre ansatte er hjertet i Avolta – ambassadører for våre verdier og kultur.</h4>
+                <p class="company-info-item-text">
+                    Vi ser etter
+                    ambassadører som drives av å skape eksepsjonelle gjesteopplevelser, levere førsteklasses
+                    service og sikre at alt fungerer sømløst.
+                </p>
+            </div>
+            <div class="company-info-item">
+                <h4 class="company-info-item-title">💜 Hvert Avolta-teammedlem spiller en viktig rolle i vår suksess, og vi er forpliktet til å
+                    skape et arbeidsmiljø der alle trives og vokser.</h4>
+                <p class="company-info-item-text">
+                    Fra øyeblikket du søker på en stilling hos oss
+                    er vi her for å støtte din utvikling. Vi investerer i våre ansatte, gir dem attraktive muligheter
+                    og følger dem tett på deres reise hos oss i Avolta.
+                </p>
+            </div>
+            <div class="company-info-item">
+                <!-- <h4 class="company-info-item-title"></h4> -->
+                <p class="company-info-item-text">
+                    Hos Avolta tror vi på å bygge en inkluderende og inspirerende arbeidsplass, der våre
+                    teammedlemmer føler seg sett, hørt og verdsatt – hver eneste dag. 💜
+                </p>
+            </div>
+        </div>
 
-<!--    <div class="container mt-0 pt-2">
+        <!--    <div class="container mt-0 pt-2">
         <div class="row mt-3 m-mt-2 m-mx-1">
 		    <script src="https://widget.gobistories.com/gwi/6" async onload="gobi.discover()"></script>
 
 <div class="gobi-collection" data-gobi-collection-id="tavnb"></div>
 		    
     </div></div>-->
-</section>
+    </section>
+
+    <section class="values-section mt-2 py-5 mb-2 m-my-0">
+        <h2 class="container py-5 mb-3 pb-0 m-py-0 m-px-4"><span class="title-alt">Verdier</span></h2>
+        <div class="container values-container">
+            <div class="values-inner">
+                <div class="values-card">
+                    <div class="values-card-inner">
+                        <div class="card-front-face">💜 Brave</div>
+                        <div class="card-back-face">
+                            <p>Vi er fremtidsrettede, innovative og ikke redde for å utfordre det etablerte. Vi leder an i bransjen med nye ideer og smarte løsninger – fordi vi vet at de største mulighetene finnes utenfor komfortsonen.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="values-card">
+                    <div class="values-card-inner">
+                        <div class="card-front-face">💜 Passionate </div>
+                        <div class="card-back-face">
+                            <p>Vi elsker det vi gjør og drives av å skape de beste opplevelsene. Med engasjement og dedikasjon strekker vi oss alltid litt lenger for å levere kvalitet og overgå forventningene.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="values-card">
+                    <div class="values-card-inner">
+                        <div class="card-front-face">💜 Collaborative </div>
+                        <div class="card-back-face">
+                            <p>Vi jobber som ett team, på tvers av landegrenser og fagområder. Sammen skaper vi resultater, deler kunnskap og bygger en sterk kultur der vi støtter og løfter hverandre mot vårt felles mål.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="values-card">
+                    <div class="values-card-inner">
+                        <div class="card-front-face">💜 Inclusive </div>
+                        <div class="card-back-face">
+                            <p>Vi er en global organisasjon med et lokalt hjerte. Hos oss feirer vi mangfold og ulikheter – fordi vi tror at ulike perspektiver skaper bedre opplevelser. Her er det plass til alle, og vi ønsker deg velkommen akkurat som du er.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 
-	
-
-	
 
 
-<!--
+
+
+    <!--
 <div class="feature-section" style="">
     <div class="container py-5 m-py-0">
         <h2 class="pt-5 m-px-2"><span class="title-alt">Our </span>culture</h2>
@@ -219,105 +279,95 @@ document.addEventListener('DOMContentLoaded', function() {
 -->
 
 
-
-
-
-
-
-
-<div class="quote-section py-5">
-    <div class="container py-5 mt-3 m-py-2">
-        <blockquote class="blockquote text-center">
-            <p class="mb-4">"Folk som jeg jobber med er fantastiske, hjelpsomme og profesjonelle. Avolta gir mye muligheter til å utvikle seg."</p>
-            <footer class="blockquote-footer">Magdalena - Assistant store manager, Peppes</footer>
-        </blockquote>
+    <div class="quote-section py-5">
+        <div class="container py-5 mt-3 m-py-2">
+            <blockquote class="blockquote text-center">
+                <p class="mb-4">"Folk som jeg jobber med er fantastiske, hjelpsomme og profesjonelle. Avolta gir mye muligheter til å utvikle seg."</p>
+                <footer class="blockquote-footer">Magdalena - Assistant store manager, Peppes</footer>
+            </blockquote>
+        </div>
     </div>
-</div>
 
 
 
-
-
-
-
-<section class="process-section mb-5 py-5 m-my-0 m-pt-0 m-pb-4" id="recruitment-process" style="background-color: #f5f5f5;">
-    <div class="container pt-5 m-px-4 m-pb-2">
-        <h2>Vår <span class="title-alt">rekrutterings&shy;prosess</span></h2>
-        <p class="pt-4">For å tilby en rettferdig og profesjonell rekrutteringsprosess, behandles alle søker rettferdig, og hver søker gis sammemuligheter til å bli vurdert.<br><br> Utvelgeseskriterinene for å best mulig fylle ledigestillinger er basert på søkerens kompetanse, ferdigheter, leverte resultster og beslutninger tatt uavhengig av rase, hudfarge, religion, kjønn, seksuell legning, alder,kjønnsidentitet eller uttrykk, nasjonal opprinnelse, politisk legning, funksjonshemning eller annen diskriminerende faktor.</span></p>
-    </div>
-    <div class="container">
-        <div class="row">
-            <!--<div class="col-md-4 px-0">
+    <section class="process-section mb-5 py-5 m-my-0 m-pt-0 m-pb-4" id="recruitment-process" style="background-color: #f5f5f5;">
+        <div class="container pt-5 m-px-4 m-pb-2">
+            <h2><span class="title-alt">Jobbreisen</span></h2>
+            <p class="pt-4">For å tilby en rettferdig og profesjonell rekrutteringsprosess, behandles alle søker rettferdig, og hver søker gis sammemuligheter til å bli vurdert.<br><br> Utvelgeseskriterinene for å best mulig fylle ledigestillinger er basert på søkerens kompetanse, ferdigheter, leverte resultster og beslutninger tatt uavhengig av rase, hudfarge, religion, kjønn, seksuell legning, alder,kjønnsidentitet eller uttrykk, nasjonal opprinnelse, politisk legning, funksjonshemning eller annen diskriminerende faktor.</span></p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!--<div class="col-md-4 px-0">
 <script src="https://widget.gobistories.com/gwi/6" async onload="gobi.discover()"></script>
 
 <div class="gobi-collection" data-gobi-collection-id="j2jom"></div>
             </div>-->
-            <!-- Existing Content in Right Column -->
-            <div class="col-md-12 pl-5 m-px-4">
-                <div class="row process-row">
-                    <!-- Benefit 1 -->
-                    <div class="col-md-4 col-sm-4 process-item">
-                        <div class="process-icon">
-                            <h3>1</h3>
+                <!-- Existing Content in Right Column -->
+                <div class="col-md-12 pl-5 m-px-4">
+                    <div class="row process-row">
+                        <!-- Benefit 1 -->
+                        <div class="col-md-4 col-sm-4 process-item">
+                            <div class="process-icon">
+                                <h3>1</h3>
+                            </div>
+                            <div class="process-content">
+                                <h3>💜 Send inn søknad</h3>
+                                <p>Din Avolta-reise starter her! Send inn en enkel søknad via vår karriereportal, så tar vi det derfra.</p>
+                            </div>
                         </div>
-                        <div class="process-content">
-                            <h3>Send søknad</h3>
-                            <p>Send søknad, start reisen din ved å legge inn en enkelsøknad i vår karriereportal.</p>
+                        <!-- Benefit 2 -->
+                        <div class="col-md-4 col-sm-4 process-item">
+                            <div class="process-icon">
+                                <h3>2</h3>
+                            </div>
+                            <div class="process-content">
+                                <h3>💜 Innledende vurdering</h3>
+                                <p>Vi ønsker å bli bedre kjent med deg! Du vil motta en kort undersøkelse som hjelper oss med å forstå dine erfaringer og motivasjon.</p>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Benefit 2 -->
-                    <div class="col-md-4 col-sm-4 process-item">
-                        <div class="process-icon">
-                            <h3>2</>
+                        <!-- Benefit 3 -->
+                        <div class="col-md-4 col-sm-4 process-item">
+                            <div class="process-icon">
+                                <h3>3</h3>
+                            </div>
+                            <div class="process-content">
+                                <h3>💜 Intervju</h3>
+                                <p>Hvis vi ser en god match, inviterer vi deg til en samtale. Vi ønsker å høre mer om dine ferdigheter, erfaringer og tanker om rollen – samt gi deg innsikt i Avolta og hvordan det er å jobbe hos oss, slik at vi sammen kan finne ut om vi er en god match.</p>
+                            </div>
                         </div>
-                        <div class="process-content">
-                            <h3>Undersøkelse</h3>
-                            <p>Du vil motta en undersøkelse.</p>
+                        <!-- Benefit 4 -->
+                        <div class="col-md-4 col-sm-4 process-item">
+                            <div class="process-icon">
+                                <h3>4</h3>
+                            </div>
+                            <div class="process-content">
+                                <h3>💜 Referansesjekk</h3>
+                                <p>Vi tar kontakt med 2–3 referanser fra tidligere arbeidsgivere eller andre som kjenner deg godt, slik at vi kan få et helhetlig bilde av deg som kandidat.</p>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Benefit 3 -->
-                    <div class="col-md-4 col-sm-4 process-item">
-                        <div class="process-icon">
-                            <h3>3</h3>
-                        </div>
-                        <div class="process-content">
-                            <h3>Intervju</h3>
-                            <p>Intervjuprosess, vi innkaller aktuelle kandidater og tar en prat sammen om dine erfaringer, kompetanse, tanker om rollen og Avolta/MEL/Flyplass som arbeidsplass.</p>
-                        </div>
-                    </div>
-                    <!-- Benefit 4 -->
-                    <div class="col-md-4 col-sm-4 process-item">
-                        <div class="process-icon">
-                            <h3>4</h3>
-                        </div>
-                        <div class="process-content">
-                            <h3>Referanser</h3>
-                            <p>Refereransesjekk, vi vil spørre deg om to til 3 referanser fra tidligere arbeidsgiver og/eller annen person som kan fortelle hvem du er.</p>
-                        </div>
-                    </div>
-                    <!-- Benefit 5 -->
-                    <div class="col-md-4 col-sm-4 process-item">
-                        <div class="process-icon">
-                            <h3>5</h3>
-                        </div>
-                        <div class="process-content">
-                            <h3>Tilbud og onboarding</h3>
-                            <p>Tilbud og onboarding, hvis det er en match, vil vi gi et tilbud. Når det er akseptert, vil vi guide deg gjennom vår onboarding prosess.</p>
+                        <!-- Benefit 5 -->
+                        <div class="col-md-4 col-sm-4 process-item">
+                            <div class="process-icon">
+                                <h3>5</h3>
+                            </div>
+                            <div class="process-content">
+                                <h3>💜 Tilbud og onboarding</h3>
+                                <p>Gratulerer – vi vil gjerne ha deg med på laget! Hvis vi sammen ser at dette er en god match, sender vi deg et tilbud. Når du takker ja, starter vi onboarding-prosessen og sørger for at du får en god og sømløs start hos oss.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 
 
-	
-	
-	
-<!--	
+
+
+
+    <!--	
         <h2 class="container pt-5 mt-5 m-my-0 m-px-4 m-pb-0">Job <span class="title-alt">categories</span></h2>
 	<div id="teamCarousel" class="carousel slide" data-interval="false">
     <div class="carousel-inner">
@@ -382,115 +432,106 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-<section class="benefits-section my-5 pb-4 m-py-0 m-mt-0">
+    <section class="benefits-section my-5 pb-4 m-py-0 m-mt-0">
         <h2 class="container pt-5 m-pt-4 m-px-4 m-pb-2">Noe av det <span class="title-alt">vi tilbyr</span></h2>
-    <div class="container">
-        <div class="row">
-            <!-- Benefit 1 -->
-            <div class="col-md-3 col-sm-4 benefit-item">
-                <div class="benefit-icon">
-				<i class="fa-regular fa-stairs"></i>
+        <div class="container">
+            <div class="row">
+                <!-- Benefit 1 -->
+                <div class="col-md-3 col-sm-4 benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fa-regular fa-stairs"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <strong>💜 Faglig utvikling</strong>
+                        <p>Vi tror på læring og utvikling! Hos oss blir du en del av et sterkt fagmiljø innen mat og drikke, med fokus på å styrke din kompetanse og karriere.</p>
+                    </div>
                 </div>
-    <div class="benefit-content">
-                <strong>Faglig utvikling</strong>
-                <p>Ett sterkt fagmiljø innen mat og drikke med fokus på din faglige utvikling.</p>
-            </div>
-            </div>
-            <!-- Benefit 2 -->
-            <div class="col-md-3 col-sm-4 benefit-item">
-                <div class="benefit-icon">
-                    <i class="fa-regular fa-wallet"></i>
+                <!-- Benefit 2 -->
+                <div class="col-md-3 col-sm-4 benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fa-regular fa-wallet"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <strong>💜 Gode lønnsbetingelser</strong>
+                        <p>Vi verdsetter våre ansatte og tilbyr konkurransedyktige og rettferdige lønnsbetingelser. Vi følger <a href="https://www.fellesforbundet.no/globalassets/lonn-og-tariffsaker/tariffavtaler/overenskomster-2024-2026/36501-riksavtalen-hele-2024-2026.pdf">riksavtalen</a> for å sikre trygge og forutsigbare arbeidsforhold</p>
+                    </div>
                 </div>
-    <div class="benefit-content">
-                <strong>Gode lønnsbetingelser</strong>
-                <p>Gode og rettferdige lønnsbetingelser, vi følger <a href="https://www.fellesforbundet.no/globalassets/lonn-og-tariffsaker/tariffoppgjoret-2024/overenskomstene-tariff-2024/riks2024/nye-satser-1.-april-2024.pdf">riksavtalen</a></p>
-            </div>
-            </div>
-            <!-- Benefit 3 -->
-            <div class="col-md-3 col-sm-4 benefit-item">
-                <div class="benefit-icon">
-                    <i class="fa-regular fa-earth-americas"></i>
+                <!-- Benefit 3 -->
+                <div class="col-md-3 col-sm-4 benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fa-regular fa-earth-americas"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <strong>💜 Internasjonalt miljø</strong>
+                        <p>Bli en del av en spennende og dynamisk arbeidsplass med et internasjonalt preg! Hos oss jobber du i et miljø preget av mangfold og samarbeid på tvers av avdelinger.</p>
+                    </div>
                 </div>
-    <div class="benefit-content">
-                <strong>Internasjonalt miljø</strong>
-                <p>Spennende jobb i ett internasjonalt miljø.</p>
-            </div>
-            </div>
-            <!-- Benefit 4 -->
-            <div class="col-md-3 col-sm-4 benefit-item">
-                <div class="benefit-icon">
-                    <i class="fa-regular fa-people-group"></i>
+                <!-- Benefit 4 -->
+                <div class="col-md-3 col-sm-4 benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fa-regular fa-people-group"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <strong>💜 Fantastiske kollegaer</strong>
+                        <p>Hos Avolta er vi mer enn et team – vi er en familie! Du blir en del av et inkluderende og støttende arbeidsmiljø, hvor samhold og godt samarbeid står i sentrum.</p>
+                    </div>
                 </div>
-    <div class="benefit-content">
-                <strong>Gode kollegaer</strong>
-                <p>Gode kollegaer.</p>
-            </div>
-            </div>
-            <!-- Benefit 5 -->
-            <div class="col-md-3 col-sm-4 benefit-item">
-                <div class="benefit-icon">
-                   <i class="fa-regular fa-shield-check"></i>
+                <!-- Benefit 5 -->
+                <div class="col-md-3 col-sm-4 benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fa-regular fa-shield-check"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <strong>💜 Gode ansattordninger</strong>
+                        <p>Vi tar vare på våre ansatte! Du får blant annet 70 % rabatt på mat i våre restauranter når du er på jobb, slik at du kan nyte gode måltider til en rimelig pris.</p>
+                    </div>
                 </div>
-    <div class="benefit-content">
-                <strong>Gode ansattordninger</strong>
-                <p>Gode ansattordninger, 70% på mat i alle våre restauranter når du er på jobb.</p>
-            </div>
-            </div>
-            <!-- Benefit 6 -->
-            <div class="col-md-3 col-sm-4 benefit-item">
-                <div class="benefit-icon">
-                    	<i class="fa-regular fa-badge-percent"></i>
+                <!-- Benefit 6 -->
+                <div class="col-md-3 col-sm-4 benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fa-regular fa-badge-percent"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <strong>💜 Eksklusive rabatter</strong>
+                        <p>Som en del av Avolta får du tilgang til en rekke fordeler, inkludert rabatter hos våre samarbeidspartnere på flyplassen – med blant annet redusert pris på Flytoget og parkering.</p>
+                    </div>
                 </div>
-    <div class="benefit-content">
-                <strong>Rabatter</strong>
-                <p>Ditt id-kort gir deg rabatter hos våre samarbeidspartnere på flyplassen, med bland annet rabatt på Flytoget og parkering.</p>
             </div>
+        </div>
+    </section>
+
+
+    <div class="mt-5">
+        <div id="mapid" style="height: 500px; overflow: hidden;"></div>
+    </div>
+
+
+    <div class="feature-section pt-3 pb-5" id="jobs-anchor" style="background-color: #eeeef2;">
+        <div class="container mt-3 mb-0 m-mb-0">
+            <h2 class="my-5 m-px-2 m-mt-0">Ledige <span style="font-weight: 800">stillinger</span></h2>
+            <div class="row my-3 jobs-filter">
+                <div class="col-md-3 mb-3">
+                    <label for="locationFilter">Sted</label>
+                    <select id="locationFilter" class="form-control">
+                        <option value="All">Alle steder</option>
+                    </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="jobTypeFilter">Stillingstype</label>
+                    <select id="jobTypeFilter" class="form-control">
+                        <option value="All">Alle stillingstyper</option>
+                    </select>
+                </div>
+            </div>
+            <div id="jobList" class="row"></div>
+            <div class="text-center mt-2">
+                <button id="loadMore" class="btn btn-primary">Last flere</button>
             </div>
         </div>
     </div>
-</section>
 
 
-	
-
-	
-
-
-
-
-
-	
-<div class=" mt-5">
-    <div id="mapid" style="height: 500px; overflow: hidden;"></div>
-</div>
-
-	
-<div class="feature-section pt-3 pb-5" id="jobs-anchor" style="background-color: #eeeef2;">
-<div class="container mt-3 mb-0 m-mb-0">
-    <h2 class="my-5 m-px-2 m-mt-0">Ledige <span style="font-weight: 800">stillinger</span></h2>
-    <div class="row my-3 jobs-filter">
-        <div class="col-md-3 mb-3">
-            <label for="locationFilter">Sted</label>
-            <select id="locationFilter" class="form-control">
-                <option value="All">Alle steder</option>
-            </select>
-        </div>
-        <div class="col-md-3 mb-3">
-            <label for="jobTypeFilter">Stillingstype</label>
-            <select id="jobTypeFilter" class="form-control">
-                <option value="All">Alle stillingstyper</option>
-            </select>
-        </div>
-    </div>
-    <div id="jobList" class="row"></div>
-	<div class="text-center mt-2">
-    <button id="loadMore" class="btn btn-primary">Last flere</button>
-	</div>
-</div>
-</div>
-
-
-<!-- DISABLED DUE TO POSITION UNPUBLISHED
+    <!-- DISABLED DUE TO POSITION UNPUBLISHED
 <div class="feature-section mb-5 pb-5" id="jobs-anchor" style="background-color: #eeeef2;">
 <div class="container mb-5 m-mb-0">
     <h3 class="mb-5 m-px-2 m-mb-4">Join our <span style="font-weight: 800">talent pool</span></h3>
@@ -515,211 +556,204 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
 </div>
 </div>
- -->	
+ -->
 
 
 
+    <div class="container my-5 py-5 m-my-0" style="text-align: center;">
+        <div class="agent-wrapper">
+            <h2>Fant du ikke en stilling som passer for deg?</h2>
+            <div class="mt-4 mb-2">
+                <p>Registrer deg for jobbvarsler, så gir vi deg beskjed når en relevant stilling blir ledig.
+                </p>
+            </div>
+        </div>
 
 
+        <button id="agent" class="mt-3 btn btn-primary" style="font-weight:800">🤍 Registrer deg her</button>
 
 
+        <div class="modal fade modal-fullscreen-90w" id="exampleModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" id="closeModalButton" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe id="modalIframe" src="" style="border: none; width: 100%; height: 450px;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                document.getElementById('agent').addEventListener('click', function () {
+                    var iframeUrl = "https://web103.reachmee.com/ext/I022/2136/subscribe?site=6&lang=NO&validator=0d32864875e40299a57c8698c2f99c4b";
+                    document.getElementById('modalIframe').src = iframeUrl;
+                    $('#exampleModal').modal('show');
+                });
+            });
+        </script>
 
-
-<div class="container my-5 py-5 m-my-0" style="text-align: center;">
-    <div class="agent-wrapper">
-        <h2>Fant du ikke stillingen for deg?</h2>
-        <div class="mt-4 mb-2">
-		<p>Abonner på stillinger, så får du en e-post når det er en ledig stilling som passer dine preferanser.</p>
-		</div>
     </div>
- 
-
-    <button id="agent" class="mt-3 btn btn-primary" style="font-weight:800">Registrer deg</button>
-
-
-<div class="modal fade modal-fullscreen-90w" id="exampleModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" id="closeModalButton" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <iframe id="modalIframe" src="" style="border: none; width: 100%; height: 450px;"></iframe>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('agent').addEventListener('click', function() {
-        var iframeUrl = "https://web103.reachmee.com/ext/I022/2136/subscribe?site=6&lang=NO&validator=0d32864875e40299a57c8698c2f99c4b";
-        document.getElementById('modalIframe').src = iframeUrl;
-        $('#exampleModal').modal('show');
-    });
-});
-</script>
-
-</div>
 
 
 
-
-
-<section class="text-center bg-dark text-light py-5">
-    <div class="container">
-        <img src="./files/avolta-logo.svg" alt="Talentech Logo" class="mb-3" style="max-width: 180px;">
-                <div class="mt-3 mb-4" style="max-width: 600px; margin: auto;">
-		 <p style="font-size: 1.25rem;">Våre ansatte er viktige ambassadører for selskapets verdier og vi ser etter personer som motiveres av å skape gode gjesteopplevelser for gjestene våre, yte god service og følge rutiner.</p>
-		</div>
-        <!--<div class="">
+    <section class="text-center bg-dark text-light py-5">
+        <div class="container">
+            <img src="./files/avolta-logo.svg" alt="Talentech Logo" class="mb-3" style="max-width: 180px;">
+            <div class="mt-3 mb-4" style="max-width: 600px; margin: auto;">
+                <h4 class="mb-4" style="font-size: 1.25rem;">💜 Avolta – med deg på reisen, uansett hvor du skal</h4>
+                <p style="font-size: 1.25rem;">
+                    Enten du er på farten, tar en pause eller planlegger din neste destinasjon, er vi her for deg. Med et bredt utvalg innen travel retail, mat og drikke, hybrid- og convenience-konsepter, finner du oss på flyplasser, motorveier, cruise, jernbaner og mer – i over 1 000 lokasjoner i 70 land.
+                </p>
+            </div>
+            <!--<div class="">
             <a href="https://www.facebook.com/talentechnorway"><img src="./files/TT-f.svg" alt="Icon 1" class="mx-2" style="width: 30px; height: 30px;"></a>
             <a href="https://www.linkedin.com/company/talentech-norway"><img src="./files/TT-l.svg" alt="Icon 2" class="mx-2" style="width: 30px; height: 30px;"></a>
             <a href="https://talentech.com/no/kontakt"><img src="./files/TT-e.svg" alt="Icon 4" class="mx-2" style="width: 30px; height: 30px;"></a>
         </div>-->
-    </div>
-</section>
-
-
-
-
-	
-<div class="container my-0 py-1 m-py-2">
-    <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center">
-        <div>
-            <span class="mr-1">Levert av</span>
-            <a style="text-decoration:none; color: inherit;" href="https://talentech.com"><img src="./files/TT-fav.svg" alt="Talentech Logo" style="width: 20px; vertical-align: middle; position: relative; bottom: 1px;"></a>
-            <a style="text-decoration:none; color: inherit;" href="https://talentech.com"><span class="ml-1" style="">Talentech</span></a>
         </div>
+    </section>
 
-        <div class="share-container mt-2 mt-sm-0 ml-sm-auto">
-            <span class="d-block d-sm-inline mb-1">
-                Del på sosiale medier: 
-                <a href="#" id="facebook-share-link" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/facebook.svg" alt="Share on Facebook" width="16" height="16">
-                </a>
-                <a href="#" id="twitter-share-link" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/x.svg" alt="Share on X" width="16" height="16">
-                </a>
-                <a href="#" id="linkedin-share-link" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/linkedin.svg" alt="Share on LinkedIn" width="16" height="16">
-                </a>
-            </span>
+
+
+    <div class="container my-0 py-1 m-py-2">
+        <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center">
+            <div>
+                <span class="mr-1">Levert av</span>
+                <a style="text-decoration:none; color: inherit;" href="https://talentech.com"><img src="./files/TT-fav.svg" alt="Talentech Logo" style="width: 20px; vertical-align: middle; position: relative; bottom: 1px;"></a>
+                <a style="text-decoration:none; color: inherit;" href="https://talentech.com"><span class="ml-1" style="">Talentech</span></a>
+            </div>
+
+            <div class="share-container mt-2 mt-sm-0 ml-sm-auto">
+                <span class="d-block d-sm-inline mb-1">
+                    Del på sosiale medier:
+                    <a href="#" id="facebook-share-link" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/facebook.svg" alt="Share on Facebook" width="16" height="16">
+                    </a>
+                    <a href="#" id="twitter-share-link" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/x.svg" alt="Share on X" width="16" height="16">
+                    </a>
+                    <a href="#" id="linkedin-share-link" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/linkedin.svg" alt="Share on LinkedIn" width="16" height="16">
+                    </a>
+                </span>
+            </div>
         </div>
     </div>
-</div>	
-
-
-	
-<script>
-    // Function to dynamically set the URLs for social media sharing
-    function setSocialMediaShareUrls() {
-        var facebookShareLink = document.getElementById('facebook-share-link');
-        var twitterShareLink = document.getElementById('twitter-share-link');
-        var linkedinShareLink = document.getElementById('linkedin-share-link');
-        var currentUrl = encodeURIComponent(window.location.href);
-
-        facebookShareLink.href = 'https://www.facebook.com/sharer/sharer.php?u=' + currentUrl;
-        twitterShareLink.href = 'https://twitter.com/intent/tweet?url=' + currentUrl;
-        linkedinShareLink.href = 'https://www.linkedin.com/shareArticle?url=' + currentUrl;
-    }
-
-    // Call the function to set social media share URLs
-    setSocialMediaShareUrls();
-</script>
 
 
 
+    <script>
+        // Function to dynamically set the URLs for social media sharing
+        function setSocialMediaShareUrls() {
+            var facebookShareLink = document.getElementById('facebook-share-link');
+            var twitterShareLink = document.getElementById('twitter-share-link');
+            var linkedinShareLink = document.getElementById('linkedin-share-link');
+            var currentUrl = encodeURIComponent(window.location.href);
 
-	
-	
-<script>
-$(document).ready(function () {
-    let jobs = []; // Array to store all jobs
-    let displayedJobs = 0; // Counter for the number of jobs currently displayed
-    const jobsToShowDesktop = 12; // Number of jobs to show on desktop before "Load More"
-    const jobsToShowMobile = 6; // Number of jobs to show on mobile before "Load More"
-    let jobsToShow = window.innerWidth > 768 ? jobsToShowDesktop : jobsToShowMobile;
-
-    // Adjust jobsToShow based on window resize
-    $(window).resize(function() {
-        jobsToShow = window.innerWidth > 768 ? jobsToShowDesktop : jobsToShowMobile;
-        displayedJobs = Math.min(jobsToShow, jobs.length); // Adjust displayedJobs based on new jobsToShow
-        displayJobs(); // Redisplay jobs based on new size
-        updateLoadMoreVisibility(); // Update button visibility after resize
-    });
-
-    // Function to populate filter dropdowns based on jobs
-    function populateFilters() {
-        const locationSet = new Set();
-        const jobTypeSet = new Set();
-
-        jobs.forEach(job => {
-            if (job.areas && job.areas.length > 0) {
-                job.areas.forEach(area => locationSet.add(area.name));
-            } else if (job.country) {
-                locationSet.add(job.country);
-            }
-
-            if (job.occupation_area) {
-                jobTypeSet.add(job.occupation_area);
-            }
-        });
-
-        // Populate location filter
-        $('#locationFilter').html('<option value="All">Alla platser</option>');
-        locationSet.forEach(location => {
-            $('#locationFilter').append(`<option value="${location}">${location}</option>`);
-        });
-
-        // Populate job type filter
-        $('#jobTypeFilter').html('<option value="All">Alla typer av jobb</option>');
-        jobTypeSet.forEach(type => {
-            $('#jobTypeFilter').append(`<option value="${type}">${type}</option>`);
-        });
-    }
-
-    // Function to display jobs based on filters
-    function displayJobs() {
-        $('#jobList').empty(); // Clear current jobs
-
-        let filteredJobs = jobs.slice(0, displayedJobs); // Get the subset of jobs to be displayed
-
-        const selectedCountry = $('#locationFilter').val();
-        const selectedJobType = $('#jobTypeFilter').val();
-
-        filteredJobs = filteredJobs.filter(job => {
-            const jobLocations = job.areas?.map(area => area.name) || [job.country];
-            return (selectedCountry === 'All' || jobLocations.includes(selectedCountry)) &&
-                   (selectedJobType === 'All' || job.occupation_area === selectedJobType);
-        });
-
-        filteredJobs.forEach(job => {
-            $('#jobList').append(buildJobCard(job));
-        });
-
-        updateLoadMoreVisibility();
-    }
-
-
-    // Function to build HTML for a job card
-    function buildJobCard(job) {
-        const jobDetailUrl = `job-details.html?jobId=${job.ad_id}`;
-        const organizationUnitName = job.organizations && job.organizations.length > 1 
-            ? job.organizations[1].nameorgunit 
-            : job.organizations?.[0]?.nameorgunit || 'Not specified';
-        const category = job.occupation_area || 'Avolta';
-	    
-        // Determine the display location based on the areas and country
-        let displayLocation = job.country || '';
-        if (job.areas && job.areas.length > 0) {
-            displayLocation = job.areas[job.areas.length - 1].name; // Use the last area
+            facebookShareLink.href = 'https://www.facebook.com/sharer/sharer.php?u=' + currentUrl;
+            twitterShareLink.href = 'https://twitter.com/intent/tweet?url=' + currentUrl;
+            linkedinShareLink.href = 'https://www.linkedin.com/shareArticle?url=' + currentUrl;
         }
 
-        return `
+        // Call the function to set social media share URLs
+        setSocialMediaShareUrls();
+    </script>
+
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            let jobs = []; // Array to store all jobs
+            let displayedJobs = 0; // Counter for the number of jobs currently displayed
+            const jobsToShowDesktop = 12; // Number of jobs to show on desktop before "Load More"
+            const jobsToShowMobile = 6; // Number of jobs to show on mobile before "Load More"
+            let jobsToShow = window.innerWidth > 768 ? jobsToShowDesktop : jobsToShowMobile;
+
+            // Adjust jobsToShow based on window resize
+            $(window).resize(function () {
+                jobsToShow = window.innerWidth > 768 ? jobsToShowDesktop : jobsToShowMobile;
+                displayedJobs = Math.min(jobsToShow, jobs.length); // Adjust displayedJobs based on new jobsToShow
+                displayJobs(); // Redisplay jobs based on new size
+                updateLoadMoreVisibility(); // Update button visibility after resize
+            });
+
+            // Function to populate filter dropdowns based on jobs
+            function populateFilters() {
+                const locationSet = new Set();
+                const jobTypeSet = new Set();
+
+                jobs.forEach(job => {
+                    if (job.areas && job.areas.length > 0) {
+                        job.areas.forEach(area => locationSet.add(area.name));
+                    } else if (job.country) {
+                        locationSet.add(job.country);
+                    }
+
+                    if (job.occupation_area) {
+                        jobTypeSet.add(job.occupation_area);
+                    }
+                });
+
+                // Populate location filter
+                $('#locationFilter').html('<option value="All">Alla platser</option>');
+                locationSet.forEach(location => {
+                    $('#locationFilter').append(`<option value="${location}">${location}</option>`);
+                });
+
+                // Populate job type filter
+                $('#jobTypeFilter').html('<option value="All">Alla typer av jobb</option>');
+                jobTypeSet.forEach(type => {
+                    $('#jobTypeFilter').append(`<option value="${type}">${type}</option>`);
+                });
+            }
+
+            // Function to display jobs based on filters
+            function displayJobs() {
+                $('#jobList').empty(); // Clear current jobs
+
+                let filteredJobs = jobs.slice(0, displayedJobs); // Get the subset of jobs to be displayed
+
+                const selectedCountry = $('#locationFilter').val();
+                const selectedJobType = $('#jobTypeFilter').val();
+
+                filteredJobs = filteredJobs.filter(job => {
+                    const jobLocations = job.areas?.map(area => area.name) || [job.country];
+                    return (selectedCountry === 'All' || jobLocations.includes(selectedCountry)) &&
+                        (selectedJobType === 'All' || job.occupation_area === selectedJobType);
+                });
+
+                filteredJobs.forEach(job => {
+                    $('#jobList').append(buildJobCard(job));
+                });
+
+                updateLoadMoreVisibility();
+            }
+
+
+            // Function to build HTML for a job card
+            function buildJobCard(job) {
+                const jobDetailUrl = `job-details.html?jobId=${job.ad_id}`;
+                const organizationUnitName = job.organizations && job.organizations.length > 1
+                    ? job.organizations[1].nameorgunit
+                    : job.organizations?.[0]?.nameorgunit || 'Not specified';
+                const category = job.occupation_area || 'Avolta';
+
+                // Determine the display location based on the areas and country
+                let displayLocation = job.country || '';
+                if (job.areas && job.areas.length > 0) {
+                    displayLocation = job.areas[job.areas.length - 1].name; // Use the last area
+                }
+
+                return `
         <div class="col-12 col-md-6 col-lg-6 mb-4">
             <a href="${jobDetailUrl}" class="" style="text-decoration: none; color: inherit;" aria-label="Job details">
                 <div class="card h-100">
@@ -734,144 +768,144 @@ $(document).ready(function () {
                 </div>
             </a>
         </div>`;
-    }
+            }
 
-    // Function to update the visibility of the "Load More" button
-    function updateLoadMoreVisibility() {
-        if (displayedJobs >= jobs.length) {
-            $('#loadMore').hide();
-        } else {
-            $('#loadMore').show();
-        }
-    }
-
-    // Function to fetch jobs from the API
-    function fetchJobs() {
-        fetch('https://api.talentech.io/reachmee/feed/avolta')
-            .then(response => response.json())
-            .then(data => {
-                jobs = data; // Store fetched jobs
-                displayedJobs = Math.min(jobsToShow, jobs.length); // Initialize displayedJobs
-                populateFilters(); // Fill dropdowns with options
-                displayJobs(); // Show initial jobs
-            })
-            .catch(error => {
-                console.error('Error fetching jobs:', error);
-            });
-    }
-
-    // Load jobs when page is ready
-    fetchJobs();
-
-    // Event listeners for "Load More" button and filter dropdowns
-    $('#loadMore').click(function() {
-        displayedJobs += jobsToShow;
-        displayJobs();
-        updateLoadMoreVisibility();
-    });
-
-    $('#locationFilter').change(function() {
-        displayedJobs = jobsToShow;
-        displayJobs();
-        updateLoadMoreVisibility();
-    });
-
-    $('#jobTypeFilter').change(function() {
-        displayedJobs = jobsToShow;
-        displayJobs();
-        updateLoadMoreVisibility();
-    });
-});
-</script>
-
-
-
-
-
-
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<script>
-    async function fetchFeed() {
-        const response = await fetch('https://api.talentech.io/reachmee/feed/avolta');
-        return await response.json();
-    }
-
-    async function geocodeArea(areaName) {
-        const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(areaName)}&format=json&limit=1`);
-        const data = await response.json();
-        return data.length > 0 ? { lat: parseFloat(data[0].lat), lon: parseFloat(data[0].lon) } : null;
-    }
-
-    async function initMap() {
-        const feed = await fetchFeed();
-        const markers = {};
-
-        const map = L.map('mapid', {
-            attributionControl: false,
-            scrollWheelZoom: false
-        }).setView([64.70397159508356, 13.109082259358335], 4);
-	    
-        L.tileLayer('https://api.mapbox.com/styles/v1/inequi/cksdgny7b0vrk17ocyud79yck/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiaW5lcXVpIiwiYSI6ImNsdTQ0c2FybTFiZG4ya3FzZjQxOW91ejUifQ.Z_vyEld041G0LshX2Mdtpw', {
-            maxZoom: 19,
-            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-            id: 'mapbox/streets-v11',
-            tileSize: 512,
-            zoomOffset: -1,
-            accessToken: 'yourMapboxAccessToken'
-        }).addTo(map);
-
-        var customIcon = L.icon({
-            iconUrl: './files/location-dot-solid.svg',
-            iconSize: [34, 34],
-            iconAnchor: [15, 30],
-            popupAnchor: [1, -15]
-        });
-
-        for (const item of feed) {
-            let coords = null;
-            let location = 'Norge';
-
-            // Check if the job has areas defined.
-            if (item.areas && item.areas.length > 0) {
-                for (const area of item.areas) {
-                    // Skip if area.name is missing or empty.
-                    if (!area.name || area.name.trim() === "") continue;
-                    
-                    coords = await geocodeArea(area.name);
-                    if (coords) {
-                        location = area.name;
-                        break;
-                    }
+            // Function to update the visibility of the "Load More" button
+            function updateLoadMoreVisibility() {
+                if (displayedJobs >= jobs.length) {
+                    $('#loadMore').hide();
+                } else {
+                    $('#loadMore').show();
                 }
             }
 
-            // If no valid coordinates were found, use the default location.
-            if (!coords) {
-                coords = { lat: 60.201246726231126, lon: 11.094145105955588 };
+            // Function to fetch jobs from the API
+            function fetchJobs() {
+                fetch('https://api.talentech.io/reachmee/feed/avolta')
+                    .then(response => response.json())
+                    .then(data => {
+                        jobs = data; // Store fetched jobs
+                        displayedJobs = Math.min(jobsToShow, jobs.length); // Initialize displayedJobs
+                        populateFilters(); // Fill dropdowns with options
+                        displayJobs(); // Show initial jobs
+                    })
+                    .catch(error => {
+                        console.error('Error fetching jobs:', error);
+                    });
             }
 
-            const key = `${coords.lat},${coords.lon}`;
+            // Load jobs when page is ready
+            fetchJobs();
 
-            if (!markers[key]) {
-                markers[key] = { marker: L.marker([coords.lat, coords.lon], { icon: customIcon }).addTo(map), jobs: [], jobIndex: 0 };
-            }
-
-            markers[key].jobs.push({
-                title: item.title,
-                location: location,
-                url: `./job-details.html?jobId=${item.url.split('rmjob=')[1]}`
+            // Event listeners for "Load More" button and filter dropdowns
+            $('#loadMore').click(function () {
+                displayedJobs += jobsToShow;
+                displayJobs();
+                updateLoadMoreVisibility();
             });
-        }
 
-        Object.values(markers).forEach(markerObj => {
-            markerObj.marker.on('click', () => {
-                updatePopup(markerObj);
+            $('#locationFilter').change(function () {
+                displayedJobs = jobsToShow;
+                displayJobs();
+                updateLoadMoreVisibility();
+            });
+
+            $('#jobTypeFilter').change(function () {
+                displayedJobs = jobsToShow;
+                displayJobs();
+                updateLoadMoreVisibility();
             });
         });
+    </script>
 
-        function updatePopup(markerObj) {
-            const job = markerObj.jobs[markerObj.jobIndex];
-            let popupContent = `
+
+
+
+
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        async function fetchFeed() {
+            const response = await fetch('https://api.talentech.io/reachmee/feed/avolta');
+            return await response.json();
+        }
+
+        async function geocodeArea(areaName) {
+            const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(areaName)}&format=json&limit=1`);
+            const data = await response.json();
+            return data.length > 0 ? { lat: parseFloat(data[0].lat), lon: parseFloat(data[0].lon) } : null;
+        }
+
+        async function initMap() {
+            const feed = await fetchFeed();
+            const markers = {};
+
+            const map = L.map('mapid', {
+                attributionControl: false,
+                scrollWheelZoom: false
+            }).setView([64.70397159508356, 13.109082259358335], 4);
+
+            L.tileLayer('https://api.mapbox.com/styles/v1/inequi/cksdgny7b0vrk17ocyud79yck/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiaW5lcXVpIiwiYSI6ImNsdTQ0c2FybTFiZG4ya3FzZjQxOW91ejUifQ.Z_vyEld041G0LshX2Mdtpw', {
+                maxZoom: 19,
+                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                id: 'mapbox/streets-v11',
+                tileSize: 512,
+                zoomOffset: -1,
+                accessToken: 'yourMapboxAccessToken'
+            }).addTo(map);
+
+            var customIcon = L.icon({
+                iconUrl: './files/location-dot-solid.svg',
+                iconSize: [34, 34],
+                iconAnchor: [15, 30],
+                popupAnchor: [1, -15]
+            });
+
+            for (const item of feed) {
+                let coords = null;
+                let location = 'Norge';
+
+                // Check if the job has areas defined.
+                if (item.areas && item.areas.length > 0) {
+                    for (const area of item.areas) {
+                        // Skip if area.name is missing or empty.
+                        if (!area.name || area.name.trim() === "") continue;
+
+                        coords = await geocodeArea(area.name);
+                        if (coords) {
+                            location = area.name;
+                            break;
+                        }
+                    }
+                }
+
+                // If no valid coordinates were found, use the default location.
+                if (!coords) {
+                    coords = { lat: 60.201246726231126, lon: 11.094145105955588 };
+                }
+
+                const key = `${coords.lat},${coords.lon}`;
+
+                if (!markers[key]) {
+                    markers[key] = { marker: L.marker([coords.lat, coords.lon], { icon: customIcon }).addTo(map), jobs: [], jobIndex: 0 };
+                }
+
+                markers[key].jobs.push({
+                    title: item.title,
+                    location: location,
+                    url: `./job-details.html?jobId=${item.url.split('rmjob=')[1]}`
+                });
+            }
+
+            Object.values(markers).forEach(markerObj => {
+                markerObj.marker.on('click', () => {
+                    updatePopup(markerObj);
+                });
+            });
+
+            function updatePopup(markerObj) {
+                const job = markerObj.jobs[markerObj.jobIndex];
+                let popupContent = `
                 <div style="background-color: #000; color: #fff; padding: 20px; border-radius: 12px;">
                     <a href="${job.url}" target="_blank" style="font-size: large; color: #fff; text-decoration: none;">${job.title}</a>
                     <div style="margin-top: 10px;">
@@ -888,41 +922,33 @@ $(document).ready(function () {
                     ` : ''}
                 </div>
             `;
-            markerObj.marker.bindPopup(popupContent).openPopup();
+                markerObj.marker.bindPopup(popupContent).openPopup();
 
-            markerObj.marker.getPopup().on('remove', () => {
-                markerObj.marker.off().on('click', () => {
-                    updatePopup(markerObj);
+                markerObj.marker.getPopup().on('remove', () => {
+                    markerObj.marker.off().on('click', () => {
+                        updatePopup(markerObj);
+                    });
                 });
-            });
+            }
+
+            window.changeJob = function (markerId, direction, e) {
+                e.stopPropagation();
+                const markerObj = Object.values(markers).find(m => m.marker._leaflet_id === markerId);
+                markerObj.jobIndex += direction;
+                if (markerObj.jobIndex >= markerObj.jobs.length) {
+                    markerObj.jobIndex = 0;
+                } else if (markerObj.jobIndex < 0) {
+                    markerObj.jobIndex = markerObj.jobs.length - 1;
+                }
+                updatePopup(markerObj);
+                return false;
+            };
         }
 
-        window.changeJob = function(markerId, direction, e) {
-            e.stopPropagation();
-            const markerObj = Object.values(markers).find(m => m.marker._leaflet_id === markerId);
-            markerObj.jobIndex += direction;
-            if (markerObj.jobIndex >= markerObj.jobs.length) {
-                markerObj.jobIndex = 0;
-            } else if (markerObj.jobIndex < 0) {
-                markerObj.jobIndex = markerObj.jobs.length - 1;
-            }
-            updatePopup(markerObj);
-            return false;
-        };
-    }
-
-    document.addEventListener('DOMContentLoaded', initMap);
-</script>
+        document.addEventListener('DOMContentLoaded', initMap);
+    </script>
 
 
-
-
-
-
-	
-
-	
-	
 </body>
 
 </html>
