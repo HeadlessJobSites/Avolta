@@ -156,9 +156,9 @@
 
 
 
-    <section class="team-section mt-2 py-5 m-my-0" id="meet-the-team" style="background-color: #f5f5f5;">
-        <h2 class="container py-5 mb-3 pb-0 m-py-0 m-px-4">Hvordan er det å jobbe hos <span class="title-alt">oss?</span></h2>
-        <div class="company-info container">
+    <section class="team-section py-5 m-my-0" id="meet-the-team" style="background-color: #f5f5f5;">
+        <h2 class="container py-5 pb-0 m-py-0 m-px-4">Hvordan er det å jobbe hos <span class="title-alt">oss?</span></h2>
+        <div class="company-info-container container">
             <div class="company-info-item">
                 <h4 class="company-info-item-title">💜 Avolta – med deg på reisen, uansett hvor du skal!</h4>
                 <p class="company-info-item-text">
@@ -204,7 +204,7 @@
     </section>
 
     <section class="values-section mt-2 py-5 mb-2 m-my-0">
-        <h2 class="container py-5 mb-3 pb-0 m-py-0 m-px-4"><span class="title-alt">Verdier</span></h2>
+        <h2 class="container py-5 pb-0 m-py-0 m-px-4"><span class="title-alt">Verdier</span></h2>
         <div class="container values-container">
             <div class="values-inner">
                 <div class="values-card">
@@ -290,9 +290,9 @@
 
 
     <section class="process-section mb-5 py-5 m-my-0 m-pt-0 m-pb-4" id="recruitment-process" style="background-color: #f5f5f5;">
-        <div class="container pt-5 m-px-4 m-pb-2">
+        <div class="container py-5 pb-0 m-py-0 m-px-4">
             <h2><span class="title-alt">Jobbreisen</span></h2>
-            <p class="pt-4">For å tilby en rettferdig og profesjonell rekrutteringsprosess, behandles alle søker rettferdig, og hver søker gis sammemuligheter til å bli vurdert.<br><br> Utvelgeseskriterinene for å best mulig fylle ledigestillinger er basert på søkerens kompetanse, ferdigheter, leverte resultster og beslutninger tatt uavhengig av rase, hudfarge, religion, kjønn, seksuell legning, alder,kjønnsidentitet eller uttrykk, nasjonal opprinnelse, politisk legning, funksjonshemning eller annen diskriminerende faktor.</span></p>
+            <p class="pt-4"><strong>💜 Vi tror på mangfold og inkludering – fordi ulike perspektiver skaper en sterkere organisasjon og bedre opplevelser for våre gjester.</strong> <br><br>For å tilby en rettferdig og profesjonell rekrutteringsprosess, behandles alle søker rettferdig, og hver søker gis sammemuligheter til å bli vurdert. Hos oss i Avolta handler rekruttering om mer enn bare å finne den rette kandidaten – det handler også om at du skal finne ut om vi er rett for deg. Derfor er prosessen vår åpen, inkluderende og bygget på dialog. Vi ønsker å bli kjent med deg, men like viktig er det at du får innsikt i hvem vi er og hva vi står for!</span></p>
         </div>
         <div class="container">
             <div class="row">
@@ -432,7 +432,7 @@
 
 
     <section class="benefits-section my-5 pb-4 m-py-0 m-mt-0">
-        <h2 class="container pt-5 m-pt-4 m-px-4 m-pb-2">Noe av det <span class="title-alt">vi tilbyr</span></h2>
+        <h2 class="container py-5 pb-0 m-py-0 m-px-4">Noe av det <span class="title-alt">vi tilbyr</span></h2>
         <div class="container">
             <div class="row">
                 <!-- Benefit 1 -->
@@ -453,6 +453,9 @@
                     <div class="benefit-content">
                         <strong>💜 Gode lønnsbetingelser</strong>
                         <p>Vi verdsetter våre ansatte og tilbyr konkurransedyktige og rettferdige lønnsbetingelser. Vi følger <a href="https://www.fellesforbundet.no/globalassets/lonn-og-tariffsaker/tariffavtaler/overenskomster-2024-2026/36501-riksavtalen-hele-2024-2026.pdf">riksavtalen</a> for å sikre trygge og forutsigbare arbeidsforhold</p>
+                        <br><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#testimonialsModal">
+                            Les mer
+                        </button>
                     </div>
                 </div>
                 <!-- Benefit 3 -->
@@ -498,6 +501,11 @@
             </div>
         </div>
     </section>
+
+
+
+
+
 
 
     <div class="mt-5">
@@ -946,6 +954,46 @@
 
         document.addEventListener('DOMContentLoaded', initMap);
     </script>
+
+    <!-- SLIDE UP MODAL FOR TESTIMONIALS -->
+    <div class="modal fade testimonials-modal" id="testimonialsModal" tabindex="-1" aria-labelledby="testimonialsModalLabel" aria-hidden="true">
+        <div class="modal-dialog testimonials-modal-dialog">
+            <div class="modal-content testimonials-modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="testimonials-modal-body">
+                    <div class="container mt-4 pt-5 m-mt-2">
+                        <div style="text-align: center;">
+                            <div class="testimonials-modal-text">
+                                <strong>💜 Gode lønnsbetingelser</strong><br>
+                                Vi verdsetter våre ansatte og tilbyr konkurransedyktige og rettferdige lønnsbetingelser. Vi følger riksavtalen for å sikre trygge og forutsigbare arbeidsforhold
+                            </div>
+                            <iframe src="./files/36501-riksavtalen-hele-2024-2026.pdf" style="width:100%; height:500px;" frameborder="0" loading="lazy" title="PDF-file">
+                                This browser does not support PDFs. Please download the PDF to view it:
+                                <a href="https://www.fellesforbundet.no/globalassets/lonn-og-tariffsaker/tariffavtaler/overenskomster-2024-2026/36501-riksavtalen-hele-2024-2026.pdf">Download PDF</a>
+                            </iframe>
+                            <br>
+                            <button type="button" class="btn btn-primary my-5" data-dismiss="modal" aria-label="Close">Tilbake til karriereportalen</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- FIXES DOUBLE TAP FOR 'LES MER' TESTIMONIAL BUTTON -->
+        <script>
+            $(document).ready(function () {
+                // Handling touchstart separately to avoid the mobile double-tap issue
+                $('.btn[data-target="#testimonialsModal"]').on('touchstart', function (e) {
+                    e.preventDefault(); // Prevents the default click behavior on touch
+                    $('#testimonialsModal').modal('show');
+                });
+            });
+        </script>
 
 
 </body>

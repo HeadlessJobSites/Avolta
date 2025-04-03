@@ -719,6 +719,10 @@ h2 {
 	font-size: 2rem;
 }
 
+.company-info-container {
+	padding-block: 0;
+}
+
 .company-info-item-title {
 	font-size: 1rem;
 }
@@ -882,9 +886,83 @@ font-size: 1.8rem;
 }
 }
 
+.close-btn {
+	z-index: 10000;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	cursor: pointer;
+	padding: 2px 5px;
+	background-color: transparent;
+	background: transparent;
+	border: none;
+	border-radius: 2px;
+	color: #26253e !important;
+}
+.close-btn i{
+	color: #ffcfcd !important;
+	font-size: 20px;
+}
+.close {
+    font-size: 2.5rem;
+    opacity: .6;
+}
+.gs-m {
+	display: none;
+}
 
 
+.testimonials-modal-dialog {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0; 
+	height: 85vh;
+	transform: translateY(100%);
+	transition: transform 0.3s ease-out;
+}
+.testimonials-modal.fade.show .testimonials-modal-dialog {
+			transform: translate(0, 0);
+ }
+.testimonials-modal .modal-dialog {
+	margin: 0vh auto;
+}
+.testimonials-modal-content {
+	border-radius: 0.3rem 0.3rem 0 0; 
+	height: 100%; 
+	display: flex;
+	flex-direction: column; 
+}
+.testimonials-modal-body {
+	overflow-y: auto; /* Allows scrolling */
+	flex-grow: 1; /* Takes up all available space not used by the header */
+}
+.testimonials-modal-dialog .modal-header {
+	position: absolute;
+	height: 80px;
+	z-index: 222;
+	background: rgb(255, 255, 255);
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 100%);
+}
+.testimonials-modal-dialog .background-image {
+flex-grow: 1;
+}
+.testimonials-modal-dialog .testimonial-height {
+min-height: 540px;
+}
 
+.testimonials-modal-text {
+	text-align: left;
+	margin-block-end: 2rem;
+	max-width: 620px;
+	margin-inline: auto;
+}
+
+@media (max-width: 768px) {
+	.testimonials-modal-dialog {
+			height: 100% !important;
+	}
+}
 
 .modal-fullscreen-90w {
   padding-right: 0 !important;
