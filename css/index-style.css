@@ -957,11 +957,7 @@ min-height: 540px;
 	margin-inline: auto;
 }
 
-@media (max-width: 768px) {
-	.testimonials-modal-dialog {
-			height: 100% !important;
-	}
-}
+
 
 .modal-fullscreen-90w {
   padding-right: 0 !important;
@@ -1032,7 +1028,14 @@ min-height: 540px;
 .modal-body {
   overflow-y: auto; /* Ensures only the modal body scrolls, not the entire modal */
   padding: 0;
-}	   
+}	
+
+@media (max-width: 768px) {
+	.testimonials-modal-dialog {
+			height: 100% !important;
+	}
+}
+
 .navbar-dark .navbar-nav .active>.nav-link {
     font-weight: 500;
 }
