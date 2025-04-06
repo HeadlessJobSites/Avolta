@@ -727,13 +727,6 @@ h2 {
 	padding: 60px 20px;
 }
 
-@media (max-width: 768px) {
-	.quote-section {
-	
-	padding-inline: 0;
-}
-
-}
 .quote-section .container {
 	max-width: 880px;
 	margin: auto;
