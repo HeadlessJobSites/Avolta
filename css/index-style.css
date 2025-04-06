@@ -726,6 +726,14 @@ h2 {
 	color: #fff;
 	padding: 60px 20px;
 }
+
+@media (max-width: 768px) {
+	.quote-section {
+	
+	padding-inline: 0;
+}
+
+}
 .quote-section .container {
 	max-width: 880px;
 	margin: auto;
@@ -895,7 +903,7 @@ h2 {
 	.process-item {
 		flex: 0 0 50%;
 		max-width: 80%;
-		padding-left: 10px;
+		/* padding-left: 10px; */
 		padding-right: 10px;
 	}
 	.process-section .row {
