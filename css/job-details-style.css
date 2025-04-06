@@ -54,6 +54,13 @@
 	font-style: normal;
 	font-display: swap;
 }
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+p {
+	text-wrap: pretty;
+}
 .hero-section {
 	position: relative;
 	height: 100vh;
@@ -325,6 +332,14 @@ h2 {
 	flex-wrap: wrap;
 	justify-content: center;
 }
+
+
+@media (max-width: 768px) {
+	.benefits-section .row {
+		justify-content: left;
+	}
+}
+
 .benefit-item {
 	display: flex;
 	flex-direction: column;
@@ -340,7 +355,7 @@ h2 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: #eeeef2;
+	background-color: #f5f3ed;
 	border-radius: 10px;
 	padding: 20px;
 	padding-top: 60px;
@@ -350,7 +365,7 @@ h2 {
 .benefit-icon {
 	position: relative;
 	margin-bottom: -50px;
-	background-color: #c6c5d9;
+	background-color: #e5e3de;
 	border-radius: 50%;
 	width: 100px;
 	height: 120px;
@@ -374,7 +389,7 @@ h2 {
 	}
 	.benefit-item {
 		flex: 0 0 80%;
-		margin-right: 20px;
+		/* margin-right: 20px; */
 	}
 	.benefit-content {
 	}
@@ -460,7 +475,7 @@ h2 {
 	.process-item {
 		flex: 0 0 50%;
 		max-width: 80%;
-		padding-left: 10px;
+		/* padding-left: 10px; */
 		padding-right: 10px;
 	}
 	.process-section .row {
@@ -673,11 +688,16 @@ h1 {
 	}
 	.h2-small {
 font-size: 1.8rem;
+
 }
 }
 
 
-
+@media (max-width: 768px) {
+	h2 {
+			font-size: 2rem;
+	}
+}
 
 
 .modal-fullscreen-90w {

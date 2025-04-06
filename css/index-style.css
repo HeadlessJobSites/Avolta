@@ -970,9 +970,8 @@ h2 {
 	font-size: 1rem;
 }
 
-.company-info-item {
+.company-info-item:not(:last-child) {
 	margin-bottom: 2rem;
-	font-size: 1rem;
 }
 
 @media (max-width: 768px) {
