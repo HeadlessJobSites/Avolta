@@ -325,7 +325,7 @@ h2 {
 	font-size: 20px;
 }
 .benefits-section .container {
-	max-width: 1200px;
+	/* max-width: 1200px; */
 }
 .benefits-section .row {
 	display: flex;
@@ -398,7 +398,7 @@ h2 {
 	margin-bottom: 0;
 }
 .process-section .container {
-	max-width: 1200px;
+	/* max-width: 1200px; */
 }
 .process-section .row {
 	display: flex;
@@ -488,7 +488,7 @@ h2 {
 }
 }
 .team-section .container {
-	max-width: 1200px;
+	/* max-width: 1200px; */
 }
 .team-section .row {
 	display: flex;

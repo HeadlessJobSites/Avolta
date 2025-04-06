@@ -474,7 +474,7 @@ border-radius: 0 4px 0 32px;
 	margin-bottom: 2rem !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 	.concepts-item {
 		height: 510px !important;
 	}
