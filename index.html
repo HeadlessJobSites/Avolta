@@ -255,7 +255,7 @@
                 </div>
                 <div class="concepts-item">
                     <div class="concepts-item-image-container">
-                        <img class="concepts-item-image" src="./files/twotigers-cropped.png" alt="Våre Konsepter">
+                        <img class="concepts-item-image" src="./files/twotigers-cropped.PNG" alt="Våre Konsepter">
                     </div>
 
                     <div class="concepts-item-text">
@@ -529,7 +529,7 @@
             <h2><span class="title-alt">JOBBREISEN</span></h2>
         </div>
         <div class="container pt-5 pb-5">
-            <p><strong>💜 Vi tror på mangfold og inkludering – fordi ulike perspektiver skaper en sterkere organisasjon og bedre opplevelser for våre gjester.</strong> <br><br>For å tilby en rettferdig og profesjonell rekrutteringsprosess, behandles alle søker rettferdig, og hver søker gis sammemuligheter til å bli vurdert. Hos oss i Avolta handler rekruttering om mer enn bare å finne den rette kandidaten – det handler også om at du skal finne ut om vi er rett for deg. Derfor er prosessen vår åpen, inkluderende og bygget på dialog. Vi ønsker å bli kjent med deg, men like viktig er det at du får innsikt i hvem vi er og hva vi står for!</span></p>
+            <p><strong>💜 Vi tror på mangfold og inkludering – fordi ulike perspektiver skaper en sterkere organisasjon og bedre opplevelser for våre gjester.</strong> <br><br>Hos oss i Avolta handler rekruttering om mer enn bare å finne den rette kandidaten – det handler også om at du skal finne ut om vi er rett for deg. Derfor er prosessen vår åpen, inkluderende og bygget på dialog. Vi ønsker å bli kjent med deg, men like viktig er det at du får innsikt i hvem vi er og hva vi står for!</p>
         </div>
         <div class="container">
             <div class="row">
@@ -689,7 +689,7 @@
                     </div>
                     <div class="benefit-content">
                         <strong>💜 Gode lønnsbetingelser</strong>
-                        <p>Vi verdsetter våre ansatte og tilbyr konkurransedyktige og rettferdige lønnsbetingelser. Vi følger <a href="https://www.fellesforbundet.no/globalassets/lonn-og-tariffsaker/tariffavtaler/overenskomster-2024-2026/36501-riksavtalen-hele-2024-2026.pdf">riksavtalen</a> for å sikre trygge og forutsigbare arbeidsforhold</p>
+                        <p>Vi verdsetter våre ansatte og tilbyr konkurransedyktige og rettferdige lønnsbetingelser. Vi følger <a href="https://www.fellesforbundet.no/globalassets/lonn-og-tariffsaker/tariffavtaler/overenskomster-2024-2026/36501-riksavtalen-hele-2024-2026.pdf">riksavtalen</a> for å sikre trygge og forutsigbare arbeidsforhold.</p>
                         <br><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#testimonialsModal">
                             Les mer
                         </button>
@@ -752,7 +752,7 @@
 
     <div class="feature-section pt-3 pb-5" id="jobs-anchor" style="background-color: #eeeef2;">
         <div class="container mt-3 mb-0 m-mb-0">
-            <h2 class="my-5 m-px-2 m-mt-0">Ledige <span style="font-weight: 800">stillinger</span></h2>
+            <h2 class="my-5 m-px-2 m-mt-0">Ledige <span style="color:#8f53f0">stillinger</span></h2>
             <div class="row my-3 jobs-filter">
                 <div class="col-md-3 mb-3">
                     <label for="locationFilter">Sted</label>
@@ -1220,26 +1220,27 @@
                 </div>
             </div>
         </div>
+    </div>
 
 
-        <script>
-            const iframe = document.getElementById('pdf-frame');
-            const baseUrl = 'https://docs.google.com/viewer?url=https://www.fellesforbundet.no/globalassets/lonn-og-tariffsaker/tariffavtaler/overenskomster-2024-2026/36501-riksavtalen-hele-2024-2026.pdf&embedded=true';
-            iframe.src = baseUrl + '&t=' + new Date().getTime(); // cache buster
-        </script>
+    <script>
+        const iframe = document.getElementById('pdf-frame');
+        const baseUrl = 'https://docs.google.com/viewer?url=https://www.fellesforbundet.no/globalassets/lonn-og-tariffsaker/tariffavtaler/overenskomster-2024-2026/36501-riksavtalen-hele-2024-2026.pdf&embedded=true';
+        iframe.src = baseUrl + '&t=' + new Date().getTime(); // cache buster
+    </script>
 
 
 
-        <!-- FIXES DOUBLE TAP FOR 'LES MER' TESTIMONIAL BUTTON -->
-        <script>
-            $(document).ready(function () {
-                // Handling touchstart separately to avoid the mobile double-tap issue
-                $('.btn[data-target="#testimonialsModal"]').on('touchstart', function (e) {
-                    e.preventDefault(); // Prevents the default click behavior on touch
-                    $('#testimonialsModal').modal('show');
-                });
+    <!-- FIXES DOUBLE TAP FOR 'LES MER' TESTIMONIAL BUTTON -->
+    <script>
+        $(document).ready(function () {
+            // Handling touchstart separately to avoid the mobile double-tap issue
+            $('.btn[data-target="#testimonialsModal"]').on('touchstart', function (e) {
+                e.preventDefault(); // Prevents the default click behavior on touch
+                $('#testimonialsModal').modal('show');
             });
-        </script>
+        });
+    </script>
 
 
 
