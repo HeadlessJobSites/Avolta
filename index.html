@@ -327,9 +327,12 @@
         $(document).ready(function () {
             $('.concepts-inner').slick({
                 slidesToShow: 3,
+
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 2500,
+                pauseOnHover: true,
+                touchMove: true,
                 arrows: true,
                 dots: true,
                 adaptiveHeight: false,
@@ -337,21 +340,22 @@
                 // nextArrow: '<div class="slick-next"><i class="fa fa-angle-right arrow-next" aria-hidden="true"></i></div>',
                 responsive: [
                     {
-                        breakpoint: 768,
+                        breakpoint: 769,
                         settings: {
-                            slidesToShow: 2
+                            slidesToShow: 2,
+                            arrows: false,
                         }
                     },
                     {
                         breakpoint: 550,
                         settings: {
-                            slidesToShow: 1
+                            slidesToShow: 1,
+                            arrows: false,
                         }
                     }
                 ]
 
             })
-
 
         })
 
@@ -359,7 +363,7 @@
 
     </script>
 
-    <section class="values-section mt-2 py-5 mb-2 m-my-0">
+    <!-- <section class="values-section mt-2 py-5 mb-2 m-my-0">
         <h2 class="container py-5 pb-0 m-py-0 m-px-4"><span class="title-alt">VERDIER</span></h2>
         <div class="container values-container pt-4">
             <div class="values-inner">
@@ -398,10 +402,86 @@
             </div>
 
         </div>
+    </section> -->
+
+    <section class="test-section py-5 mb-2 m-my-0">
+        <h2 class="container py-5 pb-0 m-py-0 m-px-4"><span class="title-alt">VERDIER</span></h2>
+        <div class="container test-container pt-4">
+            <div class="test-inner">
+                <div class="test-card">
+                    <div class="test-front-face">
+                        <div class="test-front-title">
+                            <span class="emoji">💜</span> Brave
+                        </div>
+                        <i class="test-arrow"></i>
+                    </div>
+                    <p class="test-back-face">
+                        Vi er fremtidsrettede, innovative og ikke redde for å utfordre det etablerte. Vi leder an i bransjen med nye ideer og smarte løsninger – fordi vi vet at de største mulighetene finnes utenfor komfortsonen.
+                    </p>
+                </div>
+                <div class="test-card">
+                    <div class="test-front-face">
+                        <div class="test-front-title">
+                            <span class="emoji">💜</span> Passionate
+                        </div>
+                        <i class="test-arrow"></i>
+                    </div>
+                    <p class="test-back-face">
+                        Vi elsker det vi gjør og drives av å skape de beste opplevelsene. Med engasjement og dedikasjon strekker vi oss alltid litt lenger for å levere kvalitet og overgå forventningene.
+                    </p>
+                </div>
+                <div class="test-card">
+                    <div class="test-front-face">
+                        <div class="test-front-title">
+                            <span class="emoji">💜</span> Collaborative
+                        </div>
+                        <i class="test-arrow"></i>
+                    </div>
+                    <p class="test-back-face">
+                        Vi jobber som ett team, på tvers av landegrenser og fagområder. Sammen skaper vi resultater, deler kunnskap og bygger en sterk kultur der vi støtter og løfter hverandre mot vårt felles mål.
+                    </p>
+                </div>
+                <div class="test-card">
+                    <div class="test-front-face">
+                        <div class="test-front-title">
+                            <span class="emoji">💜</span> Inclusive
+                        </div>
+                        <i class="test-arrow"></i>
+                    </div>
+                    <p class="test-back-face">
+                        Vi er en global organisasjon med et lokalt hjerte. Hos oss feirer vi mangfold og ulikheter – fordi vi tror at ulike perspektiver skaper bedre opplevelser. Her er det plass til alle, og vi ønsker deg velkommen akkurat som du er.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <script>
+        const valueItems = document.querySelectorAll('.test-card');
 
+        valueItems.forEach((item) => {
+            item.addEventListener('click', () => {
+                if (item.classList.contains('active-test-card')) {
+                    item.classList.remove('active-test-card')
+                } else {
+                    const openItem = document.querySelectorAll('.active-test-card');
+                    openItem.forEach((openItem) => {
+                        openItem.classList.remove('active-test-card');
+                    })
+                    item.classList.add('active-test-card')
+                }
+            });
+        });
 
+        // valueItems.forEach((item) => {
+        //     item.addEventListener('click', () => {
+        //         item.classList.toggle('active-test-card');
+        //         if (item.classList.contains('active-test-card')) {
+
+        //         }
+        //     })
+        // });
+    </script>
 
 
 
