@@ -753,8 +753,8 @@
                     if (job.country) {
                         locationSet.add(job.country);
                     }
-                    if (job.title) {
-                        jobTypeSet.add(job.title);
+                    if (job.occupation_orientation) {
+                        jobTypeSet.add(job.occupation_orientation);
                     }
                 });
 
@@ -782,7 +782,7 @@
                 // Filter jobs based on selected filters
                 let filteredJobs = jobs.filter(job => {
                     return (selectedCountry === 'All' || job.country === selectedCountry) &&
-                        (selectedJobType === 'All' || job.title === selectedJobType);
+                        (selectedJobType === 'All' || job.occupation_orientation === selectedJobType);
                 });
 
                 // Append job cards for each filtered job
