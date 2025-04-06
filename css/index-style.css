@@ -349,9 +349,13 @@ border-radius: 0 4px 0 32px;
 	transition: background-color 0.3s ease-in-out;
 }
 
-.test-card:hover {
-	background-color: #e5e3de;
+@media (hover: hover) {
+  .test-card:hover {
+		background-color: #e5e3de;
+	}
 }
+
+
 
 /* .test-card:nth-child(2) {
 	flex-direction: row-reverse;
@@ -378,10 +382,6 @@ border-radius: 0 4px 0 32px;
 	}
 }
 
-@media (hover: hover) and (pointer: fine) {
-  
-}
-
 .test-back-face {
 	opacity: 0;
 	overflow: hidden;
@@ -395,6 +395,10 @@ border-radius: 0 4px 0 32px;
 	opacity: 1;
 	max-height: 6rem;
 	margin-top: 1rem;
+}
+
+.test-card.active-test-card {
+	background-color: #e5e3de;
 }
 
 
@@ -963,6 +967,11 @@ h2 {
 }
 
 .company-info-item-title {
+	font-size: 1rem;
+}
+
+.company-info-item {
+	margin-bottom: 2rem;
 	font-size: 1rem;
 }
 
