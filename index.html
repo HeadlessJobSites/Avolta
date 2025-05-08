@@ -1029,7 +1029,7 @@
                 const organizationUnitName = job.organizations && job.organizations.length > 1
                     ? job.organizations[1].nameorgunit
                     : job.organizations?.[0]?.nameorgunit || 'Not specified';
-                const category = job.occupation_area || 'Avolta';
+                const category = job.organizations?.[1]?.nameorgunit || job.organizations?.[0]?.nameorgunit || 'Avolta';
 
                 // Determine the display location based on the areas and country
                 let displayLocation = job.country || '';
@@ -1043,7 +1043,7 @@
                 <div class="card h-100">
                     <div class="card-body">
                          <div class="card-category">
-                            <span>${job.organizations?.[1]?.nameorgunit || job.organizations?.[0]?.nameorgunit || 'Avolta'}</span>
+                            <span>${category}</span>
                         </div>
                         <div class="card-title">${job.title}</div>
 	                <p class="card-text">${displayLocation}</p>
