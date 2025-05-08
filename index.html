@@ -1042,7 +1042,9 @@
             <a href="${jobDetailUrl}" class="" style="text-decoration: none; color: inherit;" aria-label="Job details">
                 <div class="card h-100">
                     <div class="card-body">
-                        <div class="card-category"><span>Avolta</span></div>
+                         <div class="card-category">
+                            <span>${job.organizations?.[1]?.nameorgunit || job.organizations?.[0]?.nameorgunit || 'Avolta'}</span>
+                        </div>
                         <div class="card-title">${job.title}</div>
 	                <p class="card-text">${displayLocation}</p>
                         <a href="${jobDetailUrl}" class="stretched-link">
