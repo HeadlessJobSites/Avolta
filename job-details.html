@@ -802,13 +802,16 @@
                     : organizations.length > 0
                         ? organizations[0].nameorgunit
                         : 'Not specified';
+                const category = job.organizations?.[1]?.nameorgunit || job.organizations?.[0]?.nameorgunit || 'Avolta';
 
                 return `
 <div class="col-12 col-md-4 col-lg-4 mb-4">
     <a href="${jobDetailUrl}" style="text-decoration: none; color: inherit;">
         <div class="card h-100">
             <div class="card-body">
-                <div class="card-category"><span>Avolta</span></div>
+                <div class="card-category">
+                    <span>${category}</span>
+                </div>
                 <h5 class="card-title">${job.title}</h5>
                 <a href="${jobDetailUrl}" class="stretched-link">
                     <img src="./files/arrow-right-thin.svg" class="stretched-link" alt="Details">
